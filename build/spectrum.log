@@ -1,0 +1,48 @@
+# do test_spectrum.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work_spectrum 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:08:23 on Oct 26,2026
+# vlog -sv ../user_source/hdl_source/audio_spectrum.v ../user_source/hdl_source/text_layers.v tb_spectrum.v 
+# -- Compiling module audio_spectrum
+# -- Compiling module spectrum_renderer_pipeline
+# -- Compiling module text_layers
+# -- Compiling module tb_spectrum
+# 
+# Top level modules:
+# 	tb_spectrum
+# End time: 18:08:23 on Oct 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt work.tb_spectrum 
+# Start time: 18:08:23 on Oct 26,2026
+# Loading sv_std.std
+# Loading work.tb_spectrum
+# Loading work.audio_spectrum
+# Loading work.text_layers
+# ** Warning: (vsim-3017) tb_spectrum.v(8): [TFMPC] - Too few port connections. Expected 30, found 27.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_spectrum/osd File: ../user_source/hdl_source/text_layers.v
+# ** Warning: (vsim-3722) tb_spectrum.v(8): [TFMPC] - Missing connection for port 'temperature'.
+# ** Warning: (vsim-3722) tb_spectrum.v(8): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) tb_spectrum.v(8): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-7) Failed to open readmem file "spectrum_background.hex" in read mode.
+# No such file or directory. (errno = ENOENT)    : tb_spectrum.v(29)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_spectrum
+# COMPACT_SPECTRUM_THIN_BARS_ROUND_LOWER_RIGHT_BOUNDS_PASS
+# RADIAL_48_SEGMENTS_NO_OUTER_RING_32_BARS_SAME_WIDTH_PASS
+# REAL_DFT_FREQUENCY_SELECTIVITY_SILENCE_FRAME_ATOMIC_BARS_RADIAL_PASS
+# ** Note: $finish    : tb_spectrum.v(96)
+#    Time: 5757500 ns  Iteration: 1  Instance: /tb_spectrum
+# Break in Module tb_spectrum at tb_spectrum.v line 96
+# Stopped at tb_spectrum.v line 96
+# End time: 18:08:34 on Oct 26,2026, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 5
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:08:34 on Oct 26,2026
+# vlog -sv -work spectrum_previous ../docs/before_radial48_fatcache/audio_spectrum.v 
+# ** Error: (vlog-7) Failed to open design unit file "../docs/before_radial48_fatcache/audio_spectrum.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 18:08:34 on Oct 26,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: E:/intelFPGA/18.1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro ./test_spectrum.do line 10

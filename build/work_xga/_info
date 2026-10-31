@@ -1,0 +1,106 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vframe_fifo_read
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1793167895
+!i10b 1
+!s100 eKbTfn:I]1?4BWN2`ZH?63
+I;<75ATZkZMhLCJJ`??EC:1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 frame_fifo_read_v_unit
+S1
+R0
+w1785054852
+8../user_source/hdl_source/SD/frame_fifo_read.v
+F../user_source/hdl_source/SD/frame_fifo_read.v
+L0 2
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1793167895.000000
+Z6 !s107 tb_xga_reader.v|../user_source/hdl_source/SD/frame_fifo_read.v|../user_source/hdl_source/scaled_frame_reader.v|../user_source/hdl_source/xga_scale_config.v|
+Z7 !s90 -work|work_xga|-sv|../user_source/hdl_source/xga_scale_config.v|../user_source/hdl_source/scaled_frame_reader.v|../user_source/hdl_source/SD/frame_fifo_read.v|tb_xga_reader.v|
+!i113 1
+Z8 o-work work_xga -sv
+Z9 tCvgOpt 0
+vscaled_frame_reader
+R1
+R2
+!i10b 1
+!s100 X_GgJB8@IGRDBC6b1f3=E2
+IfgIUbn?4lh]GoJT9@58f_1
+R3
+!s105 scaled_frame_reader_v_unit
+S1
+R0
+w1793006078
+8../user_source/hdl_source/scaled_frame_reader.v
+F../user_source/hdl_source/scaled_frame_reader.v
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vtb_xga_reader
+R1
+R2
+!i10b 1
+!s100 09En611>jUe3NZC3bZS^F0
+IUh6e?2MXZl5MXSzXlz5Ml3
+R3
+!s105 tb_xga_reader_v_unit
+S1
+R0
+w1792421966
+8tb_xga_reader.v
+Ftb_xga_reader.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vxga_scale_config
+R1
+R2
+!i10b 1
+!s100 Y6KbVVK`z4Ffiml2QU>TF1
+If=oVE`J1kNNhOa40>I3FN3
+R3
+!s105 xga_scale_config_v_unit
+S1
+R0
+w1792417956
+8../user_source/hdl_source/xga_scale_config.v
+F../user_source/hdl_source/xga_scale_config.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9

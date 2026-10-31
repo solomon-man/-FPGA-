@@ -1,0 +1,45 @@
+# do test_video_alignment.do
+# ** Warning: (vlib-34) Library already exists at "work_video_alignment".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work_video_alignment 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:58:15 on Oct 28,2026
+# vlog -sv -work work_video_alignment ../user_source/hdl_source/display_enhance.v ../user_source/hdl_source/thumbnail_scaler.v ../user_source/hdl_source/runtime_adjust.v ../user_source/hdl_source/audio_spectrum.v ../user_source/hdl_source/audio_wave.v ../user_source/hdl_source/text_layers.v tb_video_alignment.v 
+# -- Compiling module display_enhance
+# -- Compiling module thumbnail_scaler
+# -- Compiling module runtime_adjust
+# -- Compiling module runtime_adjust_pipeline
+# -- Compiling module audio_spectrum
+# -- Compiling module spectrum_renderer_pipeline
+# -- Compiling module audio_wave_levels
+# -- Compiling module audio_wave_overlay
+# -- Compiling module text_layers
+# -- Compiling module osd_font_rom
+# -- Compiling module tb_video_alignment
+# 
+# Top level modules:
+# 	runtime_adjust
+# 	tb_video_alignment
+# End time: 12:58:15 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt work_video_alignment.tb_video_alignment 
+# Start time: 12:58:15 on Oct 28,2026
+# Loading sv_std.std
+# Loading work_video_alignment.tb_video_alignment
+# Loading work_video_alignment.display_enhance
+# Loading work_video_alignment.thumbnail_scaler
+# Loading work_video_alignment.runtime_adjust_pipeline
+# Loading work_video_alignment.audio_spectrum
+# Loading work_video_alignment.spectrum_renderer_pipeline
+# Loading work_video_alignment.text_layers
+# Loading work_video_alignment.osd_font_rom
+# Loading work_video_alignment.audio_wave_levels
+# Loading work_video_alignment.audio_wave_overlay
+# XGA_DISPLAY_17_CLOCK_RGB_HS_VS_DE_ALIGNMENT_NO_DOUBLE_MASK_PASS
+# ** Note: $finish    : tb_video_alignment.v(25)
+#    Time: 22000250 ns  Iteration: 1  Instance: /tb_video_alignment
+# Break in Module tb_video_alignment at tb_video_alignment.v line 25
+# Stopped at tb_video_alignment.v line 25
+# End time: 12:59:44 on Oct 28,2026, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 0

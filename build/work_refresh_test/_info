@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vsdr_init_ref
+Z1 !s110 1793007757
+!i10b 1
+!s100 F@?__iXni@>`0HLFL0RB32
+IkTl4AR@L:2zko12hTG7zz1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1791604916
+8../user_source/hdl_source/include/sdr_init_ref.enc.v
+F../user_source/hdl_source/include/sdr_init_ref.enc.v
+L0 13
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1793007756.000000
+Z5 !s107 ../user_source/hdl_source/include/global_def.v|tb_sdram_refresh.v|../user_source/hdl_source/include/sdr_init_ref.enc.v|
+Z6 !s90 +incdir+../user_source/hdl_source/include|../user_source/hdl_source/include/sdr_init_ref.enc.v|tb_sdram_refresh.v|
+!i113 1
+Z7 !s92 +incdir+../user_source/hdl_source/include
+Z8 tCvgOpt 0
+vtb_sdram_refresh
+R1
+!i10b 1
+!s100 mnLA[Q93@R=QG@mTVW_KM0
+I4]1I>@ccfk]M`mIdAiIPe1
+R2
+R0
+w1792421966
+8tb_sdram_refresh.v
+Ftb_sdram_refresh.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8

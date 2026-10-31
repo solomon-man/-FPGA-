@@ -1,0 +1,50 @@
+# do test_serial_reset.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:43:23 on Oct 26,2026
+# vlog -work work_serial_reset E:/TD_Engineer/sim_release/eg4/eg_logic_io.v E:/TD_Engineer/sim_release/eg4/eg_phy_pad.v E:/TD_Engineer/sim_release/eg4/eg_phy_glbl.v 
+# -- Compiling module EG_LOGIC_IDELAY
+# -- Compiling module EG_LOGIC_IDDR
+# -- Compiling module EG_LOGIC_ODDR
+# -- Compiling module EG_LOGIC_IDDRx2
+# -- Compiling module EG_LOGIC_ODELAY
+# -- Compiling module EG_LOGIC_ODDRx2
+# -- Compiling module EG_LOGIC_ODDRx2l
+# -- Compiling module EG_PHY_PAD
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	EG_LOGIC_IDELAY
+# 	EG_LOGIC_ODELAY
+# 	EG_LOGIC_ODDRx2l
+# 	EG_PHY_PAD
+# 	glbl
+# End time: 17:43:24 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:43:24 on Oct 26,2026
+# vlog -sv -work work_serial_reset ../user_source/hdl_source/reset_release.v ../user_source/hdl_source/lane_lvds_10_1.v lane_reference.v tb_serial_reset.v 
+# -- Compiling module reset_release
+# -- Compiling module lane_lvds_10_1
+# -- Compiling module lane_reference
+# -- Compiling module tb_serial_reset
+# 
+# Top level modules:
+# 	tb_serial_reset
+# End time: 17:43:24 on Oct 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt work_serial_reset.tb_serial_reset work_serial_reset.glbl 
+# Start time: 17:43:24 on Oct 26,2026
+# Loading sv_std.std
+# Loading work_serial_reset.tb_serial_reset
+# Loading work_serial_reset.reset_release
+# Loading work_serial_reset.lane_lvds_10_1
+# Loading work_serial_reset.lane_reference
+# Loading work_serial_reset.glbl
+# Loading work_serial_reset.EG_LOGIC_ODDR
+# TMDS_SEPARATE_PIXEL_SERIAL_RESET_EXACT_BITS_RESTART_PASS
+# ** Note: $finish    : tb_serial_reset.v(15)
+#    Time: 12957850 ps  Iteration: 0  Instance: /tb_serial_reset
+# Break in Module tb_serial_reset at tb_serial_reset.v line 15
+# Stopped at tb_serial_reset.v line 15
+# End time: 17:43:25 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

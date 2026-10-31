@@ -1,0 +1,22 @@
+# do test_xga_write.do
+# ** Warning: (vlib-34) Library already exists at "work_xga_write".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:22 on Oct 28,2026
+# vlog -work work_xga_write -sv ../user_source/hdl_source/SD/frame_fifo_write.v tb_xga_write.v 
+# -- Compiling module frame_fifo_write
+# -- Compiling module tb_xga_write
+# 
+# Top level modules:
+# 	tb_xga_write
+# End time: 14:11:22 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt work_xga_write.tb_xga_write 
+# Start time: 14:11:22 on Oct 28,2026
+# Loading sv_std.std
+# Loading work_xga_write.tb_xga_write
+# Loading work_xga_write.frame_fifo_write
+# FOUR_VGA_TWO_XGA_TRANSIENT_VGA_FULL_FRAME_WRITE_BOUNDS_PASS
+# ** Note: $finish    : tb_xga_write.v(32)
+#    Time: 63151260 ns  Iteration: 1  Instance: /tb_xga_write
+# End time: 14:11:34 on Oct 28,2026, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 0

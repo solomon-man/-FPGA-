@@ -1,0 +1,163 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vEG_PHY_SDRAM_2M_32
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1793007753
+!i10b 1
+!s100 n:1>okClRT@^^oDVU6i4I3
+IW1IYnOjhGEIO_W=DnUSO=3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 tb_sdram_link_v_unit
+S1
+R0
+Z5 w1792421966
+Z6 8tb_sdram_link.v
+Z7 Ftb_sdram_link.v
+L0 36
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1793007752.000000
+Z10 !s107 ../user_source/hdl_source/include/../include/global_def.v|../user_source/hdl_source/include/global_def.v|tb_sdram_link.v|../user_source/hdl_source/SD/sdram.v|../user_source/hdl_source/include/sdr_as_ram.enc.v|../user_source/hdl_source/include/sdr_wrrd.enc.v|../user_source/hdl_source/include/sdr_init_ref.enc.v|
+Z11 !s90 -sv|-work|work_sdram_link|+incdir+../user_source/hdl_source/include|../user_source/hdl_source/include/sdr_init_ref.enc.v|../user_source/hdl_source/include/sdr_wrrd.enc.v|../user_source/hdl_source/include/sdr_as_ram.enc.v|../user_source/hdl_source/SD/sdram.v|tb_sdram_link.v|
+!i113 1
+Z12 o-sv -work work_sdram_link
+Z13 !s92 -sv -work work_sdram_link +incdir+../user_source/hdl_source/include
+Z14 tCvgOpt 0
+n@e@g_@p@h@y_@s@d@r@a@m_2@m_32
+vsdr_as_ram
+R1
+R2
+!i10b 1
+!s100 M0oS`E`RhBR3zcREMA@Lj1
+IX?olbABf84N[gfM<b98<:3
+R3
+!s105 sdr_as_ram_enc_v_unit
+S1
+R0
+w1789449568
+8../user_source/hdl_source/include/sdr_as_ram.enc.v
+F../user_source/hdl_source/include/sdr_as_ram.enc.v
+Z15 L0 12
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vsdr_init_ref
+R1
+R2
+!i10b 1
+!s100 WUQDOHlAV<0b0n>?RKRg_3
+IIRJZzTVYf0f2hdnPnmXDz3
+R3
+!s105 sdr_init_ref_enc_v_unit
+S1
+R0
+Z16 w1791604916
+8../user_source/hdl_source/include/sdr_init_ref.enc.v
+F../user_source/hdl_source/include/sdr_init_ref.enc.v
+L0 13
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+v9m1yqb6sQZPsnQOb5Hz8/Q==
+R1
+R2
+!i10b 0
+!s100 8@CiL2Q@ROWM2^3MTKDh;1
+IHS9?SAlI?J:6G7z7Q4`N80
+R3
+!i8a 1813171776
+!s105 sdr_wrrd_enc_v_unit
+S1
+R0
+w1793007753
+8../user_source/hdl_source/include/sdr_wrrd.enc.v
+F../user_source/hdl_source/include/sdr_wrrd.enc.v
+L0 77
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+nb86ee14
+vsdram
+R1
+R2
+!i10b 1
+!s100 28J_6eR?Ue?`SAJ@JO^^U3
+Im[QBH`TIlP=;jF1^K@<G`0
+R3
+!s105 sdram_v_unit
+S1
+R0
+R16
+8../user_source/hdl_source/SD/sdram.v
+F../user_source/hdl_source/SD/sdram.v
+R15
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vtb_sdram_link
+R1
+R2
+!i10b 1
+!s100 21:D]ShSZcWMVE1BD1:?G3
+IJV>BH5QLkkTI_A`_Tg1bH0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14

@@ -1,0 +1,247 @@
+[
+  {
+    "name": "progressive",
+    "script": "test_progressive.do",
+    "log": "progressive.log",
+    "markers": [
+      "PROGRESSIVE_PREVIEW_HD_OWNERSHIP_DRAIN_STALE_FAILURE_PASS"
+    ]
+  },
+  {
+    "name": "xga_write",
+    "script": "test_xga_write.do",
+    "log": "xga_write.log",
+    "markers": [
+      "FOUR_VGA_TWO_XGA_TRANSIENT_VGA_FULL_FRAME_WRITE_BOUNDS_PASS"
+    ]
+  },
+  {
+    "name": "xga_reader",
+    "script": "test_xga_reader.do",
+    "log": "xga_reader.log",
+    "markers": [
+      "XGA_READER_36_FRAMES_RGB888_BANDWIDTH_PASS"
+    ]
+  },
+  {
+    "name": "xga_fit",
+    "script": "test_xga_fit.do",
+    "log": "xga_fit.log",
+    "markers": [
+      "XGA_BMP_FULL_PIXELS_LANDSCAPE_PORTRAIT_PASS",
+      "BMP_ASPECT_FIT_INVALID_GEOMETRY_PAYLOAD_REJECTED_PASS"
+    ]
+  },
+  {
+    "name": "xga_timing",
+    "script": "test_xga_timing.do",
+    "log": "xga_timing.log",
+    "markers": [
+      "XGA_1344_806_1024_768_AXIS_SOF_EOL_PASS"
+    ]
+  },
+  {
+    "name": "adjust_pipeline",
+    "script": "test_adjust_pipeline.do",
+    "log": "adjust_pipeline.log",
+    "markers": [
+      "ADJUST_PIPELINE_150000_EXACT_RGB_SIGNED_SATURATION_PASS"
+    ]
+  },
+  {
+    "name": "render_pipeline",
+    "script": "test_render_pipeline.do",
+    "log": "render_pipeline.log",
+    "markers": [
+      "SPECTRUM_BARS_EQUAL_3_0_RADIAL_XGA_BOX_ONLY_GATES_PASS"
+    ]
+  },
+  {
+    "name": "osd_pipeline",
+    "script": "test_osd_pipeline.do",
+    "log": "osd_pipeline.log",
+    "markers": [
+      "OSD_XGA_SIMSUN24_9_PAGES_PANEL_INK_GLYPH_EXACT_PASS"
+    ]
+  },
+  {
+    "name": "video_alignment",
+    "script": "test_video_alignment.do",
+    "log": "video_alignment.log",
+    "markers": [
+      "XGA_DISPLAY_17_CLOCK_RGB_HS_VS_DE_ALIGNMENT_NO_DOUBLE_MASK_PASS"
+    ]
+  },
+  {
+    "name": "pll_clocks",
+    "script": "test_pll_clocks.do",
+    "log": "pll_clocks.log",
+    "markers": [
+      "PLL_INTERNAL_FEEDBACK_100_83_65_325_12MHZ_PHASE_ZERO_PASS"
+    ]
+  },
+  {
+    "name": "sdram_link",
+    "script": "test_sdram_link.do",
+    "log": "sdram_link.log",
+    "markers": [
+      "SDRAM_REAL_CONTROLLER_RGB888_PHASE_0_ROWBANK_READWRITE_PASS"
+    ]
+  },
+  {
+    "name": "refresh",
+    "script": "test_refresh.do",
+    "log": "refresh.log",
+    "markers": [
+      "SDRAM_REFRESH_PASS: period 12 ns, counter 2603, refresh request interval 2604 cycles"
+    ]
+  },
+  {
+    "name": "frame_ui",
+    "script": "test_frame_ui.do",
+    "log": "frame_ui.log",
+    "markers": [
+      "FRAME_UI_CHORD_CONTEXT_MUSIC_DIP_DEFAULTS_ZOOM_TOAST_PASS",
+      "TEMPERATURE_DIP_1001_LIMITS_OSD_CHORD_OVERVIEW_RESET_PASS"
+    ]
+  },
+  {
+    "name": "temperature",
+    "script": "test_temperature.do",
+    "log": "temperature.log",
+    "markers": [
+      "TEMPERATURE_ALL_STEPS_BRIGHT_CONTRAST_RGB_SATURATION_NEUTRAL_IDENTITY_PASS",
+      "TEMPERATURE_55BIT_ASYNC_MAILBOX_ATOMIC_PENDING_UPDATES_PASS"
+    ]
+  },
+  {
+    "name": "fat_cache",
+    "script": "test_fat_cache.do",
+    "log": "fat_cache.log",
+    "markers": [
+      "FAT_CACHE_IDENTICAL_BYTES_CROSS_SECTOR_EOF_PASS FAT_READS=129->2 TOTAL_READS=260->133"
+    ]
+  },
+  {
+    "name": "raw_pcm",
+    "script": "test_raw_pcm.do",
+    "log": "raw_pcm.log",
+    "fixtures": [
+      "bgm_prefix.hex"
+    ],
+    "markers": [
+      "REAL_BGM_PCM_PREFIX_EXACT_SAMPLES_BACKPRESSURE_PASS CHANNELS=1",
+      "REAL_BGM_PCM_PREFIX_EXACT_SAMPLES_BACKPRESSURE_PASS CHANNELS=2"
+    ]
+  },
+  {
+    "name": "sd_audio",
+    "script": "test_sd_audio.do",
+    "log": "sd_audio.log",
+    "fixtures": [
+      "wav_disk.hex"
+    ],
+    "markers": [
+      "RAW_PCM_FRAGMENTED_MONO_EXACT_SAMPLES_WAV_SWITCH_PASS PARTITION=2048",
+      "PCM_ONLY_BUILD_CATALOG_FRAGMENTED_PLAYBACK_PASS",
+      "SD_PCM_THREE_LOOPS_EXACT_SAMPLES_STOP_PASS"
+    ]
+  },
+  {
+    "name": "sd_transport",
+    "script": "test_sd_transport.do",
+    "log": "sd_transport.log",
+    "markers": [
+      "SD_ARBITER_ROUND_ROBIN_NO_STARVATION_OWNERSHIP_DRAIN_TIMEOUT_PASS",
+      "PCM_ASYNC_FIFO_BACKPRESSURE_MULTI_WRAP_EXACT_STEREO_PASS"
+    ]
+  },
+  {
+    "name": "serial_reset",
+    "script": "test_serial_reset.do",
+    "log": "serial_reset.log",
+    "markers": [
+      "TMDS_SEPARATE_PIXEL_SERIAL_RESET_EXACT_BITS_RESTART_PASS"
+    ]
+  },
+  {
+    "name": "fat_integration",
+    "script": "test_fat121.do",
+    "log": "fat121.log",
+    "markers": [
+      "FAT32_SUPERFLOPPY_FRAGMENTED_FULL_BGR_ROOT_CHAIN_PASS",
+      "FAT32_MBR_FRAGMENTED_FULL_BGR_PASS",
+      "FAT32_MULTI_SECTOR_ACTIVE_SECOND_FAT_THIRD_MBR_PARTITION_PASS",
+      "FAT32_CIRCULAR_CHAIN_REJECTED_PASS",
+      "FAT32_EARLY_EOF_REJECTED_PASS",
+      "RAW_10_COMPATIBILITY_FULL_IMAGE_PASS"
+    ]
+  },
+  {
+    "name": "slideshow",
+    "script": "test_slideshow.do",
+    "log": "slideshow.log",
+    "markers": [
+      "SLIDESHOW_VGA_ENTRY_TWO_HD_DRAIN_STOP_HD5_TWO_PREVIEWS_RESTORE_PASS",
+      "SLIDESHOW_HD_ENTRY_STOP_HD4_TWO_PREVIEWS_PREV_REMAP_PASS"
+    ]
+  },
+  {
+    "name": "slideshow_fault",
+    "script": "test_slideshow_fault.do",
+    "log": "slideshow_fault.log",
+    "markers": [
+      "SLIDESHOW_HD_ERROR_TIMEOUT_PRESERVE_QUEUED_NAV_RESTORE_PASS"
+    ]
+  },
+  {
+    "name": "reader_owner",
+    "script": "test_reader_owner.do",
+    "log": "reader_owner.log",
+    "markers": [
+      "SDRAM_READER_OWNER_HD4_HD5_TRANSIENT_VGA_ROW_DRAIN_PASS"
+    ]
+  },
+  {
+    "name": "dual_reader",
+    "script": "test_dual_reader.do",
+    "log": "dual_reader.log",
+    "markers": [
+      "DUAL_HD_ALIAS_TRANSIENT_PREVIEW_21_FRAMES_EXACT_PIXELS_BANDWIDTH_PASS"
+    ]
+  },
+  {
+    "name": "wave_overlay3",
+    "script": "test_wave_overlay3.do",
+    "log": "wave_overlay3.log",
+    "markers": [
+      "WAVE3_OVERLAY_2163845_PIXELS_MATCH_V027_REFERENCE_7_CLOCK_PASS"
+    ]
+  },
+  {
+    "name": "wave_levels3",
+    "script": "test_wave_levels3.do",
+    "log": "wave_levels3.log",
+    "markers": [
+      "WAVE3_LINEAR_LEVELS_EQUAL_V027_12800_BARS_PASS",
+      "WAVE3_LOG_SCALE_1P5DB_STEPS_MINUS42_TO_0DBFS_PASS",
+      "WAVE3_ENABLE_GATE_BLANK_RESTART_DECAY_PASS"
+    ]
+  },
+  {
+    "name": "wave_display3",
+    "script": "test_wave_display3.do",
+    "log": "wave_display3.log",
+    "markers": [
+      "WAVE3_XGA_DISPLAY_17_CLOCK_BAND_ONLY_MUTE_DOTS_BYPASS_RESTART_PASS"
+    ]
+  },
+  {
+    "name": "spectrum_levels3",
+    "script": "test_spectrum_levels3.do",
+    "log": "spectrum_levels3.log",
+    "markers": [
+      "SPECTRUM3_PIPELINED_LEVELS_EQUAL_V20_224_BINS_PASS"
+    ]
+  }
+]

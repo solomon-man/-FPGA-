@@ -1,0 +1,394 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vbmp_fit_read
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1793169450
+!i10b 1
+!s100 [PEhJFX`3U`=a7N>49`<C3
+Imah:A=FTGzlkH1cU5j4OH0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 fat_bmp_read_v_unit
+S1
+R0
+Z5 w1793006506
+Z6 8../user_source/hdl_source/SD/fat_bmp_read.v
+Z7 F../user_source/hdl_source/SD/fat_bmp_read.v
+L0 79
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1793169449.000000
+Z10 !s107 tb_progressive.v|../user_source/hdl_source/SD/spi_master.v|../user_source/hdl_source/SD/sd_card_sec_read_write.v|../user_source/hdl_source/SD/sd_card_cmd.v|../user_source/hdl_source/SD/sd_card_top.v|../user_source/hdl_source/SD/sd_card_bmp.v|../user_source/hdl_source/SD/key_press_debounce.v|../user_source/hdl_source/SD/fat_bmp_read.v|../user_source/hdl_source/SD/bmp_fit_read.v|../user_source/hdl_source/SD/fat32_sector_map.v|../user_source/hdl_source/SD/bmp_read.v|../user_source/hdl_source/SD/sd_wav_player.v|../user_source/hdl_source/SD/wav_pcm_reader.v|../user_source/hdl_source/SD/fat32_wav_map.v|../user_source/hdl_source/SD/sd_read_arbiter.v|../user_source/hdl_source/pcm_async_fifo.v|
+Z11 !s90 -work|progressive|-sv|../user_source/hdl_source/pcm_async_fifo.v|../user_source/hdl_source/SD/sd_read_arbiter.v|../user_source/hdl_source/SD/fat32_wav_map.v|../user_source/hdl_source/SD/wav_pcm_reader.v|../user_source/hdl_source/SD/sd_wav_player.v|../user_source/hdl_source/SD/bmp_read.v|../user_source/hdl_source/SD/fat32_sector_map.v|../user_source/hdl_source/SD/bmp_fit_read.v|../user_source/hdl_source/SD/fat_bmp_read.v|../user_source/hdl_source/SD/key_press_debounce.v|../user_source/hdl_source/SD/sd_card_bmp.v|../user_source/hdl_source/SD/sd_card_top.v|../user_source/hdl_source/SD/sd_card_cmd.v|../user_source/hdl_source/SD/sd_card_sec_read_write.v|../user_source/hdl_source/SD/spi_master.v|tb_progressive.v|
+!i113 1
+Z12 o-work progressive -sv
+Z13 tCvgOpt 0
+vbmp_read
+R1
+R2
+!i10b 1
+!s100 ;m7;OMlnXhjCR7_T[LI941
+I<ha`7lHGGISIZOO8WF_ZI1
+R3
+!s105 bmp_read_v_unit
+S1
+R0
+w1791642078
+8../user_source/hdl_source/SD/bmp_read.v
+F../user_source/hdl_source/SD/bmp_read.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vfat32_sector_map
+R1
+R2
+!i10b 1
+!s100 gF4j8^>eGjjWgI2A1=9UM3
+IG10A0PK^9o@Jz?SK@?P:12
+R3
+!s105 fat32_sector_map_v_unit
+S1
+R0
+w1793070826
+8../user_source/hdl_source/SD/fat32_sector_map.v
+F../user_source/hdl_source/SD/fat32_sector_map.v
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vfat32_wav_map
+R1
+R2
+!i10b 1
+!s100 cObW^TS:XI]?MITo@TQ371
+IlfflNk69eiz4;zVUOSmiB3
+R3
+!s105 fat32_wav_map_v_unit
+S1
+R0
+w1793006014
+8../user_source/hdl_source/SD/fat32_wav_map.v
+F../user_source/hdl_source/SD/fat32_wav_map.v
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vfat_bmp_read
+R1
+R2
+!i10b 1
+!s100 h>7e98_7V`J_;P>68hZKV1
+IIlR2I7]Rli5QB:Mmz@8ek2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vkey_press_debounce
+R1
+R2
+!i10b 1
+!s100 V^iomCPN]U^;09g1dKCCo1
+IRZgQkFh6:CJ5VfLh>k;KH0
+R3
+!s105 key_press_debounce_v_unit
+S1
+R0
+w1791641404
+8../user_source/hdl_source/SD/key_press_debounce.v
+F../user_source/hdl_source/SD/key_press_debounce.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vpcm_async_fifo
+R1
+R2
+!i10b 1
+!s100 J7gBa@h;3DICQMKFz7<2D2
+IL3f^@oeFC<91a3o[[mW?a3
+R3
+!s105 pcm_async_fifo_v_unit
+S1
+R0
+w1793006050
+8../user_source/hdl_source/pcm_async_fifo.v
+F../user_source/hdl_source/pcm_async_fifo.v
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vsd_card_bmp
+R1
+R2
+!i10b 1
+!s100 o=`a95<1HY[HShVkL2UZH0
+INz^4;MiGSGSROZ=HMCI9B3
+R3
+!s105 sd_card_bmp_v_unit
+S1
+R0
+w1793168778
+8../user_source/hdl_source/SD/sd_card_bmp.v
+F../user_source/hdl_source/SD/sd_card_bmp.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vsd_card_cmd
+R1
+R2
+!i10b 1
+!s100 RLl4NVfTPfV=Gc]l?<Mg^0
+IDSRfbnT7]G>m<E2O8^jNR3
+R3
+!s105 sd_card_cmd_v_unit
+S1
+R0
+w1785055178
+8../user_source/hdl_source/SD/sd_card_cmd.v
+F../user_source/hdl_source/SD/sd_card_cmd.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vsd_card_sec_read_write
+R1
+R2
+!i10b 1
+!s100 VC`:34hfm20EzjcWC@20@2
+I95oc=L@W?UckIhmiFB`7;2
+R3
+!s105 sd_card_sec_read_write_v_unit
+S1
+R0
+Z14 w1785055180
+8../user_source/hdl_source/SD/sd_card_sec_read_write.v
+F../user_source/hdl_source/SD/sd_card_sec_read_write.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vsd_card_top
+R1
+R2
+!i10b 1
+!s100 [d8<FDnm3<6YZ3n]Y2THB2
+IISo16V86?hRobiCOI^Fn`1
+R3
+!s105 sd_card_top_v_unit
+S1
+R0
+R14
+8../user_source/hdl_source/SD/sd_card_top.v
+F../user_source/hdl_source/SD/sd_card_top.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vsd_read_arbiter
+R1
+R2
+!i10b 1
+!s100 m;M[8OY3?MfR4FlJaE@m`0
+Im9_JOd=hg6doPKYf:dk@K2
+R3
+!s105 sd_read_arbiter_v_unit
+S1
+R0
+Z15 w1792851782
+8../user_source/hdl_source/SD/sd_read_arbiter.v
+F../user_source/hdl_source/SD/sd_read_arbiter.v
+L0 4
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vsd_wav_player
+R1
+R2
+!i10b 1
+!s100 OI[TKHkO=a:F>24CPg<c]2
+IjMm;FQLGmEA5VN_S<iS>c0
+R3
+!s105 sd_wav_player_v_unit
+S1
+R0
+R15
+8../user_source/hdl_source/SD/sd_wav_player.v
+F../user_source/hdl_source/SD/sd_wav_player.v
+L0 4
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vspi_master
+R1
+R2
+!i10b 1
+!s100 ojJg`CH=d;kX6zVK_dTkz3
+IFihAX7FgULDlX`k[8N2RX0
+R3
+!s105 spi_master_v_unit
+S1
+R0
+w1785055160
+8../user_source/hdl_source/SD/spi_master.v
+F../user_source/hdl_source/SD/spi_master.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vtb_progressive
+R1
+R2
+!i10b 1
+!s100 X0cAEFiH:OKjON^jF`n^z0
+I6MQ=BR_mXL;]AB:KXFZ<W0
+R3
+!s105 tb_progressive_v_unit
+S1
+R0
+w1792418608
+8tb_progressive.v
+Ftb_progressive.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vwav_pcm_reader
+R1
+R2
+!i10b 1
+!s100 4LD;Dmhi3ek<fmZ@gaH:03
+I7KG?7S]X>]`4zD0]R0cS?0
+R3
+!s105 wav_pcm_reader_v_unit
+S1
+R0
+w1791964130
+8../user_source/hdl_source/SD/wav_pcm_reader.v
+F../user_source/hdl_source/SD/wav_pcm_reader.v
+L0 4
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13

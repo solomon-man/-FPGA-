@@ -1,0 +1,7 @@
+Tang Dynasty executable not found: /workspace/volumes/v_c075/TD_Engineer/bin/run.exe
+ËùÔÚÎ»ÖÃ G:\ANLU_Project\digital photo frame3.0\tools\build.ps1:4 ×Ö·û: 45
++ ... xecutable)){throw "Tang Dynasty executable not found: $TdExecutable"} ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Tang Dynasty ex...eer/bin/run.exe:String) [], RuntimeException
+    + FullyQualifiedErrorId : Tang Dynasty executable not found: /workspace/volumes/v_c075/TD_Engineer/bin/run.exe
+ 

@@ -1,0 +1,394 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vbmp_fit_read
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1793169447
+!i10b 1
+!s100 [PEhJFX`3U`=a7N>49`<C3
+I`Tm4Tfb36VNnKYK7=7BD]0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 fat_bmp_read_v_unit
+S1
+R0
+Z5 w1793006506
+Z6 8../user_source/hdl_source/SD/fat_bmp_read.v
+Z7 F../user_source/hdl_source/SD/fat_bmp_read.v
+L0 79
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1793169447.000000
+Z10 !s107 tb_slideshow_fault.v|../user_source/hdl_source/SD/spi_master.v|../user_source/hdl_source/SD/sd_card_sec_read_write.v|../user_source/hdl_source/SD/sd_card_cmd.v|../user_source/hdl_source/SD/sd_card_top.v|../user_source/hdl_source/SD/sd_card_bmp.v|../user_source/hdl_source/SD/key_press_debounce.v|../user_source/hdl_source/SD/fat_bmp_read.v|../user_source/hdl_source/SD/bmp_fit_read.v|../user_source/hdl_source/SD/fat32_sector_map.v|../user_source/hdl_source/SD/bmp_read.v|../user_source/hdl_source/SD/sd_wav_player.v|../user_source/hdl_source/SD/wav_pcm_reader.v|../user_source/hdl_source/SD/fat32_wav_map.v|../user_source/hdl_source/SD/sd_read_arbiter.v|../user_source/hdl_source/pcm_async_fifo.v|
+Z11 !s90 -work|slideshow_fault|-sv|../user_source/hdl_source/pcm_async_fifo.v|../user_source/hdl_source/SD/sd_read_arbiter.v|../user_source/hdl_source/SD/fat32_wav_map.v|../user_source/hdl_source/SD/wav_pcm_reader.v|../user_source/hdl_source/SD/sd_wav_player.v|../user_source/hdl_source/SD/bmp_read.v|../user_source/hdl_source/SD/fat32_sector_map.v|../user_source/hdl_source/SD/bmp_fit_read.v|../user_source/hdl_source/SD/fat_bmp_read.v|../user_source/hdl_source/SD/key_press_debounce.v|../user_source/hdl_source/SD/sd_card_bmp.v|../user_source/hdl_source/SD/sd_card_top.v|../user_source/hdl_source/SD/sd_card_cmd.v|../user_source/hdl_source/SD/sd_card_sec_read_write.v|../user_source/hdl_source/SD/spi_master.v|tb_slideshow_fault.v|
+!i113 1
+Z12 o-work slideshow_fault -sv
+Z13 tCvgOpt 0
+vbmp_read
+R1
+R2
+!i10b 1
+!s100 ;m7;OMlnXhjCR7_T[LI941
+ILFd>QegkmPIk`FOcMM92L2
+R3
+!s105 bmp_read_v_unit
+S1
+R0
+w1791642078
+8../user_source/hdl_source/SD/bmp_read.v
+F../user_source/hdl_source/SD/bmp_read.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vfat32_sector_map
+R1
+R2
+!i10b 1
+!s100 gF4j8^>eGjjWgI2A1=9UM3
+Iabb<Uk03KRIoQ_TZHFnf>1
+R3
+!s105 fat32_sector_map_v_unit
+S1
+R0
+w1793070826
+8../user_source/hdl_source/SD/fat32_sector_map.v
+F../user_source/hdl_source/SD/fat32_sector_map.v
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vfat32_wav_map
+R1
+R2
+!i10b 1
+!s100 cObW^TS:XI]?MITo@TQ371
+IOKOj5Hmc=zzoU31l`TDoQ3
+R3
+!s105 fat32_wav_map_v_unit
+S1
+R0
+w1793006014
+8../user_source/hdl_source/SD/fat32_wav_map.v
+F../user_source/hdl_source/SD/fat32_wav_map.v
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vfat_bmp_read
+R1
+R2
+!i10b 1
+!s100 h>7e98_7V`J_;P>68hZKV1
+Ib`6zWa9jhd84f;JI;g5:02
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vkey_press_debounce
+R1
+R2
+!i10b 1
+!s100 V^iomCPN]U^;09g1dKCCo1
+IC9B56C^0HQjn:m_8[2Kz]3
+R3
+!s105 key_press_debounce_v_unit
+S1
+R0
+w1791641404
+8../user_source/hdl_source/SD/key_press_debounce.v
+F../user_source/hdl_source/SD/key_press_debounce.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vpcm_async_fifo
+R1
+R2
+!i10b 1
+!s100 J7gBa@h;3DICQMKFz7<2D2
+I;BNM5eYOV^Q7WgW@@lfNW3
+R3
+!s105 pcm_async_fifo_v_unit
+S1
+R0
+w1793006050
+8../user_source/hdl_source/pcm_async_fifo.v
+F../user_source/hdl_source/pcm_async_fifo.v
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vsd_card_bmp
+R1
+Z14 !s110 1793169448
+!i10b 1
+!s100 o=`a95<1HY[HShVkL2UZH0
+Imo<F<S0L=oi7?Q;?UljLc3
+R3
+!s105 sd_card_bmp_v_unit
+S1
+R0
+w1793168778
+8../user_source/hdl_source/SD/sd_card_bmp.v
+F../user_source/hdl_source/SD/sd_card_bmp.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vsd_card_cmd
+R1
+R14
+!i10b 1
+!s100 RLl4NVfTPfV=Gc]l?<Mg^0
+Igao:SjZj=lUP@TURUQJR>3
+R3
+!s105 sd_card_cmd_v_unit
+S1
+R0
+w1785055178
+8../user_source/hdl_source/SD/sd_card_cmd.v
+F../user_source/hdl_source/SD/sd_card_cmd.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vsd_card_sec_read_write
+R1
+R14
+!i10b 1
+!s100 VC`:34hfm20EzjcWC@20@2
+I4Xg1;b1ZZe`LkMCBR0S3R0
+R3
+!s105 sd_card_sec_read_write_v_unit
+S1
+R0
+Z15 w1785055180
+8../user_source/hdl_source/SD/sd_card_sec_read_write.v
+F../user_source/hdl_source/SD/sd_card_sec_read_write.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vsd_card_top
+R1
+R14
+!i10b 1
+!s100 [d8<FDnm3<6YZ3n]Y2THB2
+I7>BoU>P1Z<EH_F1KC59]g3
+R3
+!s105 sd_card_top_v_unit
+S1
+R0
+R15
+8../user_source/hdl_source/SD/sd_card_top.v
+F../user_source/hdl_source/SD/sd_card_top.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vsd_read_arbiter
+R1
+R2
+!i10b 1
+!s100 m;M[8OY3?MfR4FlJaE@m`0
+IPn>kLNjiz__32^X9N8:I?0
+R3
+!s105 sd_read_arbiter_v_unit
+S1
+R0
+Z16 w1792851782
+8../user_source/hdl_source/SD/sd_read_arbiter.v
+F../user_source/hdl_source/SD/sd_read_arbiter.v
+L0 4
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vsd_wav_player
+R1
+R2
+!i10b 1
+!s100 OI[TKHkO=a:F>24CPg<c]2
+IBcoNbQ6=9E_OcTchLKOe02
+R3
+!s105 sd_wav_player_v_unit
+S1
+R0
+R16
+8../user_source/hdl_source/SD/sd_wav_player.v
+F../user_source/hdl_source/SD/sd_wav_player.v
+L0 4
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vspi_master
+R1
+R14
+!i10b 1
+!s100 ojJg`CH=d;kX6zVK_dTkz3
+IB`SY0k71MP:186<aM76AD1
+R3
+!s105 spi_master_v_unit
+S1
+R0
+w1785055160
+8../user_source/hdl_source/SD/spi_master.v
+F../user_source/hdl_source/SD/spi_master.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vtb_slideshow_fault
+R1
+R14
+!i10b 1
+!s100 nXh?L6?hSVJN9C_FXI3Ho1
+IkgRnbUD;EXL8^ln`3gNgY1
+R3
+!s105 tb_slideshow_fault_v_unit
+S1
+R0
+w1792425166
+8tb_slideshow_fault.v
+Ftb_slideshow_fault.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vwav_pcm_reader
+R1
+R2
+!i10b 1
+!s100 4LD;Dmhi3ek<fmZ@gaH:03
+IDLQc<TaY_U7dc:MKPc^442
+R3
+!s105 wav_pcm_reader_v_unit
+S1
+R0
+w1791964130
+8../user_source/hdl_source/SD/wav_pcm_reader.v
+F../user_source/hdl_source/SD/wav_pcm_reader.v
+L0 4
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13

@@ -1,0 +1,113 @@
+# do test_sd_audio.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work_sd_audio 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:42:48 on Oct 26,2026
+# vlog -sv ../user_source/hdl_source/SD/sd_read_arbiter.v ../user_source/hdl_source/pcm_async_fifo.v ../user_source/hdl_source/SD/fat32_wav_map.v ../user_source/hdl_source/SD/wav_pcm_reader.v ../user_source/hdl_source/SD/sd_wav_player.v tb_sd_audio.v 
+# -- Compiling module sd_read_arbiter
+# -- Compiling module pcm_async_fifo
+# -- Compiling module fat32_wav_map
+# -- Compiling module wav_pcm_reader
+# -- Compiling module sd_wav_player
+# -- Compiling module tb_sd_audio
+# 
+# Top level modules:
+# 	tb_sd_audio
+# End time: 17:42:48 on Oct 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt work.tb_sd_audio 
+# Start time: 17:42:48 on Oct 26,2026
+# Loading sv_std.std
+# Loading work.tb_sd_audio
+# Loading work.sd_wav_player
+# Loading work.fat32_wav_map
+# Loading work.wav_pcm_reader
+# Loading work.pcm_async_fifo
+# Loading work.sd_read_arbiter
+# ** Warning: (vsim-3017) tb_sd_audio.v(17): [TFMPC] - Too few port connections. Expected 18, found 16.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sd_audio/arb File: ../user_source/hdl_source/SD/sd_read_arbiter.v
+# ** Warning: (vsim-3722) tb_sd_audio.v(17): [TFMPC] - Missing connection for port 'card_data'.
+# ** Warning: (vsim-3722) tb_sd_audio.v(17): [TFMPC] - Missing connection for port 'data'.
+# WAV_FRAGMENTED_STEREO_CHUNKS_PADDING_EXACT_PCM_PASS
+# WAV_SHORT_MONO_PREFILL_EOF_PASS
+# WAV_BOUNDS_ALIGNMENT_REJECT_PASS PARTITION=0
+# SD_AUDIO_CATALOG_INVALID_RATE_SWITCH_FLUSH_BAD_CHAIN_PASS
+# RAW_PCM_FRAGMENTED_MONO_EXACT_SAMPLES_WAV_SWITCH_PASS PARTITION=0
+# RAW_PCM_SHORT_EOF_ODD_LENGTH_REJECT_PASS
+# ** Note: $finish    : tb_sd_audio.v(107)
+#    Time: 9917200 ns  Iteration: 1  Instance: /tb_sd_audio
+# Break in Module tb_sd_audio at tb_sd_audio.v line 107
+# Stopped at tb_sd_audio.v line 107
+# End time: 17:42:58 on Oct 26,2026, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 3
+# vsim -novopt work.tb_sd_audio -gPARTITION=2048 
+# Start time: 17:42:58 on Oct 26,2026
+# Loading sv_std.std
+# Loading work.tb_sd_audio
+# Loading work.sd_wav_player
+# Loading work.fat32_wav_map
+# Loading work.wav_pcm_reader
+# Loading work.pcm_async_fifo
+# Loading work.sd_read_arbiter
+# ** Warning: (vsim-3017) tb_sd_audio.v(17): [TFMPC] - Too few port connections. Expected 18, found 16.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sd_audio/arb File: ../user_source/hdl_source/SD/sd_read_arbiter.v
+# ** Warning: (vsim-3722) tb_sd_audio.v(17): [TFMPC] - Missing connection for port 'card_data'.
+# ** Warning: (vsim-3722) tb_sd_audio.v(17): [TFMPC] - Missing connection for port 'data'.
+# WAV_FRAGMENTED_STEREO_CHUNKS_PADDING_EXACT_PCM_PASS
+# WAV_SHORT_MONO_PREFILL_EOF_PASS
+# WAV_BOUNDS_ALIGNMENT_REJECT_PASS PARTITION=2048
+# SD_AUDIO_CATALOG_INVALID_RATE_SWITCH_FLUSH_BAD_CHAIN_PASS
+# RAW_PCM_FRAGMENTED_MONO_EXACT_SAMPLES_WAV_SWITCH_PASS PARTITION=2048
+# RAW_PCM_SHORT_EOF_ODD_LENGTH_REJECT_PASS
+# ** Note: $finish    : tb_sd_audio.v(107)
+#    Time: 9997880 ns  Iteration: 1  Instance: /tb_sd_audio
+# Break in Module tb_sd_audio at tb_sd_audio.v line 107
+# Stopped at tb_sd_audio.v line 107
+# End time: 17:43:08 on Oct 26,2026, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 3
+# vsim -novopt work.tb_sd_audio -gPCM_ONLY=1 -gPARTITION=2048 
+# Start time: 17:43:08 on Oct 26,2026
+# Loading sv_std.std
+# Loading work.tb_sd_audio
+# Loading work.sd_wav_player
+# Loading work.fat32_wav_map
+# Loading work.wav_pcm_reader
+# Loading work.pcm_async_fifo
+# Loading work.sd_read_arbiter
+# ** Warning: (vsim-3017) tb_sd_audio.v(17): [TFMPC] - Too few port connections. Expected 18, found 16.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sd_audio/arb File: ../user_source/hdl_source/SD/sd_read_arbiter.v
+# ** Warning: (vsim-3722) tb_sd_audio.v(17): [TFMPC] - Missing connection for port 'card_data'.
+# ** Warning: (vsim-3722) tb_sd_audio.v(17): [TFMPC] - Missing connection for port 'data'.
+# RAW_PCM_FRAGMENTED_MONO_EXACT_SAMPLES_WAV_SWITCH_PASS PARTITION=2048
+# RAW_PCM_SHORT_EOF_ODD_LENGTH_REJECT_PASS
+# PCM_ONLY_BUILD_CATALOG_FRAGMENTED_PLAYBACK_PASS
+# ** Note: $finish    : tb_sd_audio.v(107)
+#    Time: 3314040 ns  Iteration: 1  Instance: /tb_sd_audio
+# Break in Module tb_sd_audio at tb_sd_audio.v line 107
+# Stopped at tb_sd_audio.v line 107
+# End time: 17:43:11 on Oct 26,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 3
+# vsim -novopt work.tb_sd_audio -gLOOP_TEST=1 -gPCM_ONLY=1 -gPARTITION=2048 
+# Start time: 17:43:11 on Oct 26,2026
+# Loading sv_std.std
+# Loading work.tb_sd_audio
+# Loading work.sd_wav_player
+# Loading work.fat32_wav_map
+# Loading work.wav_pcm_reader
+# Loading work.pcm_async_fifo
+# Loading work.sd_read_arbiter
+# ** Warning: (vsim-3017) tb_sd_audio.v(17): [TFMPC] - Too few port connections. Expected 18, found 16.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sd_audio/arb File: ../user_source/hdl_source/SD/sd_read_arbiter.v
+# ** Warning: (vsim-3722) tb_sd_audio.v(17): [TFMPC] - Missing connection for port 'card_data'.
+# ** Warning: (vsim-3722) tb_sd_audio.v(17): [TFMPC] - Missing connection for port 'data'.
+# SD_PCM_THREE_LOOPS_EXACT_SAMPLES_STOP_PASS
+# RAW_PCM_FRAGMENTED_MONO_EXACT_SAMPLES_WAV_SWITCH_PASS PARTITION=2048
+# RAW_PCM_SHORT_EOF_ODD_LENGTH_REJECT_PASS
+# PCM_ONLY_BUILD_CATALOG_FRAGMENTED_PLAYBACK_PASS
+# ** Note: $finish    : tb_sd_audio.v(107)
+#    Time: 9097960 ns  Iteration: 1  Instance: /tb_sd_audio
+# Break in Module tb_sd_audio at tb_sd_audio.v line 107
+# Stopped at tb_sd_audio.v line 107
+# End time: 17:43:20 on Oct 26,2026, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 3

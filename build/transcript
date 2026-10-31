@@ -1,0 +1,53 @@
+# do test_spectrum.do
+# ** Warning: (vlib-34) Library already exists at "work_spectrum".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work_spectrum 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:08:17 on Oct 28,2026
+# vlog -sv ../user_source/hdl_source/audio_spectrum.v ../user_source/hdl_source/text_layers.v tb_spectrum.v 
+# -- Compiling module audio_spectrum
+# -- Compiling module spectrum_renderer_pipeline
+# -- Compiling module text_layers
+# -- Compiling module osd_font_rom
+# -- Compiling module tb_spectrum
+# 
+# Top level modules:
+# 	tb_spectrum
+# End time: 15:08:18 on Oct 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt work.tb_spectrum 
+# Start time: 15:08:18 on Oct 28,2026
+# Loading sv_std.std
+# Loading work.tb_spectrum
+# Loading work.audio_spectrum
+# Loading work.spectrum_renderer_pipeline
+# Loading work.text_layers
+# Loading work.osd_font_rom
+# ** Warning: (vsim-3008) tb_spectrum.v(54): [CNNODP] - Component name (body) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_spectrum File: tb_spectrum.v
+# ** Error: (vsim-3043) tb_spectrum.v(54): Unresolved reference to 'body' in dut.body.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_spectrum File: tb_spectrum.v
+# ** Warning: (vsim-3008) tb_spectrum.v(81): [CNNODP] - Component name (cap) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_spectrum File: tb_spectrum.v
+# ** Error: (vsim-3043) tb_spectrum.v(81): Unresolved reference to 'cap' in dut.cap.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_spectrum File: tb_spectrum.v
+# ** Warning: (vsim-3008) tb_spectrum.v(80): [CNNODP] - Component name (sector) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_spectrum File: tb_spectrum.v
+# ** Error: (vsim-3043) tb_spectrum.v(80): Unresolved reference to 'sector' in dut.sector.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_spectrum File: tb_spectrum.v
+# ** Warning: (vsim-3017) tb_spectrum.v(7): [TFMPC] - Too few port connections. Expected 14, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_spectrum/dut File: ../user_source/hdl_source/audio_spectrum.v
+# ** Warning: (vsim-3722) tb_spectrum.v(7): [TFMPC] - Missing connection for port 'xga_x'.
+# ** Warning: (vsim-3722) tb_spectrum.v(7): [TFMPC] - Missing connection for port 'xga_y'.
+# ** Warning: (vsim-3017) tb_spectrum.v(8): [TFMPC] - Too few port connections. Expected 33, found 27.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_spectrum/osd File: ../user_source/hdl_source/text_layers.v
+# ** Warning: (vsim-3722) tb_spectrum.v(8): [TFMPC] - Missing connection for port 'temperature'.
+# ** Warning: (vsim-3722) tb_spectrum.v(8): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) tb_spectrum.v(8): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3722) tb_spectrum.v(8): [TFMPC] - Missing connection for port 'de_early'.
+# ** Warning: (vsim-3722) tb_spectrum.v(8): [TFMPC] - Missing connection for port 'x_early'.
+# ** Warning: (vsim-3722) tb_spectrum.v(8): [TFMPC] - Missing connection for port 'y_early'.
+# Error loading design
+# End time: 15:08:18 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 13

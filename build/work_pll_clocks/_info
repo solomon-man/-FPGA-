@@ -1,0 +1,268 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+veg_clko_ctrl
+Z1 !s110 1793007747
+!i10b 1
+!s100 _2MOGZk^F<b3R2mhXL:LX0
+IToYKoTMzdX_dF@eE]ZmU03
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1752052136
+Z4 8E:/TD_Engineer/sim_release/eg4/eg_phy_pll.v
+Z5 FE:/TD_Engineer/sim_release/eg4/eg_phy_pll.v
+L0 1014
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1793007746.000000
+Z8 !s107 ../user_source/hdl_source/IP/PLL_HDMI_AUDIO.v|../user_source/hdl_source/IP/video_pll.v|../user_source/hdl_source/IP/sys_pll.v|sim_bufg.v|E:/TD_Engineer/sim_release/eg4/eg_phy_pll.v|
+Z9 !s90 -work|work_pll_clocks|E:/TD_Engineer/sim_release/eg4/eg_phy_pll.v|sim_bufg.v|../user_source/hdl_source/IP/sys_pll.v|../user_source/hdl_source/IP/video_pll.v|../user_source/hdl_source/IP/PLL_HDMI_AUDIO.v|
+!i113 1
+Z10 o-work work_pll_clocks
+Z11 tCvgOpt 0
+veg_clko_premux
+R1
+!i10b 1
+!s100 CNj2m8a7[Dgcio?PQQ9Xf1
+IiFdTjR<l0j7BVD5z@5P850
+R2
+R0
+R3
+R4
+R5
+L0 995
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+veg_dphase_sel
+R1
+!i10b 1
+!s100 f`GUf<9W?2iX`gh`DZ2F00
+Ih^>]SW`z4mGz6<z6NJ64=2
+R2
+R0
+R3
+R4
+R5
+L0 925
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vEG_LOGIC_BUFG
+R1
+!i10b 1
+!s100 95ZJ[>I1:d3VIgI=Q1Nah2
+IKYH@QgDROY9Iid:djPHFc1
+R2
+R0
+w1792421308
+8sim_bufg.v
+Fsim_bufg.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@e@g_@l@o@g@i@c_@b@u@f@g
+vEG_PHY_PLL
+R1
+!i10b 1
+!s100 0<?RmXoFC:Q5X^eBHc[la3
+IzWMmdHgcc6ioH=H3]hP:H2
+R2
+R0
+R3
+R4
+R5
+L0 25
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@e@g_@p@h@y_@p@l@l
+veg_pll_div128
+R1
+!i10b 1
+!s100 nK>;GM>n`W<VMBICjBfSg1
+IULLN8AXbDGAUZWbLVcUco2
+R2
+R0
+R3
+R4
+R5
+L0 1033
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+veg_pll_div2
+R1
+!i10b 1
+!s100 o^YIi5fbcY5d2]1gV^_LA2
+IlVjC3J?Z6J24E@kI<O2Ec2
+R2
+R0
+R3
+R4
+R5
+L0 1105
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vPLL_HDMI_AUDIO
+R1
+!i10b 1
+!s100 D=8JzQWTYkHNXCB8Dk1NS2
+I5[cj4A_T<oK3a2BQM@:k?0
+R2
+R0
+Z12 w1792421420
+8../user_source/hdl_source/IP/PLL_HDMI_AUDIO.v
+F../user_source/hdl_source/IP/PLL_HDMI_AUDIO.v
+Z13 L0 24
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@p@l@l_@h@d@m@i_@a@u@d@i@o
+vprediv_mux
+R1
+!i10b 1
+!s100 9l97l04_=;1<NQd^@nWa[3
+IBGD3hISj;[`dKI1dj6i_m2
+R2
+R0
+R3
+R4
+R5
+L0 904
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsys_pll
+R1
+!i10b 1
+!s100 M=AOJ0>Bn`O37bMkNo9]O2
+IBS0Kf0U[fK:G_^Q=FRNc01
+R2
+R0
+w1792458698
+8../user_source/hdl_source/IP/sys_pll.v
+F../user_source/hdl_source/IP/sys_pll.v
+R13
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtb_pll_clocks
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 W0U1C=PnFXNd_AhlHRXnO2
+I<CL168>GSd>Bd72S]ji4?1
+R2
+!s105 tb_pll_clocks_v_unit
+S1
+R0
+w1792456640
+8tb_pll_clocks.v
+Ftb_pll_clocks.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1793007747.000000
+!s107 tb_pll_clocks.v|
+!s90 -sv|-work|work_pll_clocks|tb_pll_clocks.v|
+!i113 1
+o-sv -work work_pll_clocks
+R11
+vvideo_pll
+R1
+!i10b 1
+!s100 _=Q;>ANG=68I;BHfP2<]00
+IWk_aJ=O`gW[d[4`7RZA1T0
+R2
+R0
+R12
+8../user_source/hdl_source/IP/video_pll.v
+F../user_source/hdl_source/IP/video_pll.v
+L0 23
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

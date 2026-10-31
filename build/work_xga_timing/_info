@@ -1,0 +1,85 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vcolor_bar
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1793007537
+!i10b 1
+!s100 3cBZ8MzSzGZ21[F<W]LV23
+Iaz;1h^0]9An4<l2OGf5IC1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 color_bar_v_unit
+S1
+R0
+w1785054850
+8../user_source/hdl_source/SD/color_bar.v
+F../user_source/hdl_source/SD/color_bar.v
+L0 3
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1793007536.000000
+Z6 !s107 ../user_source/hdl_source/SD/video_define.v|tb_xga_timing.v|../user_source/hdl_source/video_rgb_to_axis_640x480.v|../user_source/hdl_source/SD/color_bar.v|
+Z7 !s90 -work|work_xga_timing|-sv|+incdir+../user_source/hdl_source/SD|../user_source/hdl_source/SD/color_bar.v|../user_source/hdl_source/video_rgb_to_axis_640x480.v|tb_xga_timing.v|
+!i113 1
+Z8 o-work work_xga_timing -sv
+Z9 !s92 -work work_xga_timing -sv +incdir+../user_source/hdl_source/SD
+Z10 tCvgOpt 0
+vtb_xga_timing
+R1
+R2
+!i10b 1
+!s100 A26O[GKm9l>T0S<?^9`5R1
+Ia6CnGHnZIO:W]@_RDD`[20
+R3
+!s105 tb_xga_timing_v_unit
+S1
+R0
+w1792418754
+8tb_xga_timing.v
+Ftb_xga_timing.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10
+vvideo_rgb_to_axis_640x480
+R1
+R2
+!i10b 1
+!s100 gmUWQ0a05?1F[O>U6k<@11
+INNYj9lDd1mGDdDHI5K@<51
+R3
+!s105 video_rgb_to_axis_640x480_v_unit
+S1
+R0
+w1792417956
+8../user_source/hdl_source/video_rgb_to_axis_640x480.v
+F../user_source/hdl_source/video_rgb_to_axis_640x480.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+R10

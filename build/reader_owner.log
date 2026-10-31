@@ -1,0 +1,25 @@
+# do test_reader_owner.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:48:42 on Oct 26,2026
+# vlog -work work_reader_owner -sv ../user_source/hdl_source/xga_scale_config.v ../user_source/hdl_source/scaled_frame_reader.v ../user_source/hdl_source/SD/frame_fifo_read.v tb_reader_owner.v 
+# -- Compiling module xga_scale_config
+# -- Compiling module scaled_frame_reader
+# -- Compiling module frame_fifo_read
+# -- Compiling module tb_reader_owner
+# 
+# Top level modules:
+# 	tb_reader_owner
+# End time: 17:48:43 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt work_reader_owner.tb_reader_owner 
+# Start time: 17:48:43 on Oct 26,2026
+# Loading sv_std.std
+# Loading work_reader_owner.tb_reader_owner
+# Loading work_reader_owner.scaled_frame_reader
+# Loading work_reader_owner.xga_scale_config
+# Loading work_reader_owner.frame_fifo_read
+# SDRAM_READER_OWNER_HD4_HD5_TRANSIENT_VGA_ROW_DRAIN_PASS
+# ** Note: $finish    : tb_reader_owner.v(33)
+#    Time: 67800 ns  Iteration: 1  Instance: /tb_reader_owner
+# End time: 17:48:43 on Oct 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

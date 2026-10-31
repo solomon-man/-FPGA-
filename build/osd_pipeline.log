@@ -1,0 +1,35 @@
+# do test_osd_pipeline.do
+# ** Warning: (vlib-34) Library already exists at "work_osd_pipeline".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:53:25 on Oct 28,2026
+# vlog -sv -work work_osd_pipeline ../user_source/hdl_source/text_layers.v tb_osd_pipeline.v 
+# -- Compiling module text_layers
+# -- Compiling module osd_font_rom
+# -- Compiling module tb_osd_pipeline
+# 
+# Top level modules:
+# 	tb_osd_pipeline
+# End time: 12:53:25 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt work_osd_pipeline.tb_osd_pipeline 
+# Start time: 12:53:25 on Oct 28,2026
+# Loading sv_std.std
+# Loading work_osd_pipeline.tb_osd_pipeline
+# Loading work_osd_pipeline.text_layers
+# Loading work_osd_pipeline.osd_font_rom
+# page 0: white 220 yellow 267
+# page 1: white 220 yellow 267
+# page 2: white 304 yellow 255
+# page 3: white 234 yellow 280
+# page 4: white 164 yellow 270
+# page 5: white 128 yellow 306
+# page 6: white 7584 yellow 0
+# page 7: white 217 yellow 293
+# page 8: white 186 yellow 272
+# OSD_XGA_SIMSUN24_9_PAGES_PANEL_INK_GLYPH_EXACT_PASS
+# ** Note: $finish    : tb_osd_pipeline.v(90)
+#    Time: 37044120 ns  Iteration: 1  Instance: /tb_osd_pipeline
+# Break in Module tb_osd_pipeline at tb_osd_pipeline.v line 90
+# Stopped at tb_osd_pipeline.v line 90
+# End time: 12:53:50 on Oct 28,2026, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 0

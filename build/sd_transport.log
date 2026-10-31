@@ -1,0 +1,29 @@
+# do test_sd_transport.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work_sd_transport 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:43:21 on Oct 26,2026
+# vlog -sv ../user_source/hdl_source/pcm_async_fifo.v ../user_source/hdl_source/SD/sd_read_arbiter.v tb_sd_transport.v 
+# -- Compiling module pcm_async_fifo
+# -- Compiling module sd_read_arbiter
+# -- Compiling module tb_sd_transport
+# 
+# Top level modules:
+# 	tb_sd_transport
+# End time: 17:43:21 on Oct 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt work.tb_sd_transport 
+# Start time: 17:43:21 on Oct 26,2026
+# Loading sv_std.std
+# Loading work.tb_sd_transport
+# Loading work.sd_read_arbiter
+# Loading work.pcm_async_fifo
+# SD_ARBITER_ROUND_ROBIN_NO_STARVATION_OWNERSHIP_DRAIN_TIMEOUT_PASS
+# PCM_ASYNC_FIFO_BACKPRESSURE_MULTI_WRAP_EXACT_STEREO_PASS
+# ** Note: $finish    : tb_sd_transport.v(55)
+#    Time: 1302170 ns  Iteration: 1  Instance: /tb_sd_transport
+# Break in Module tb_sd_transport at tb_sd_transport.v line 55
+# Stopped at tb_sd_transport.v line 55
+# End time: 17:43:22 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

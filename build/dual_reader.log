@@ -1,0 +1,49 @@
+# do test_dual_reader.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:48:44 on Oct 26,2026
+# vlog -work work_dual_reader -sv ../user_source/hdl_source/xga_scale_config.v ../user_source/hdl_source/scaled_frame_reader.v ../user_source/hdl_source/SD/frame_fifo_read.v tb_dual_reader.v 
+# -- Compiling module xga_scale_config
+# -- Compiling module scaled_frame_reader
+# -- Compiling module frame_fifo_read
+# -- Compiling module tb_dual_reader
+# 
+# Top level modules:
+# 	tb_dual_reader
+# End time: 17:48:44 on Oct 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt work_dual_reader.tb_dual_reader 
+# Start time: 17:48:44 on Oct 26,2026
+# Loading sv_std.std
+# Loading work_dual_reader.tb_dual_reader
+# Loading work_dual_reader.scaled_frame_reader
+# Loading work_dual_reader.xga_scale_config
+# Loading work_dual_reader.frame_fifo_read
+# ** Warning: (vsim-3017) tb_dual_reader.v(11): [TFMPC] - Too few port connections. Expected 28, found 27.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_dual_reader/dut File: ../user_source/hdl_source/scaled_frame_reader.v
+# ** Warning: (vsim-3722) tb_dual_reader.v(11): [TFMPC] - Missing connection for port 'reader_owned'.
+# XGA_READER bank=          5 scale=          3 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=          4 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=          5 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=          6 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=          7 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=          8 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=          9 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=         10 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=         11 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=         12 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=         13 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=         14 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=         15 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=         16 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=         17 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=         18 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=         19 FULL_FRAME_PASS
+# XGA_READER bank=          5 scale=         20 FULL_FRAME_PASS
+# XGA_READER bank=          6 scale=          3 FULL_FRAME_PASS
+# XGA_READER bank=          6 scale=         10 FULL_FRAME_PASS
+# XGA_READER bank=          6 scale=         20 FULL_FRAME_PASS
+# DUAL_HD_ALIAS_TRANSIENT_PREVIEW_21_FRAMES_EXACT_PIXELS_BANDWIDTH_PASS
+# ** Note: $finish    : tb_dual_reader.v(54)
+#    Time: 334636440 ns  Iteration: 1  Instance: /tb_dual_reader
+# End time: 17:52:38 on Oct 26,2026, Elapsed time: 0:03:54
+# Errors: 0, Warnings: 2

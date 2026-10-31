@@ -1,0 +1,226 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vdisplay_controls4
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1793171292
+!i10b 1
+!s100 S06Yb^z?lgNP0Dd`ZTaEF3
+Ijm>cQ^lSfaz_[Fj_JB;[j1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 display_controls4_v_unit
+S1
+R0
+w1793003878
+8../user_source/hdl_source/display_controls4.v
+F../user_source/hdl_source/display_controls4.v
+L0 2
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1793171292.000000
+Z6 !s107 tb_features.v|../user_source/hdl_source/text_layers.v|../user_source/hdl_source/parameter_mailbox.v|../user_source/hdl_source/frame_commit.v|../user_source/hdl_source/thumbnail_scaler.v|../user_source/hdl_source/runtime_adjust.v|../user_source/hdl_source/display_controls4.v|
+Z7 !s90 -sv|../user_source/hdl_source/display_controls4.v|../user_source/hdl_source/runtime_adjust.v|../user_source/hdl_source/thumbnail_scaler.v|../user_source/hdl_source/frame_commit.v|../user_source/hdl_source/parameter_mailbox.v|../user_source/hdl_source/text_layers.v|tb_features.v|
+!i113 1
+o-sv
+Z8 tCvgOpt 0
+vframe_commit
+R1
+R2
+!i10b 1
+!s100 aC@HJV`ZF<;h75?mXf5i01
+IIHY=nCEgBe6fjF0WUYTSg3
+R3
+!s105 frame_commit_v_unit
+S1
+R0
+w1792417956
+8../user_source/hdl_source/frame_commit.v
+F../user_source/hdl_source/frame_commit.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8
+vosd_font_rom
+R1
+R2
+!i10b 1
+!s100 8SST17A7o:Z6Y6WVU^DbH1
+I3iRkHm=`n380XHl=SUDCS1
+R3
+Z9 !s105 text_layers_v_unit
+S1
+R0
+Z10 w1793171114
+Z11 8../user_source/hdl_source/text_layers.v
+Z12 F../user_source/hdl_source/text_layers.v
+L0 79
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8
+vparameter_mailbox
+R1
+R2
+!i10b 1
+!s100 6^_YF:JFhCfglgQkFz;O31
+IbNHACCO:=9IX`]z?IJZ:c3
+R3
+!s105 parameter_mailbox_v_unit
+S1
+R0
+w1792073380
+8../user_source/hdl_source/parameter_mailbox.v
+F../user_source/hdl_source/parameter_mailbox.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8
+vruntime_adjust
+R1
+R2
+!i10b 1
+!s100 l@@Tg03PQOS];KOY6^LbH2
+IRH>TZ98i]H]YGBAg5?<9z2
+R3
+Z13 !s105 runtime_adjust_v_unit
+S1
+R0
+Z14 w1792420402
+Z15 8../user_source/hdl_source/runtime_adjust.v
+Z16 F../user_source/hdl_source/runtime_adjust.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8
+vruntime_adjust_pipeline
+R1
+R2
+!i10b 1
+!s100 g>ZPdK:l_j_nBU72MS6Pz2
+I7Fnh2BMTRU2HL61];aS8T3
+R3
+R13
+S1
+R0
+R14
+R15
+R16
+L0 21
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8
+vtb_features
+R1
+R2
+!i10b 1
+!s100 k59@7U^Oh_PKVJQ48DF=>2
+IIIP7NWIe0h`Iho5QW^Sm90
+R3
+!s105 tb_features_v_unit
+S1
+R0
+w1792148182
+8tb_features.v
+Ftb_features.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8
+vtext_layers
+R1
+R2
+!i10b 1
+!s100 QUz8g0MWWzkFe_@fiN0>a0
+I423=lJVSi4@dEQgQSjCbe2
+R3
+R9
+S1
+R0
+R10
+R11
+R12
+L0 5
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8
+vthumbnail_scaler
+R1
+R2
+!i10b 1
+!s100 HgY^mjW_^CmC9Fz^@5Z[A0
+IQ@ZA9=He[4VjOIPd=VViZ1
+R3
+!s105 thumbnail_scaler_v_unit
+S1
+R0
+R14
+8../user_source/hdl_source/thumbnail_scaler.v
+F../user_source/hdl_source/thumbnail_scaler.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8

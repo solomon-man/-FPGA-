@@ -1,0 +1,21 @@
+Location         : G:\ANLU_Project\digital photo frame3.0\TD_project\timing_verified_Runs\phy_1
+Running with     : Tang Dynasty v6.2.168116
+                   Copyright (c) 2012-2025 Anlogic Inc.
+Top Model        : top
+Device           : EG4S20BG256
+Speed            : NA
+
+Timing Mode      : manhattan
+Setup            : WNS  1694ps  TNS        0ps  NUM_FEPS     0
+Hold             : WNS   -11ps  TNS     -352ps  NUM_FEPS    32
+
+Flow Statistics  :
+--------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+--------------------------------------------------------------------------------------------------
+      place      |    1     |  54s(100%)  |   89(100%)    |        658        |        658        
+    import_db    |    1     |   0s(0%)    |     0(0%)     |        258        |        258        
+  import_device  |    1     |   0s(0%)    |     0(0%)     |        83         |        83         
+--------------------------------------------------------------------------------------------------
+      total      |    3     |     54s     |      89       |        658        |        658        
+--------------------------------------------------------------------------------------------------

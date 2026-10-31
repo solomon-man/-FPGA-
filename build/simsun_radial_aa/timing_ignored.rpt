@@ -1,0 +1,2200 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Wed Oct 28 14:04:21 2026
+
+Top Model           : top
+Device              : EG4S20BG256
+Speed               : NA
+STA coverage        : 99.98%
+Constraint File     : G:/ANLU_Project/digital photo frame3.0/user_source/constraints_source/timing.sdc;
+Confidence          : Routed
+Check Corner        : Both (Slow and Fast)
+CRPR Enabled        : Yes
+Report Scheme       : 10 end point(s) per path group, 1 path(s) per end point
+
+
+Check Status
+-------------
+
+Corner   | Max      Min     
+------------------------------------
+Slow     | yes      yes     
+Fast     | yes      yes     
+
+Async/Exclusive Summary
+--------------------
+audio_mclk -> video_clk
+clk -> audio_mclk
+ext_mem_clk -> sd_card_clk
+ext_mem_clk -> video_clk
+sd_card_clk -> ext_mem_clk
+sd_card_clk -> video_clk
+video_clk -> ext_mem_clk
+video_clk -> sd_card_clk
+
+SFP Summary
+--------------------
+
+		Max Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+		        44           44            0            0   set_false_path -through [get_nets {rst_all}]
+
+		Min Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+		        44           44            0            0   set_false_path -through [get_nets {rst_all}]
+
+
+SFP Details
+--------------------
+
+
+Constraint     :   set_false_path -through [get_nets {rst_all}]
+Check Type     :   Max
+--------------------------------------------------------------------------------
+Total Paths    :           44
+Dominated      :           44,        100.0%
+
+
+Constraint     :   set_false_path -through [get_nets {rst_all}]
+Check Type     :   Min
+--------------------------------------------------------------------------------
+Total Paths    :           44
+Dominated      :           44,        100.0%
+
+
+
+Path Details of Ignored Path Groups
+--------------------------------------------------
+
+
+Exclusive Clock Groups
+--------------------
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set Clock Groups
+Constr         :     audio_mclk -> video_clk
+
+Statistics:
+	Setup Check    :              3   end points,               3   paths
+	Setup Check    :              3   end points,               3   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : u_hdmi_audio_tone_i2s_64fs/O_i2s_LRCK_reg_syn_8.clk(triggered by clock audio_mclk)
+End Point           : cache$sd_card_bmp_m0/disp_buf_idx_reg[1]_syn_34.mi[0](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x033y064z3                                        pin: u_hdmi_audio_tone_i2s_64fs/O_i2s_LRCK_reg_syn_8.q[0]
+net (fo=8)                                                            net: u_hdmi_audio_tone_i2s_64fs/O_i2s_LRCK,  ../user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/disp_buf_idx_reg[1]_syn_34.mi[0]
+reg                 x017y047z3                                        net: u_I2S_receiver/S_i2s_lrck_1d,  ../user_source/hdl_source/I2S_receiver.v(23)
+
+
+Begin Point         : u_hdmi_audio_tone_i2s_64fs/O_i2s_DOUT_reg_syn_5.clk(triggered by clock audio_mclk)
+End Point           : u_I2S_receiver/S_i2s_dout_1d_reg_syn_4.mi[0](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x026y062z2                                        pin: u_hdmi_audio_tone_i2s_64fs/O_i2s_DOUT_reg_syn_5.q[0]
+net (fo=1)                                                            net: u_hdmi_audio_tone_i2s_64fs/O_i2s_DOUT,  ../user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v(11)
+                                                                      pin: u_I2S_receiver/S_i2s_dout_1d_reg_syn_4.mi[0]
+reg                 x028y061z2                                        net: u_I2S_receiver/S_i2s_dout_1d,  ../user_source/hdl_source/I2S_receiver.v(30)
+
+
+Begin Point         : u_hdmi_audio_tone_i2s_64fs/O_i2s_BCLK_reg_syn_5.clk(triggered by clock audio_mclk)
+End Point           : mixer/add3_syn_93.mi[0](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x019y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/O_i2s_BCLK_reg_syn_5.q[1]
+net (fo=17)                                                           net: u_hdmi_audio_tone_i2s_64fs/O_i2s_BCLK,  ../user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v(9)
+                                                                      pin: mixer/add3_syn_93.mi[0]
+ADDER (reg)         x026y058z2                                        net: u_I2S_receiver/S_i2s_bclk_1d,  ../user_source/hdl_source/I2S_receiver.v(17)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : u_hdmi_audio_tone_i2s_64fs/O_i2s_LRCK_reg_syn_8.clk(triggered by clock audio_mclk)
+End Point           : cache$sd_card_bmp_m0/disp_buf_idx_reg[1]_syn_34.mi[0](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x033y064z3                                        pin: u_hdmi_audio_tone_i2s_64fs/O_i2s_LRCK_reg_syn_8.q[0]
+net (fo=8)                                                            net: u_hdmi_audio_tone_i2s_64fs/O_i2s_LRCK,  ../user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/disp_buf_idx_reg[1]_syn_34.mi[0]
+reg                 x017y047z3                                        net: u_I2S_receiver/S_i2s_lrck_1d,  ../user_source/hdl_source/I2S_receiver.v(23)
+
+
+Begin Point         : u_hdmi_audio_tone_i2s_64fs/O_i2s_DOUT_reg_syn_5.clk(triggered by clock audio_mclk)
+End Point           : u_I2S_receiver/S_i2s_dout_1d_reg_syn_4.mi[0](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x026y062z2                                        pin: u_hdmi_audio_tone_i2s_64fs/O_i2s_DOUT_reg_syn_5.q[0]
+net (fo=1)                                                            net: u_hdmi_audio_tone_i2s_64fs/O_i2s_DOUT,  ../user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v(11)
+                                                                      pin: u_I2S_receiver/S_i2s_dout_1d_reg_syn_4.mi[0]
+reg                 x028y061z2                                        net: u_I2S_receiver/S_i2s_dout_1d,  ../user_source/hdl_source/I2S_receiver.v(30)
+
+
+Begin Point         : u_hdmi_audio_tone_i2s_64fs/O_i2s_BCLK_reg_syn_5.clk(triggered by clock audio_mclk)
+End Point           : mixer/add3_syn_93.mi[0](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x019y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/O_i2s_BCLK_reg_syn_5.q[1]
+net (fo=17)                                                           net: u_hdmi_audio_tone_i2s_64fs/O_i2s_BCLK,  ../user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v(9)
+                                                                      pin: mixer/add3_syn_93.mi[0]
+ADDER (reg)         x026y058z2                                        net: u_I2S_receiver/S_i2s_bclk_1d,  ../user_source/hdl_source/I2S_receiver.v(17)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set Clock Groups
+Constr         :     clk -> audio_mclk
+
+Statistics:
+	Setup Check    :              2   end points,               8   paths
+	Setup Check    :              2   end points,               8   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : ra/pipe_reg[1]_syn_3.sr(triggered by clock audio_mclk)
+Check Type          : recovery
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[0]
+net (fo=2)                                                            net: power_on_count[3],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[0]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[0]
+net (fo=2)                                                            net: add0_syn_26,  ../user_source/hdl_source/top_tf_hdmi_audio.v(200)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: ra/pipe_reg[1]_syn_3.sr
+reg                 x019y065z0                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : ra/pipe_reg[2]_syn_3.sr(triggered by clock audio_mclk)
+Check Type          : recovery
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[0]
+net (fo=2)                                                            net: power_on_count[3],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[0]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[0]
+net (fo=2)                                                            net: add0_syn_26,  ../user_source/hdl_source/top_tf_hdmi_audio.v(200)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: ra/pipe_reg[2]_syn_3.sr
+reg                 x019y065z1                                             
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : ra/pipe_reg[1]_syn_3.sr(triggered by clock audio_mclk)
+Check Type          : removal
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[1]
+net (fo=3)                                                            net: power_on_count[4],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.c[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: ra/pipe_reg[1]_syn_3.sr
+reg                 x019y065z0                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : ra/pipe_reg[2]_syn_3.sr(triggered by clock audio_mclk)
+Check Type          : removal
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[1]
+net (fo=3)                                                            net: power_on_count[4],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.c[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: ra/pipe_reg[2]_syn_3.sr
+reg                 x019y065z1                                             
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set Clock Groups
+Constr         :     ext_mem_clk -> sd_card_clk
+
+Statistics:
+	Setup Check    :             20   end points,              37   paths
+	Setup Check    :             20   end points,              37   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[6]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/secondary_addr_o_reg[5]_syn_4.mi[0](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x004y025z0                                        pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[6]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[6],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/secondary_addr_o_reg[5]_syn_4.mi[0]
+reg                 x006y023z2                                        net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1[6],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : fx/spectrum/window_weight[7]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/frame_fifo_read_m0/add0_syn_65.mi[0](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x012y038z0                                        pin: fx/spectrum/window_weight[7]_syn_4.q[0]
+net (fo=2)                                                            net: frame_write_toggle_mem,  ../user_source/hdl_source/top_tf_hdmi_audio.v(94)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/add0_syn_65.mi[0]
+reg                 x012y035z3                                        net: cache$sd_card_bmp_m0/finish_sync[0],  ../user_source/hdl_source/SD/sd_card_bmp.v(66)
+
+
+Begin Point         : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_sync_reg[5]_syn_3.mi[0](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x004y022z2                                        pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[0],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_sync_reg[5]_syn_3.mi[0]
+reg                 x006y022z2                                        net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1[0],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/frame_fifo_read_m0/fs_reg[0]_syn_8.clk(triggered by clock ext_mem_clk)
+End Point           : reader_owned_meta_reg[0]_syn_4.a[0](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x009y037z1                                        pin: frame_read_write_m0/frame_fifo_read_m0/fs_reg[0]_syn_8.q[0]
+net (fo=5)                                                            net: frame_read_write_m0/frame_fifo_read_m0/fs_reg_syn_1[0],  ../user_source/hdl_source/scaled_frame_reader.v(75)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/sc1_reg[4]_syn_4.c[1]
+LUT2                x012y045z1                                        pin: frame_read_write_m0/frame_fifo_read_m0/sc1_reg[4]_syn_4.f[1]
+net (fo=7)                                                            net: frame_read_write_m0/frame_fifo_read_m0/mux82_syn_44,  ../user_source/hdl_source/scaled_frame_reader.v(23)
+                                                                      pin: reader_owned_meta_reg[0]_syn_4.a[0]
+LUT4 (reg)          x015y043z3                                        net: reader_owned_meta[3],  ../user_source/hdl_source/top_tf_hdmi_audio.v(48)
+
+
+Begin Point         : frame_read_write_m0/frame_fifo_read_m0/fs_reg[0]_syn_8.clk(triggered by clock ext_mem_clk)
+End Point           : reader_owned_meta_reg[0]_syn_4.a[1](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x009y037z1                                        pin: frame_read_write_m0/frame_fifo_read_m0/fs_reg[0]_syn_8.q[0]
+net (fo=5)                                                            net: frame_read_write_m0/frame_fifo_read_m0/fs_reg_syn_1[0],  ../user_source/hdl_source/scaled_frame_reader.v(75)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/sc1_reg[4]_syn_4.c[1]
+LUT2                x012y045z1                                        pin: frame_read_write_m0/frame_fifo_read_m0/sc1_reg[4]_syn_4.f[1]
+net (fo=7)                                                            net: frame_read_write_m0/frame_fifo_read_m0/mux82_syn_44,  ../user_source/hdl_source/scaled_frame_reader.v(23)
+                                                                      pin: reader_owned_meta_reg[0]_syn_4.a[1]
+LUT4 (reg)          x015y043z3                                        net: reader_owned_meta[0],  ../user_source/hdl_source/top_tf_hdmi_audio.v(48)
+
+
+Begin Point         : frame_read_write_m0/frame_fifo_read_m0/produced_reg[7]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/frame_fifo_read_m0/add0_syn_67.d[0](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x012y044z0                                        pin: frame_read_write_m0/frame_fifo_read_m0/produced_reg[7]_syn_4.q[0]
+net (fo=5)                                                            net: frame_read_write_m0/frame_fifo_read_m0/produced[8],  ../user_source/hdl_source/scaled_frame_reader.v(26)
+                                                                      pin: fx/spectrum/cos_q_b1[2]_syn_9.b[0]
+LUT4                x014y040z2                                        pin: fx/spectrum/cos_q_b1[2]_syn_9.f[0]
+net (fo=1)                                                            net: frame_read_write_m0/frame_fifo_read_m0/hd_read_busy_n3,  NOFILE(0)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/add0_syn_67.d[0]
+LUT3 (reg)          x013y037z0                                        net: hd_busy_meta,  ../user_source/hdl_source/top_tf_hdmi_audio.v(52)
+
+
+Begin Point         : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[1]_syn_3.mi[0](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x004y022z2                                        pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[2],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[1]_syn_3.mi[0]
+reg                 x006y026z1                                        net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1[2],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/secondary_addr_o_reg[4]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[1]_syn_3.mi[1](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x001y021z3                                        pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/secondary_addr_o_reg[4]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[1],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[1]_syn_3.mi[1]
+reg                 x006y026z1                                        net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1[1],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/frame_fifo_read_m0/fs_reg[0]_syn_8.clk(triggered by clock ext_mem_clk)
+End Point           : reader_owned_meta_reg[1]_syn_4.a[0](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x009y037z1                                        pin: frame_read_write_m0/frame_fifo_read_m0/fs_reg[0]_syn_8.q[0]
+net (fo=5)                                                            net: frame_read_write_m0/frame_fifo_read_m0/fs_reg_syn_1[0],  ../user_source/hdl_source/scaled_frame_reader.v(75)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/sc1_reg[4]_syn_4.c[1]
+LUT2                x012y045z1                                        pin: frame_read_write_m0/frame_fifo_read_m0/sc1_reg[4]_syn_4.f[1]
+net (fo=7)                                                            net: frame_read_write_m0/frame_fifo_read_m0/mux82_syn_44,  ../user_source/hdl_source/scaled_frame_reader.v(23)
+                                                                      pin: reader_owned_meta_reg[1]_syn_4.a[0]
+LUT4 (reg)          x014y045z1                                        net: reader_owned_meta[2],  ../user_source/hdl_source/top_tf_hdmi_audio.v(48)
+
+
+Begin Point         : frame_read_write_m0/frame_fifo_read_m0/fs_reg[0]_syn_8.clk(triggered by clock ext_mem_clk)
+End Point           : reader_owned_meta_reg[1]_syn_4.a[1](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x009y037z1                                        pin: frame_read_write_m0/frame_fifo_read_m0/fs_reg[0]_syn_8.q[0]
+net (fo=5)                                                            net: frame_read_write_m0/frame_fifo_read_m0/fs_reg_syn_1[0],  ../user_source/hdl_source/scaled_frame_reader.v(75)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/sc1_reg[4]_syn_4.c[1]
+LUT2                x012y045z1                                        pin: frame_read_write_m0/frame_fifo_read_m0/sc1_reg[4]_syn_4.f[1]
+net (fo=7)                                                            net: frame_read_write_m0/frame_fifo_read_m0/mux82_syn_44,  ../user_source/hdl_source/scaled_frame_reader.v(23)
+                                                                      pin: reader_owned_meta_reg[1]_syn_4.a[1]
+LUT4 (reg)          x014y045z1                                        net: reader_owned_meta[1],  ../user_source/hdl_source/top_tf_hdmi_audio.v(48)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[6]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/secondary_addr_o_reg[5]_syn_4.mi[0](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x004y025z0                                        pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[6]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[6],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/secondary_addr_o_reg[5]_syn_4.mi[0]
+reg                 x006y023z2                                        net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1[6],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : fx/spectrum/window_weight[7]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/frame_fifo_read_m0/add0_syn_65.mi[0](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x012y038z0                                        pin: fx/spectrum/window_weight[7]_syn_4.q[0]
+net (fo=2)                                                            net: frame_write_toggle_mem,  ../user_source/hdl_source/top_tf_hdmi_audio.v(94)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/add0_syn_65.mi[0]
+reg                 x012y035z3                                        net: cache$sd_card_bmp_m0/finish_sync[0],  ../user_source/hdl_source/SD/sd_card_bmp.v(66)
+
+
+Begin Point         : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_sync_reg[5]_syn_3.mi[0](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x004y022z2                                        pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[0],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_sync_reg[5]_syn_3.mi[0]
+reg                 x006y022z2                                        net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1[0],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : fx/spectrum/cos_q_b1[2]_syn_9.clk(triggered by clock ext_mem_clk)
+End Point           : reader_owned_meta_reg[0]_syn_4.c[0](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x014y040z2                                        pin: fx/spectrum/cos_q_b1[2]_syn_9.q[0]
+net (fo=7)                                                            net: frame_read_write_m0/frame_fifo_read_m0/owned_bank[1],  ../user_source/hdl_source/scaled_frame_reader.v(15)
+                                                                      pin: reader_owned_meta_reg[0]_syn_4.c[0]
+LUT4 (reg)          x015y043z3                                        net: reader_owned_meta[3],  ../user_source/hdl_source/top_tf_hdmi_audio.v(48)
+
+
+Begin Point         : fx/spectrum/cos_q_b1[2]_syn_9.clk(triggered by clock ext_mem_clk)
+End Point           : reader_owned_meta_reg[0]_syn_4.c[1](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x014y040z2                                        pin: fx/spectrum/cos_q_b1[2]_syn_9.q[0]
+net (fo=7)                                                            net: frame_read_write_m0/frame_fifo_read_m0/owned_bank[1],  ../user_source/hdl_source/scaled_frame_reader.v(15)
+                                                                      pin: reader_owned_meta_reg[0]_syn_4.c[1]
+LUT4 (reg)          x015y043z3                                        net: reader_owned_meta[0],  ../user_source/hdl_source/top_tf_hdmi_audio.v(48)
+
+
+Begin Point         : frame_read_write_m0/frame_fifo_read_m0/xp_b3[6]_syn_34.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/frame_fifo_read_m0/add0_syn_67.b[0](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x013y036z0                                        pin: frame_read_write_m0/frame_fifo_read_m0/xp_b3[6]_syn_34.q[0]
+net (fo=58)                                                           net: frame_read_write_m0/frame_fifo_read_m0/config_lut/hd,  ../user_source/hdl_source/xga_scale_config.v(1)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/add0_syn_67.b[0]
+LUT3 (reg)          x013y037z0                                        net: hd_busy_meta,  ../user_source/hdl_source/top_tf_hdmi_audio.v(52)
+
+
+Begin Point         : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[1]_syn_3.mi[0](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x004y022z2                                        pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[2],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[1]_syn_3.mi[0]
+reg                 x006y026z1                                        net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1[2],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/secondary_addr_o_reg[4]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[1]_syn_3.mi[1](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x001y021z3                                        pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/secondary_addr_o_reg[4]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[1],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1_reg[1]_syn_3.mi[1]
+reg                 x006y026z1                                        net: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/sync_r1[1],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : fx/spectrum/cos_q_b1[2]_syn_9.clk(triggered by clock ext_mem_clk)
+End Point           : reader_owned_meta_reg[1]_syn_4.c[0](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x014y040z2                                        pin: fx/spectrum/cos_q_b1[2]_syn_9.q[0]
+net (fo=7)                                                            net: frame_read_write_m0/frame_fifo_read_m0/owned_bank[1],  ../user_source/hdl_source/scaled_frame_reader.v(15)
+                                                                      pin: reader_owned_meta_reg[1]_syn_4.c[0]
+LUT4 (reg)          x014y045z1                                        net: reader_owned_meta[2],  ../user_source/hdl_source/top_tf_hdmi_audio.v(48)
+
+
+Begin Point         : fx/spectrum/cos_q_b1[2]_syn_9.clk(triggered by clock ext_mem_clk)
+End Point           : reader_owned_meta_reg[1]_syn_4.c[1](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x014y040z2                                        pin: fx/spectrum/cos_q_b1[2]_syn_9.q[0]
+net (fo=7)                                                            net: frame_read_write_m0/frame_fifo_read_m0/owned_bank[1],  ../user_source/hdl_source/scaled_frame_reader.v(15)
+                                                                      pin: reader_owned_meta_reg[1]_syn_4.c[1]
+LUT4 (reg)          x014y045z1                                        net: reader_owned_meta[1],  ../user_source/hdl_source/top_tf_hdmi_audio.v(48)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set Clock Groups
+Constr         :     ext_mem_clk -> video_clk
+
+Statistics:
+	Setup Check    :             13   end points,              13   paths
+	Setup Check    :             13   end points,              13   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_sync_reg[6]_syn_4.mi[0](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x001y041z1                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[1],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_sync_reg[6]_syn_4.mi[0]
+reg                 x003y036z3                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[1],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[0]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.mi[0](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y039z1                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[0]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[9],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.mi[0]
+reg                 x003y040z0                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[9],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/frame_fifo_read_m0/fifo_clear_reg_syn_5.clk(triggered by clock ext_mem_clk)
+End Point           : fx/spectrum/renderer/dist4_b[3]_syn_9.mi[0](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x010y045z0                                        pin: frame_read_write_m0/frame_fifo_read_m0/fifo_clear_reg_syn_5.q[1]
+net (fo=5)                                                            net: frame_read_write_m0/frame_fifo_read_m0/fifo_clear,  ../user_source/hdl_source/scaled_frame_reader.v(10)
+                                                                      pin: fx/spectrum/renderer/dist4_b[3]_syn_9.mi[0]
+reg                 x009y045z2                                        net: video_timing_data_m0/ack_meta,  ../user_source/hdl_source/SD/video_timing_data.v(17)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/read_buf/sub0_syn_54.mi[0](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y038z0                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[3],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/sub0_syn_54.mi[0]
+ADDER (reg)         x001y035z2                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[3],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/read_buf/sub0_syn_54.mi[1](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y038z0                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[4],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/sub0_syn_54.mi[1]
+ADDER (reg)         x001y035z2                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[4],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[5]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : fx/adjustment/lt3_syn_45.mi[0](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y034z2                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[5]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[5],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: fx/adjustment/lt3_syn_45.mi[0]
+ADDER (reg)         x001y036z0                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[5],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[5]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : fx/adjustment/lt3_syn_45.mi[1](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y034z2                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[5]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[6],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: fx/adjustment/lt3_syn_45.mi[1]
+ADDER (reg)         x001y036z0                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[6],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1_reg[2]_syn_4.mi[1](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x001y041z1                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[2],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1_reg[2]_syn_4.mi[1]
+reg                 x006y038z0                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[2],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[7]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/read_buf/sub1_syn_54.mi[0](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y035z2                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[7]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[7],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/sub1_syn_54.mi[0]
+ADDER (reg)         x001y037z2                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[7],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[7]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/read_buf/sub1_syn_54.mi[1](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y035z2                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[7]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[8],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/sub1_syn_54.mi[1]
+ADDER (reg)         x001y037z2                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[8],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_sync_reg[6]_syn_4.mi[0](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x001y041z1                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[1],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_sync_reg[6]_syn_4.mi[0]
+reg                 x003y036z3                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[1],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[0]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.mi[0](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y039z1                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[0]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[9],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.mi[0]
+reg                 x003y040z0                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[9],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/frame_fifo_read_m0/fifo_clear_reg_syn_5.clk(triggered by clock ext_mem_clk)
+End Point           : fx/spectrum/renderer/dist4_b[3]_syn_9.mi[0](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x010y045z0                                        pin: frame_read_write_m0/frame_fifo_read_m0/fifo_clear_reg_syn_5.q[1]
+net (fo=5)                                                            net: frame_read_write_m0/frame_fifo_read_m0/fifo_clear,  ../user_source/hdl_source/scaled_frame_reader.v(10)
+                                                                      pin: fx/spectrum/renderer/dist4_b[3]_syn_9.mi[0]
+reg                 x009y045z2                                        net: video_timing_data_m0/ack_meta,  ../user_source/hdl_source/SD/video_timing_data.v(17)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/read_buf/sub0_syn_54.mi[0](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y038z0                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[3],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/sub0_syn_54.mi[0]
+ADDER (reg)         x001y035z2                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[3],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/read_buf/sub0_syn_54.mi[1](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y038z0                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[4],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/sub0_syn_54.mi[1]
+ADDER (reg)         x001y035z2                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[4],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[5]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : fx/adjustment/lt3_syn_45.mi[0](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y034z2                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[5]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[5],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: fx/adjustment/lt3_syn_45.mi[0]
+ADDER (reg)         x001y036z0                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[5],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[5]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : fx/adjustment/lt3_syn_45.mi[1](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y034z2                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[5]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[6],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: fx/adjustment/lt3_syn_45.mi[1]
+ADDER (reg)         x001y036z0                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[6],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1_reg[2]_syn_4.mi[1](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x001y041z1                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[2],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1_reg[2]_syn_4.mi[1]
+reg                 x006y038z0                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[2],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[7]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/read_buf/sub1_syn_54.mi[0](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y035z2                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[7]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[7],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/sub1_syn_54.mi[0]
+ADDER (reg)         x001y037z2                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[7],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[7]_syn_4.clk(triggered by clock ext_mem_clk)
+End Point           : frame_read_write_m0/read_buf/sub1_syn_54.mi[1](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y035z2                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[7]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[8],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/sub1_syn_54.mi[1]
+ADDER (reg)         x001y037z2                                        net: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1[8],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set Clock Groups
+Constr         :     sd_card_clk -> ext_mem_clk
+
+Statistics:
+	Setup Check    :             15   end points,              17   paths
+	Setup Check    :             15   end points,              17   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : cache$sd_card_bmp_m0/bmp_read_m0/decoder/fetch_return_reg[1]_syn_7.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/frame_fifo_write_m0/write_req_d0_reg_syn_5.mi[0](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x006y018z2                                        pin: cache$sd_card_bmp_m0/bmp_read_m0/decoder/fetch_return_reg[1]_syn_7.q[0]
+net (fo=2)                                                            net: cache$sd_card_bmp_m0/bmp_read_m0/decoder/write_req,  ../user_source/hdl_source/SD/fat_bmp_read.v(103)
+                                                                      pin: frame_read_write_m0/frame_fifo_write_m0/write_req_d0_reg_syn_5.mi[0]
+reg                 x007y019z2                                        net: frame_read_write_m0/frame_fifo_write_m0/write_req_d0,  ../user_source/hdl_source/SD/frame_fifo_write.v(66)
+
+
+Begin Point         : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[0]_syn_4.mi[1](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x007y027z1                                        pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[0],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[0]_syn_4.mi[1]
+reg                 x004y022z3                                        net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1[0],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[1]_syn_4.mi[0](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x006y026z0                                        pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[5],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[1]_syn_4.mi[0]
+reg                 x003y026z0                                        net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1[5],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[1]_syn_4.mi[1](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x006y023z3                                        pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[1],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[1]_syn_4.mi[1]
+reg                 x003y026z0                                        net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1[1],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : cache$sd_card_bmp_m0/finish_seen_reg_syn_216.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/frame_fifo_read_m0/sy_b[6]_syn_13.d[0](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x019y039z3                                        pin: cache$sd_card_bmp_m0/finish_seen_reg_syn_216.q[0]
+net (fo=8)                                                            net: cache$sd_card_bmp_m0/write_buf_idx[1],  ../user_source/hdl_source/SD/sd_card_bmp.v(25)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/sy_b[6]_syn_13.d[0]
+LUT2 (reg)          x017y035z1                                        net: frame_read_write_m0/frame_fifo_write_m0/write_len_d0[19],  ../user_source/hdl_source/SD/frame_fifo_write.v(69)
+
+
+Begin Point         : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/secondary_addr_o_reg[1]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/write_buf/sub1_syn_49.mi[1](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x005y031z1                                        pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/secondary_addr_o_reg[1]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[6],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/sub1_syn_49.mi[1]
+ADDER (reg)         x001y023z2                                        net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1[6],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[3]_syn_4.mi[0](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x006y026z0                                        pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[4],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[3]_syn_4.mi[0]
+reg                 x003y026z1                                        net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1[4],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : cache$sd_card_bmp_m0/slideshow_cache$load_kind_reg[0]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/frame_fifo_write_m0/write_addr_index_d0_reg[1]_syn_4.mi[0](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x020y038z3                                        pin: cache$sd_card_bmp_m0/slideshow_cache$load_kind_reg[0]_syn_4.q[0]
+net (fo=8)                                                            net: cache$sd_card_bmp_m0/write_buf_idx[2],  ../user_source/hdl_source/SD/sd_card_bmp.v(25)
+                                                                      pin: frame_read_write_m0/frame_fifo_write_m0/write_addr_index_d0_reg[1]_syn_4.mi[0]
+reg                 x019y037z2                                        net: frame_read_write_m0/frame_fifo_write_m0/write_addr_index_d0[2],  ../user_source/hdl_source/SD/frame_fifo_write.v(73)
+
+
+Begin Point         : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[3]_syn_4.mi[1](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x007y027z1                                        pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[3],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[3]_syn_4.mi[1]
+reg                 x003y026z1                                        net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1[3],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : cache$sd_card_bmp_m0/finish_seen_reg_syn_216.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/frame_fifo_write_m0/write_addr_index_d0_reg[1]_syn_4.mi[1](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x019y039z3                                        pin: cache$sd_card_bmp_m0/finish_seen_reg_syn_216.q[0]
+net (fo=8)                                                            net: cache$sd_card_bmp_m0/write_buf_idx[1],  ../user_source/hdl_source/SD/sd_card_bmp.v(25)
+                                                                      pin: frame_read_write_m0/frame_fifo_write_m0/write_addr_index_d0_reg[1]_syn_4.mi[1]
+reg                 x019y037z2                                        net: frame_read_write_m0/frame_fifo_write_m0/write_addr_index_d0[1],  ../user_source/hdl_source/SD/frame_fifo_write.v(73)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : cache$sd_card_bmp_m0/bmp_read_m0/decoder/fetch_return_reg[1]_syn_7.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/frame_fifo_write_m0/write_req_d0_reg_syn_5.mi[0](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x006y018z2                                        pin: cache$sd_card_bmp_m0/bmp_read_m0/decoder/fetch_return_reg[1]_syn_7.q[0]
+net (fo=2)                                                            net: cache$sd_card_bmp_m0/bmp_read_m0/decoder/write_req,  ../user_source/hdl_source/SD/fat_bmp_read.v(103)
+                                                                      pin: frame_read_write_m0/frame_fifo_write_m0/write_req_d0_reg_syn_5.mi[0]
+reg                 x007y019z2                                        net: frame_read_write_m0/frame_fifo_write_m0/write_req_d0,  ../user_source/hdl_source/SD/frame_fifo_write.v(66)
+
+
+Begin Point         : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[0]_syn_4.mi[1](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x007y027z1                                        pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[0],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[0]_syn_4.mi[1]
+reg                 x004y022z3                                        net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1[0],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[1]_syn_4.mi[0](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x006y026z0                                        pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[5],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[1]_syn_4.mi[0]
+reg                 x003y026z0                                        net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1[5],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[1]_syn_4.mi[1](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x006y023z3                                        pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[1]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[1],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[1]_syn_4.mi[1]
+reg                 x003y026z0                                        net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1[1],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : cache$sd_card_bmp_m0/slideshow_cache$load_kind_reg[0]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/frame_fifo_read_m0/sy_b[6]_syn_13.c[0](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x020y038z3                                        pin: cache$sd_card_bmp_m0/slideshow_cache$load_kind_reg[0]_syn_4.q[0]
+net (fo=8)                                                            net: cache$sd_card_bmp_m0/write_buf_idx[2],  ../user_source/hdl_source/SD/sd_card_bmp.v(25)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/sy_b[6]_syn_13.c[0]
+LUT2 (reg)          x017y035z1                                        net: frame_read_write_m0/frame_fifo_write_m0/write_len_d0[19],  ../user_source/hdl_source/SD/frame_fifo_write.v(69)
+
+
+Begin Point         : frame_read_write_m0/write_buf/rd_to_wr_cross_inst/secondary_addr_o_reg[1]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/write_buf/sub1_syn_49.mi[1](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x005y031z1                                        pin: frame_read_write_m0/write_buf/rd_to_wr_cross_inst/secondary_addr_o_reg[1]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[6],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/sub1_syn_49.mi[1]
+ADDER (reg)         x001y023z2                                        net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1[6],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[3]_syn_4.mi[0](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x006y026z0                                        pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[4],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[3]_syn_4.mi[0]
+reg                 x003y026z1                                        net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1[4],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : cache$sd_card_bmp_m0/slideshow_cache$load_kind_reg[0]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/frame_fifo_write_m0/write_addr_index_d0_reg[1]_syn_4.mi[0](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x020y038z3                                        pin: cache$sd_card_bmp_m0/slideshow_cache$load_kind_reg[0]_syn_4.q[0]
+net (fo=8)                                                            net: cache$sd_card_bmp_m0/write_buf_idx[2],  ../user_source/hdl_source/SD/sd_card_bmp.v(25)
+                                                                      pin: frame_read_write_m0/frame_fifo_write_m0/write_addr_index_d0_reg[1]_syn_4.mi[0]
+reg                 x019y037z2                                        net: frame_read_write_m0/frame_fifo_write_m0/write_addr_index_d0[2],  ../user_source/hdl_source/SD/frame_fifo_write.v(73)
+
+
+Begin Point         : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[3]_syn_4.mi[1](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x007y027z1                                        pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg_reg[3]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/primary_addr_gray_reg[3],  ../user_source/hdl_source/IP/afifo_16_32_256.v(263)
+                                                                      pin: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1_reg[3]_syn_4.mi[1]
+reg                 x003y026z1                                        net: frame_read_write_m0/write_buf/wr_to_rd_cross_inst/sync_r1[3],  ../user_source/hdl_source/IP/afifo_16_32_256.v(264)
+
+
+Begin Point         : cache$sd_card_bmp_m0/finish_seen_reg_syn_216.clk(triggered by clock sd_card_clk)
+End Point           : frame_read_write_m0/frame_fifo_write_m0/write_addr_index_d0_reg[1]_syn_4.mi[1](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x019y039z3                                        pin: cache$sd_card_bmp_m0/finish_seen_reg_syn_216.q[0]
+net (fo=8)                                                            net: cache$sd_card_bmp_m0/write_buf_idx[1],  ../user_source/hdl_source/SD/sd_card_bmp.v(25)
+                                                                      pin: frame_read_write_m0/frame_fifo_write_m0/write_addr_index_d0_reg[1]_syn_4.mi[1]
+reg                 x019y037z2                                        net: frame_read_write_m0/frame_fifo_write_m0/write_addr_index_d0[1],  ../user_source/hdl_source/SD/frame_fifo_write.v(73)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set Clock Groups
+Constr         :     sd_card_clk -> video_clk
+
+Statistics:
+	Setup Check    :             75   end points,              91   paths
+	Setup Check    :             75   end points,              91   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/wg_reg[7]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/wm_reg[7]_syn_4.mi[1](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x029y035z2                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/wg_reg[7]_syn_4.q[1]
+net (fo=1)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/wg[7],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/wm_reg[7]_syn_4.mi[1]
+reg                 x026y038z2                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/wm[7],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : pm/mailbox_reg[35]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : pm/data_reg[4]_syn_4.mi[0](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x020y051z1                                        pin: pm/mailbox_reg[35]_syn_4.q[0]
+net (fo=2)                                                            net: pm/mailbox[39],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: pm/data_reg[4]_syn_4.mi[0]
+reg                 x017y053z3                                        net: fx/layers/speed[1],  ../user_source/hdl_source/text_layers.v(3)
+
+
+Begin Point         : pm/mailbox_reg[4]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : pm/data_reg[4]_syn_4.mi[1](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x021y051z3                                        pin: pm/mailbox_reg[4]_syn_4.q[1]
+net (fo=2)                                                            net: pm/mailbox[4],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: pm/data_reg[4]_syn_4.mi[1]
+reg                 x017y053z3                                        net: fc/transition_mode[0],  ../user_source/hdl_source/frame_commit.v(5)
+
+
+Begin Point         : fc/mailbox_settings_reg[23]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : fc/pending_settings_reg[23]_syn_4.mi[0](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x025y047z3                                        pin: fc/mailbox_settings_reg[23]_syn_4.q[0]
+net (fo=2)                                                            net: fc/mailbox_settings[22],  ../user_source/hdl_source/frame_commit.v(14)
+                                                                      pin: fc/pending_settings_reg[23]_syn_4.mi[0]
+reg                 x019y050z3                                        net: fc/pending_settings[22],  ../user_source/hdl_source/frame_commit.v(14)
+
+
+Begin Point         : fc/mailbox_settings_reg[23]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : fc/pending_settings_reg[23]_syn_4.mi[1](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x025y047z3                                        pin: fc/mailbox_settings_reg[23]_syn_4.q[1]
+net (fo=2)                                                            net: fc/mailbox_settings[23],  ../user_source/hdl_source/frame_commit.v(14)
+                                                                      pin: fc/pending_settings_reg[23]_syn_4.mi[1]
+reg                 x019y050z3                                        net: fc/pending_settings[23],  ../user_source/hdl_source/frame_commit.v(14)
+
+
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/wg_reg[9]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/wm_reg[9]_syn_4.mi[0](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x028y036z1                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/wg_reg[9]_syn_4.q[0]
+net (fo=1)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/wg[8],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/wm_reg[9]_syn_4.mi[0]
+reg                 x030y037z2                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/wm[8],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/wg_reg[9]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/wm_reg[9]_syn_4.mi[1](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x028y036z1                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/wg_reg[9]_syn_4.q[1]
+net (fo=1)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/wg[9],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/wm_reg[9]_syn_4.mi[1]
+reg                 x030y037z2                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/wm[9],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : pm/mailbox_reg[27]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : pm/data_reg[5]_syn_4.mi[0](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x020y051z0                                        pin: pm/mailbox_reg[27]_syn_4.q[0]
+net (fo=2)                                                            net: pm/mailbox[38],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: pm/data_reg[5]_syn_4.mi[0]
+reg                 x018y053z3                                        net: fx/layers/speed[0],  ../user_source/hdl_source/text_layers.v(3)
+
+
+Begin Point         : committed_return/ack_reg_syn_5.clk(triggered by clock sd_card_clk)
+End Point           : fx/spectrum/cos_q_b1[1]_syn_7.mi[0](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x017y044z3                                        pin: committed_return/ack_reg_syn_5.q[1]
+net (fo=2)                                                            net: committed_return/ack,  ../user_source/hdl_source/parameter_mailbox.v(7)
+                                                                      pin: fx/spectrum/cos_q_b1[1]_syn_7.mi[0]
+reg                 x015y043z0                                        net: committed_return/ack_sync[0],  ../user_source/hdl_source/parameter_mailbox.v(8)
+
+
+Begin Point         : pm/mailbox_reg[5]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : pm/data_reg[5]_syn_4.mi[1](triggered by clock video_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x021y052z1                                        pin: pm/mailbox_reg[5]_syn_4.q[1]
+net (fo=2)                                                            net: pm/mailbox[5],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: pm/data_reg[5]_syn_4.mi[1]
+reg                 x018y053z3                                        net: fc/transition_mode[1],  ../user_source/hdl_source/frame_commit.v(5)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/wg_reg[7]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/wm_reg[7]_syn_4.mi[1](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x029y035z2                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/wg_reg[7]_syn_4.q[1]
+net (fo=1)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/wg[7],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/wm_reg[7]_syn_4.mi[1]
+reg                 x026y038z2                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/wm[7],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : pm/mailbox_reg[35]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : pm/data_reg[4]_syn_4.mi[0](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x020y051z1                                        pin: pm/mailbox_reg[35]_syn_4.q[0]
+net (fo=2)                                                            net: pm/mailbox[39],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: pm/data_reg[4]_syn_4.mi[0]
+reg                 x017y053z3                                        net: fx/layers/speed[1],  ../user_source/hdl_source/text_layers.v(3)
+
+
+Begin Point         : pm/mailbox_reg[4]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : pm/data_reg[4]_syn_4.mi[1](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x021y051z3                                        pin: pm/mailbox_reg[4]_syn_4.q[1]
+net (fo=2)                                                            net: pm/mailbox[4],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: pm/data_reg[4]_syn_4.mi[1]
+reg                 x017y053z3                                        net: fc/transition_mode[0],  ../user_source/hdl_source/frame_commit.v(5)
+
+
+Begin Point         : fc/mailbox_settings_reg[23]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : fc/pending_settings_reg[23]_syn_4.mi[0](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x025y047z3                                        pin: fc/mailbox_settings_reg[23]_syn_4.q[0]
+net (fo=2)                                                            net: fc/mailbox_settings[22],  ../user_source/hdl_source/frame_commit.v(14)
+                                                                      pin: fc/pending_settings_reg[23]_syn_4.mi[0]
+reg                 x019y050z3                                        net: fc/pending_settings[22],  ../user_source/hdl_source/frame_commit.v(14)
+
+
+Begin Point         : fc/mailbox_settings_reg[23]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : fc/pending_settings_reg[23]_syn_4.mi[1](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x025y047z3                                        pin: fc/mailbox_settings_reg[23]_syn_4.q[1]
+net (fo=2)                                                            net: fc/mailbox_settings[23],  ../user_source/hdl_source/frame_commit.v(14)
+                                                                      pin: fc/pending_settings_reg[23]_syn_4.mi[1]
+reg                 x019y050z3                                        net: fc/pending_settings[23],  ../user_source/hdl_source/frame_commit.v(14)
+
+
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/wg_reg[9]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/wm_reg[9]_syn_4.mi[0](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x028y036z1                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/wg_reg[9]_syn_4.q[0]
+net (fo=1)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/wg[8],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/wm_reg[9]_syn_4.mi[0]
+reg                 x030y037z2                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/wm[8],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/wg_reg[9]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/wm_reg[9]_syn_4.mi[1](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x028y036z1                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/wg_reg[9]_syn_4.q[1]
+net (fo=1)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/wg[9],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/wm_reg[9]_syn_4.mi[1]
+reg                 x030y037z2                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/wm[9],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : pm/mailbox_reg[27]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : pm/data_reg[5]_syn_4.mi[0](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x020y051z0                                        pin: pm/mailbox_reg[27]_syn_4.q[0]
+net (fo=2)                                                            net: pm/mailbox[38],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: pm/data_reg[5]_syn_4.mi[0]
+reg                 x018y053z3                                        net: fx/layers/speed[0],  ../user_source/hdl_source/text_layers.v(3)
+
+
+Begin Point         : committed_return/ack_reg_syn_5.clk(triggered by clock sd_card_clk)
+End Point           : fx/spectrum/cos_q_b1[1]_syn_7.mi[0](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x017y044z3                                        pin: committed_return/ack_reg_syn_5.q[1]
+net (fo=2)                                                            net: committed_return/ack,  ../user_source/hdl_source/parameter_mailbox.v(7)
+                                                                      pin: fx/spectrum/cos_q_b1[1]_syn_7.mi[0]
+reg                 x015y043z0                                        net: committed_return/ack_sync[0],  ../user_source/hdl_source/parameter_mailbox.v(8)
+
+
+Begin Point         : pm/mailbox_reg[5]_syn_4.clk(triggered by clock sd_card_clk)
+End Point           : pm/data_reg[5]_syn_4.mi[1](triggered by clock video_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x021y052z1                                        pin: pm/mailbox_reg[5]_syn_4.q[1]
+net (fo=2)                                                            net: pm/mailbox[5],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: pm/data_reg[5]_syn_4.mi[1]
+reg                 x018y053z3                                        net: fc/transition_mode[1],  ../user_source/hdl_source/frame_commit.v(5)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set Clock Groups
+Constr         :     video_clk -> ext_mem_clk
+
+Statistics:
+	Setup Check    :             19   end points,              19   paths
+	Setup Check    :             19   end points,              19   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : fc/active_bank_reg[1]_syn_7.clk(triggered by clock video_clk)
+End Point           : fx/spectrum/cos_q_b1[0]_syn_8.mi[0](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x014y047z1                                        pin: fc/active_bank_reg[1]_syn_7.q[0]
+net (fo=5)                                                            net: fc/active_bank[1],  ../user_source/hdl_source/frame_commit.v(4)
+                                                                      pin: fx/spectrum/cos_q_b1[0]_syn_8.mi[0]
+reg                 x014y042z1                                        net: frame_read_write_m0/frame_fifo_read_m0/bank0[1],  ../user_source/hdl_source/scaled_frame_reader.v(12)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1_reg[2]_syn_4.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[1]_syn_3.mi[1](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x006y038z0                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1_reg[2]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[1],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[1]_syn_3.mi[1]
+reg                 x001y040z1                                        net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1[1],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : fc/active_bank_reg[0]_syn_7.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/frame_fifo_read_m0/bank0_reg[0]_syn_4.mi[0](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x014y047z0                                        pin: fc/active_bank_reg[0]_syn_7.q[0]
+net (fo=5)                                                            net: fc/active_bank[2],  ../user_source/hdl_source/frame_commit.v(4)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/bank0_reg[0]_syn_4.mi[0]
+reg                 x014y044z0                                        net: frame_read_write_m0/frame_fifo_read_m0/bank0[2],  ../user_source/hdl_source/scaled_frame_reader.v(12)
+
+
+Begin Point         : fc/active_bank_reg[0]_syn_7.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/frame_fifo_read_m0/bank0_reg[0]_syn_4.mi[1](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x014y047z0                                        pin: fc/active_bank_reg[0]_syn_7.q[1]
+net (fo=5)                                                            net: fc/active_bank[0],  ../user_source/hdl_source/frame_commit.v(4)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/bank0_reg[0]_syn_4.mi[1]
+reg                 x014y044z0                                        net: frame_read_write_m0/frame_fifo_read_m0/bank0[0],  ../user_source/hdl_source/scaled_frame_reader.v(12)
+
+
+Begin Point         : fx/adjustment/rgb[7]_syn_6.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[2]_syn_3.mi[0](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x006y040z1                                        pin: fx/adjustment/rgb[7]_syn_6.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[3],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[2]_syn_3.mi[0]
+reg                 x005y041z0                                        net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1[3],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[2]_syn_3.mi[1](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x003y040z0                                        pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[2],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[2]_syn_3.mi[1]
+reg                 x005y041z0                                        net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1[2],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[4]_syn_3.mi[0](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y036z3                                        pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[5],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[4]_syn_3.mi[0]
+reg                 x003y039z1                                        net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1[5],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[4]_syn_3.mi[1](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y036z3                                        pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[4],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[4]_syn_3.mi[1]
+reg                 x003y039z1                                        net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1[4],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[7]_syn_4.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[7]_syn_3.mi[1](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y037z3                                        pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[7]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[7],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[7]_syn_3.mi[1]
+reg                 x001y041z0                                        net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1[7],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : fc/active_settings_reg[10]_syn_4.clk(triggered by clock video_clk)
+End Point           : fx/spectrum/renderer/hi3_b3[3]_syn_10.mi[0](triggered by clock ext_mem_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x018y052z3                                        pin: fc/active_settings_reg[10]_syn_4.q[1]
+net (fo=5)                                                            net: fc/active_settings[10],  ../user_source/hdl_source/frame_commit.v(8)
+                                                                      pin: fx/spectrum/renderer/hi3_b3[3]_syn_10.mi[0]
+reg                 x011y046z1                                        net: frame_read_write_m0/frame_fifo_read_m0/sc0[1],  ../user_source/hdl_source/scaled_frame_reader.v(13)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : fc/active_bank_reg[1]_syn_7.clk(triggered by clock video_clk)
+End Point           : fx/spectrum/cos_q_b1[0]_syn_8.mi[0](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x014y047z1                                        pin: fc/active_bank_reg[1]_syn_7.q[0]
+net (fo=5)                                                            net: fc/active_bank[1],  ../user_source/hdl_source/frame_commit.v(4)
+                                                                      pin: fx/spectrum/cos_q_b1[0]_syn_8.mi[0]
+reg                 x014y042z1                                        net: frame_read_write_m0/frame_fifo_read_m0/bank0[1],  ../user_source/hdl_source/scaled_frame_reader.v(12)
+
+
+Begin Point         : frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1_reg[2]_syn_4.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[1]_syn_3.mi[1](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x006y038z0                                        pin: frame_read_write_m0/read_buf/wr_to_rd_cross_inst/sync_r1_reg[2]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[1],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[1]_syn_3.mi[1]
+reg                 x001y040z1                                        net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1[1],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : fc/active_bank_reg[0]_syn_7.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/frame_fifo_read_m0/bank0_reg[0]_syn_4.mi[0](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x014y047z0                                        pin: fc/active_bank_reg[0]_syn_7.q[0]
+net (fo=5)                                                            net: fc/active_bank[2],  ../user_source/hdl_source/frame_commit.v(4)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/bank0_reg[0]_syn_4.mi[0]
+reg                 x014y044z0                                        net: frame_read_write_m0/frame_fifo_read_m0/bank0[2],  ../user_source/hdl_source/scaled_frame_reader.v(12)
+
+
+Begin Point         : fc/active_bank_reg[0]_syn_7.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/frame_fifo_read_m0/bank0_reg[0]_syn_4.mi[1](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x014y047z0                                        pin: fc/active_bank_reg[0]_syn_7.q[1]
+net (fo=5)                                                            net: fc/active_bank[0],  ../user_source/hdl_source/frame_commit.v(4)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/bank0_reg[0]_syn_4.mi[1]
+reg                 x014y044z0                                        net: frame_read_write_m0/frame_fifo_read_m0/bank0[0],  ../user_source/hdl_source/scaled_frame_reader.v(12)
+
+
+Begin Point         : fx/adjustment/rgb[7]_syn_6.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[2]_syn_3.mi[0](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x006y040z1                                        pin: fx/adjustment/rgb[7]_syn_6.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[3],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[2]_syn_3.mi[0]
+reg                 x005y041z0                                        net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1[3],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[2]_syn_3.mi[1](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x003y040z0                                        pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[2]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[2],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[2]_syn_3.mi[1]
+reg                 x005y041z0                                        net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1[2],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[4]_syn_3.mi[0](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y036z3                                        pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.q[0]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[5],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[4]_syn_3.mi[0]
+reg                 x003y039z1                                        net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1[5],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[4]_syn_3.mi[1](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y036z3                                        pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[4]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[4],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[4]_syn_3.mi[1]
+reg                 x003y039z1                                        net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1[4],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[7]_syn_4.clk(triggered by clock video_clk)
+End Point           : frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[7]_syn_3.mi[1](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x002y037z3                                        pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg_reg[7]_syn_4.q[1]
+net (fo=1)                                                            net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/primary_addr_gray_reg[7],  ../user_source/hdl_source/IP/afifo_32_16_256.v(263)
+                                                                      pin: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1_reg[7]_syn_3.mi[1]
+reg                 x001y041z0                                        net: frame_read_write_m0/read_buf/rd_to_wr_cross_inst/sync_r1[7],  ../user_source/hdl_source/IP/afifo_32_16_256.v(264)
+
+
+Begin Point         : fc/active_settings_reg[10]_syn_4.clk(triggered by clock video_clk)
+End Point           : fx/spectrum/renderer/hi3_b3[3]_syn_10.mi[0](triggered by clock ext_mem_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x018y052z3                                        pin: fc/active_settings_reg[10]_syn_4.q[1]
+net (fo=5)                                                            net: fc/active_settings[10],  ../user_source/hdl_source/frame_commit.v(8)
+                                                                      pin: fx/spectrum/renderer/hi3_b3[3]_syn_10.mi[0]
+reg                 x011y046z1                                        net: frame_read_write_m0/frame_fifo_read_m0/sc0[1],  ../user_source/hdl_source/scaled_frame_reader.v(13)
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set Clock Groups
+Constr         :     video_clk -> sd_card_clk
+
+Statistics:
+	Setup Check    :             24   end points,              24   paths
+	Setup Check    :             24   end points,              24   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : committed_return/mailbox_reg[5]_syn_4.clk(triggered by clock video_clk)
+End Point           : committed_return/data_reg[4]_syn_4.mi[0](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x017y045z2                                        pin: committed_return/mailbox_reg[5]_syn_4.q[0]
+net (fo=2)                                                            net: committed_return/mailbox[7],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: committed_return/data_reg[4]_syn_4.mi[0]
+reg                 x018y044z1                                        net: committed_return/data[7],  ../user_source/hdl_source/parameter_mailbox.v(5)
+
+
+Begin Point         : fx/layers/v2_n_syn_449.clk(triggered by clock video_clk)
+End Point           : committed_return/data_reg[4]_syn_4.mi[1](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x015y044z2                                        pin: fx/layers/v2_n_syn_449.q[0]
+net (fo=2)                                                            net: committed_return/mailbox[4],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: committed_return/data_reg[4]_syn_4.mi[1]
+reg                 x018y044z1                                        net: committed_return/data[4],  ../user_source/hdl_source/parameter_mailbox.v(5)
+
+
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[3]_syn_4.clk(triggered by clock video_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[0]_syn_3.mi[0](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x029y038z3                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[3]_syn_4.q[0]
+net (fo=2)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/rg[4],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[0]_syn_3.mi[0]
+reg                 x028y037z0                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/rm[4],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[0]_syn_4.clk(triggered by clock video_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[0]_syn_3.mi[1](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x029y038z0                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[0]_syn_4.q[1]
+net (fo=2)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/rg[0],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[0]_syn_3.mi[1]
+reg                 x028y037z0                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/rm[0],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : fx/layers/v2_n_syn_477.clk(triggered by clock video_clk)
+End Point           : committed_return/data_reg[5]_syn_4.mi[0](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x017y045z3                                        pin: fx/layers/v2_n_syn_477.q[0]
+net (fo=2)                                                            net: committed_return/mailbox[6],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: committed_return/data_reg[5]_syn_4.mi[0]
+reg                 x017y046z2                                        net: committed_return/data[6],  ../user_source/hdl_source/parameter_mailbox.v(5)
+
+
+Begin Point         : committed_return/mailbox_reg[5]_syn_4.clk(triggered by clock video_clk)
+End Point           : committed_return/data_reg[5]_syn_4.mi[1](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x017y045z2                                        pin: committed_return/mailbox_reg[5]_syn_4.q[1]
+net (fo=2)                                                            net: committed_return/mailbox[5],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: committed_return/data_reg[5]_syn_4.mi[1]
+reg                 x017y046z2                                        net: committed_return/data[5],  ../user_source/hdl_source/parameter_mailbox.v(5)
+
+
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[3]_syn_4.clk(triggered by clock video_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[1]_syn_3.mi[0](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x029y038z3                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[3]_syn_4.q[1]
+net (fo=2)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/rg[3],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[1]_syn_3.mi[0]
+reg                 x028y037z1                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/rm[3],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[1]_syn_4.clk(triggered by clock video_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[1]_syn_3.mi[1](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x029y038z1                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[1]_syn_4.q[1]
+net (fo=2)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/rg[1],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[1]_syn_3.mi[1]
+reg                 x028y037z1                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/rm[1],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[5]_syn_4.clk(triggered by clock video_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[2]_syn_3.mi[0](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x030y039z3                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[5]_syn_4.q[0]
+net (fo=2)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/rg[6],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[2]_syn_3.mi[0]
+reg                 x029y037z3                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/rm[6],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : controls/brightness_reg[7]_syn_39.clk(triggered by clock video_clk)
+End Point           : pm/ack_sync_reg[0]_syn_4.mi[0](triggered by clock sd_card_clk)
+Check Type          : setup
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x021y055z3                                        pin: controls/brightness_reg[7]_syn_39.q[0]
+net (fo=2)                                                            net: pm/ack,  ../user_source/hdl_source/parameter_mailbox.v(7)
+                                                                      pin: pm/ack_sync_reg[0]_syn_4.mi[0]
+reg                 x020y056z1                                        net: pm/ack_sync[0],  ../user_source/hdl_source/parameter_mailbox.v(8)
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : committed_return/mailbox_reg[5]_syn_4.clk(triggered by clock video_clk)
+End Point           : committed_return/data_reg[4]_syn_4.mi[0](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x017y045z2                                        pin: committed_return/mailbox_reg[5]_syn_4.q[0]
+net (fo=2)                                                            net: committed_return/mailbox[7],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: committed_return/data_reg[4]_syn_4.mi[0]
+reg                 x018y044z1                                        net: committed_return/data[7],  ../user_source/hdl_source/parameter_mailbox.v(5)
+
+
+Begin Point         : fx/layers/v2_n_syn_449.clk(triggered by clock video_clk)
+End Point           : committed_return/data_reg[4]_syn_4.mi[1](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x015y044z2                                        pin: fx/layers/v2_n_syn_449.q[0]
+net (fo=2)                                                            net: committed_return/mailbox[4],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: committed_return/data_reg[4]_syn_4.mi[1]
+reg                 x018y044z1                                        net: committed_return/data[4],  ../user_source/hdl_source/parameter_mailbox.v(5)
+
+
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[3]_syn_4.clk(triggered by clock video_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[0]_syn_3.mi[0](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x029y038z3                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[3]_syn_4.q[0]
+net (fo=2)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/rg[4],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[0]_syn_3.mi[0]
+reg                 x028y037z0                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/rm[4],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[0]_syn_4.clk(triggered by clock video_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[0]_syn_3.mi[1](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x029y038z0                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[0]_syn_4.q[1]
+net (fo=2)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/rg[0],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[0]_syn_3.mi[1]
+reg                 x028y037z0                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/rm[0],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : fx/layers/v2_n_syn_477.clk(triggered by clock video_clk)
+End Point           : committed_return/data_reg[5]_syn_4.mi[0](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x017y045z3                                        pin: fx/layers/v2_n_syn_477.q[0]
+net (fo=2)                                                            net: committed_return/mailbox[6],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: committed_return/data_reg[5]_syn_4.mi[0]
+reg                 x017y046z2                                        net: committed_return/data[6],  ../user_source/hdl_source/parameter_mailbox.v(5)
+
+
+Begin Point         : committed_return/mailbox_reg[5]_syn_4.clk(triggered by clock video_clk)
+End Point           : committed_return/data_reg[5]_syn_4.mi[1](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x017y045z2                                        pin: committed_return/mailbox_reg[5]_syn_4.q[1]
+net (fo=2)                                                            net: committed_return/mailbox[5],  ../user_source/hdl_source/parameter_mailbox.v(6)
+                                                                      pin: committed_return/data_reg[5]_syn_4.mi[1]
+reg                 x017y046z2                                        net: committed_return/data[5],  ../user_source/hdl_source/parameter_mailbox.v(5)
+
+
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[3]_syn_4.clk(triggered by clock video_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[1]_syn_3.mi[0](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x029y038z3                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[3]_syn_4.q[1]
+net (fo=2)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/rg[3],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[1]_syn_3.mi[0]
+reg                 x028y037z1                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/rm[3],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[1]_syn_4.clk(triggered by clock video_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[1]_syn_3.mi[1](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x029y038z1                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[1]_syn_4.q[1]
+net (fo=2)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/rg[1],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[1]_syn_3.mi[1]
+reg                 x028y037z1                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/rm[1],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[5]_syn_4.clk(triggered by clock video_clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[2]_syn_3.mi[0](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x030y039z3                                        pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rg_reg[5]_syn_4.q[0]
+net (fo=2)                                                            net: cache$sd_card_bmp_m0/sd_music$player/fifo/rg[6],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fifo/rm_reg[2]_syn_3.mi[0]
+reg                 x029y037z3                                        net: cache$sd_card_bmp_m0/sd_music$player/fifo/rm[6],  ../user_source/hdl_source/pcm_async_fifo.v(10)
+
+
+Begin Point         : controls/brightness_reg[7]_syn_39.clk(triggered by clock video_clk)
+End Point           : pm/ack_sync_reg[0]_syn_4.mi[0](triggered by clock sd_card_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x021y055z3                                        pin: controls/brightness_reg[7]_syn_39.q[0]
+net (fo=2)                                                            net: pm/ack,  ../user_source/hdl_source/parameter_mailbox.v(7)
+                                                                      pin: pm/ack_sync_reg[0]_syn_4.mi[0]
+reg                 x020y056z1                                        net: pm/ack_sync[0],  ../user_source/hdl_source/parameter_mailbox.v(8)
+
+
+
+Set False Path
+--------------------
+
+From flow sdc
+--------------------
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set False Path
+Constr         :     set_false_path -through [get_nets {rst_all}]
+
+Statistics:
+	Setup Check    :             11   end points,              44   paths
+	Setup Check    :             11   end points,              44   paths
+----------------------------------------------------------------------------------------------------
+
+Max Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : rs/pipe_reg[1]_syn_4.sr(triggered by clock sd_card_clk)
+Check Type          : recovery
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[0]
+net (fo=2)                                                            net: power_on_count[3],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[0]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[0]
+net (fo=2)                                                            net: add0_syn_26,  ../user_source/hdl_source/top_tf_hdmi_audio.v(200)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: rs/pipe_reg[1]_syn_4.sr
+reg                 x026y039z3                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : frame_read_write_m0/frame_fifo_read_m0/contiguous_reader/lt1_syn_54.sr(triggered by clock sd_card_clk)
+Check Type          : recovery
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[0]
+net (fo=2)                                                            net: power_on_count[3],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[0]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[0]
+net (fo=2)                                                            net: add0_syn_26,  ../user_source/hdl_source/top_tf_hdmi_audio.v(200)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/contiguous_reader/lt1_syn_54.sr
+ADDER (reg)         x027y039z0                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : ra/pipe_reg[1]_syn_3.sr(triggered by clock audio_mclk)
+Check Type          : recovery
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[0]
+net (fo=2)                                                            net: power_on_count[3],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[0]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[0]
+net (fo=2)                                                            net: add0_syn_26,  ../user_source/hdl_source/top_tf_hdmi_audio.v(200)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: ra/pipe_reg[1]_syn_3.sr
+reg                 x019y065z0                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : rserial/pipe_reg[0]_syn_4.sr(triggered by clock hdmi_5x_clk)
+Check Type          : recovery
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[0]
+net (fo=2)                                                            net: power_on_count[3],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[0]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[0]
+net (fo=2)                                                            net: add0_syn_26,  ../user_source/hdl_source/top_tf_hdmi_audio.v(200)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: rserial/pipe_reg[0]_syn_4.sr
+reg                 x039y024z2                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fs/add10_syn_164.sr(triggered by clock hdmi_5x_clk)
+Check Type          : recovery
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[0]
+net (fo=2)                                                            net: power_on_count[3],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[0]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[0]
+net (fo=2)                                                            net: add0_syn_26,  ../user_source/hdl_source/top_tf_hdmi_audio.v(200)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fs/add10_syn_164.sr
+ADDER (reg)         x036y022z2                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : ra/pipe_reg[2]_syn_3.sr(triggered by clock audio_mclk)
+Check Type          : recovery
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[0]
+net (fo=2)                                                            net: power_on_count[3],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[0]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[0]
+net (fo=2)                                                            net: add0_syn_26,  ../user_source/hdl_source/top_tf_hdmi_audio.v(200)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: ra/pipe_reg[2]_syn_3.sr
+reg                 x019y065z1                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : rv/pipe_reg[1]_syn_4.sr(triggered by clock video_clk)
+Check Type          : recovery
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[0]
+net (fo=2)                                                            net: power_on_count[3],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[0]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[0]
+net (fo=2)                                                            net: add0_syn_26,  ../user_source/hdl_source/top_tf_hdmi_audio.v(200)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: rv/pipe_reg[1]_syn_4.sr
+reg                 x028y041z3                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/S_packet_body[55]_syn_72.sr(triggered by clock video_clk)
+Check Type          : recovery
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[0]
+net (fo=2)                                                            net: power_on_count[3],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[0]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[0]
+net (fo=2)                                                            net: add0_syn_26,  ../user_source/hdl_source/top_tf_hdmi_audio.v(200)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/S_packet_body[55]_syn_72.sr
+reg                 x028y041z1                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : rm/pipe_reg[1]_syn_3.sr(triggered by clock ext_mem_clk)
+Check Type          : recovery
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[0]
+net (fo=2)                                                            net: power_on_count[3],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[0]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[0]
+net (fo=2)                                                            net: add0_syn_26,  ../user_source/hdl_source/top_tf_hdmi_audio.v(200)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: rm/pipe_reg[1]_syn_3.sr
+reg                 x033y060z2                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/S_packet_body[51]_syn_36.sr(triggered by clock sd_card_clk)
+Check Type          : recovery
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[0]
+net (fo=2)                                                            net: power_on_count[3],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[0]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[0]
+net (fo=2)                                                            net: add0_syn_26,  ../user_source/hdl_source/top_tf_hdmi_audio.v(200)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.d[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/S_packet_body[51]_syn_36.sr
+reg                 x029y039z3                                             
+
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : rs/pipe_reg[1]_syn_4.sr(triggered by clock sd_card_clk)
+Check Type          : removal
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[1]
+net (fo=3)                                                            net: power_on_count[4],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.c[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: rs/pipe_reg[1]_syn_4.sr
+reg                 x026y039z3                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : frame_read_write_m0/frame_fifo_read_m0/contiguous_reader/lt1_syn_54.sr(triggered by clock sd_card_clk)
+Check Type          : removal
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[1]
+net (fo=3)                                                            net: power_on_count[4],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.c[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: frame_read_write_m0/frame_fifo_read_m0/contiguous_reader/lt1_syn_54.sr
+ADDER (reg)         x027y039z0                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : ra/pipe_reg[1]_syn_3.sr(triggered by clock audio_mclk)
+Check Type          : removal
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[1]
+net (fo=3)                                                            net: power_on_count[4],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.c[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: ra/pipe_reg[1]_syn_3.sr
+reg                 x019y065z0                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : rserial/pipe_reg[0]_syn_4.sr(triggered by clock hdmi_5x_clk)
+Check Type          : removal
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[1]
+net (fo=3)                                                            net: power_on_count[4],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.c[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: rserial/pipe_reg[0]_syn_4.sr
+reg                 x039y024z2                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : cache$sd_card_bmp_m0/sd_music$player/fs/add10_syn_164.sr(triggered by clock hdmi_5x_clk)
+Check Type          : removal
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[1]
+net (fo=3)                                                            net: power_on_count[4],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.c[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: cache$sd_card_bmp_m0/sd_music$player/fs/add10_syn_164.sr
+ADDER (reg)         x036y022z2                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : ra/pipe_reg[2]_syn_3.sr(triggered by clock audio_mclk)
+Check Type          : removal
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[1]
+net (fo=3)                                                            net: power_on_count[4],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.c[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: ra/pipe_reg[2]_syn_3.sr
+reg                 x019y065z1                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : rv/pipe_reg[1]_syn_4.sr(triggered by clock video_clk)
+Check Type          : removal
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[1]
+net (fo=3)                                                            net: power_on_count[4],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.c[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: rv/pipe_reg[1]_syn_4.sr
+reg                 x028y041z3                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/S_packet_body[55]_syn_72.sr(triggered by clock video_clk)
+Check Type          : removal
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[1]
+net (fo=3)                                                            net: power_on_count[4],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.c[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/S_packet_body[55]_syn_72.sr
+reg                 x028y041z1                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : rm/pipe_reg[1]_syn_3.sr(triggered by clock ext_mem_clk)
+Check Type          : removal
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[1]
+net (fo=3)                                                            net: power_on_count[4],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.c[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: rm/pipe_reg[1]_syn_3.sr
+reg                 x033y060z2                                             
+
+
+Begin Point         : power_on_count_reg[4]_syn_7.clk(triggered by clock clk)
+End Point           : u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/S_packet_body[51]_syn_36.sr(triggered by clock sd_card_clk)
+Check Type          : removal
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x027y062z2                                        pin: power_on_count_reg[4]_syn_7.q[1]
+net (fo=3)                                                            net: power_on_count[4],  ../user_source/hdl_source/top_tf_hdmi_audio.v(199)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.c[1]
+LUT4                x023y063z0                                        pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/u_iic_w11_d1024_fifo/u_logic_ramfifo[4]__3_syn_4.f[1]
+net (fo=3)                                                            net: rst_all_n_syn_3,  NOFILE(0)
+                                                                      pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.a[0]
+LUT4                x022y066z0                                        pin: u_hdmi_audio_tone_i2s_64fs/S_sample_next_reg[11]_syn_4.f[0]
+net (fo=11)                                                           net: rst_all,  ../user_source/hdl_source/top_tf_hdmi_audio.v(142)
+                                                                      pin: u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/S_packet_body[51]_syn_36.sr
+reg                 x029y039z3                                             
+
+

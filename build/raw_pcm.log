@@ -1,0 +1,35 @@
+# do test_raw_pcm.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:42:46 on Oct 26,2026
+# vlog -sv -work work_raw_pcm ../user_source/hdl_source/SD/wav_pcm_reader.v tb_raw_pcm.v 
+# -- Compiling module wav_pcm_reader
+# -- Compiling module tb_raw_pcm
+# 
+# Top level modules:
+# 	tb_raw_pcm
+# End time: 17:42:46 on Oct 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt work_raw_pcm.tb_raw_pcm 
+# Start time: 17:42:46 on Oct 26,2026
+# Loading sv_std.std
+# Loading work_raw_pcm.tb_raw_pcm
+# Loading work_raw_pcm.wav_pcm_reader
+# REAL_BGM_PCM_PREFIX_EXACT_SAMPLES_BACKPRESSURE_PASS CHANNELS=1
+# ** Note: $finish    : tb_raw_pcm.v(37)
+#    Time: 429766 ns  Iteration: 0  Instance: /tb_raw_pcm
+# Break in Module tb_raw_pcm at tb_raw_pcm.v line 37
+# Stopped at tb_raw_pcm.v line 37
+# End time: 17:42:46 on Oct 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt work_raw_pcm.tb_raw_pcm -gCHANNELS=2 
+# Start time: 17:42:46 on Oct 26,2026
+# Loading sv_std.std
+# Loading work_raw_pcm.tb_raw_pcm
+# Loading work_raw_pcm.wav_pcm_reader
+# REAL_BGM_PCM_PREFIX_EXACT_SAMPLES_BACKPRESSURE_PASS CHANNELS=2
+# ** Note: $finish    : tb_raw_pcm.v(37)
+#    Time: 342766 ns  Iteration: 0  Instance: /tb_raw_pcm
+# Break in Module tb_raw_pcm at tb_raw_pcm.v line 37
+# Stopped at tb_raw_pcm.v line 37
+# End time: 17:42:47 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vtb_raw_pcm
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1793007766
+!i10b 1
+!s100 aALQ[BR1ZdJkg5H_:Z]dJ0
+I3B;>XH9D8`<ci>J0AEFiS0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 tb_raw_pcm_v_unit
+S1
+R0
+w1792421584
+8tb_raw_pcm.v
+Ftb_raw_pcm.v
+L0 2
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1793007766.000000
+Z6 !s107 tb_raw_pcm.v|../user_source/hdl_source/SD/wav_pcm_reader.v|
+Z7 !s90 -sv|-work|work_raw_pcm|../user_source/hdl_source/SD/wav_pcm_reader.v|tb_raw_pcm.v|
+!i113 1
+Z8 o-sv -work work_raw_pcm
+Z9 tCvgOpt 0
+vwav_pcm_reader
+R1
+R2
+!i10b 1
+!s100 4LD;Dmhi3ek<fmZ@gaH:03
+IMeLeegk3h70PY:67fZ=kl3
+R3
+!s105 wav_pcm_reader_v_unit
+S1
+R0
+w1791964130
+8../user_source/hdl_source/SD/wav_pcm_reader.v
+F../user_source/hdl_source/SD/wav_pcm_reader.v
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9

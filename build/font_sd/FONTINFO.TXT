@@ -1,0 +1,6 @@
+FPGA Chinese font resource
+FONT16.BIN: packed 16x16 monochrome glyphs, row-major, MSB is left pixel.
+FONT16.MEM: one hexadecimal byte per line, suitable as a BRAM init source.
+FONTMAP.TXT: glyph index and UTF-8 character mapping.
+Glyphs: 56; bytes per glyph: 32; total bytes: 1792.
+The FPGA initializes its BRAM font during configuration from font16_rows.mem. SD files are resource copies, not loaded at runtime.

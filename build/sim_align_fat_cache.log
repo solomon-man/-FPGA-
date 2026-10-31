@@ -1,0 +1,31 @@
+Reading E:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# do test_fat_cache.do
+# ** Warning: (vlib-34) Library already exists at "work_fat_cache".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work_fat_cache 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:14:19 on Oct 27,2026
+# vlog -sv ../user_source/hdl_source/SD/fat32_sector_map.v tb_fat_cache.v 
+# -- Compiling module fat32_sector_map
+# -- Compiling module tb_fat_cache
+# 
+# Top level modules:
+# 	tb_fat_cache
+# End time: 11:14:20 on Oct 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt work.tb_fat_cache 
+# Start time: 11:14:20 on Oct 27,2026
+# Loading sv_std.std
+# Loading work.tb_fat_cache
+# Loading work.fat32_sector_map
+# FAT_CACHE_IDENTICAL_BYTES_CROSS_SECTOR_EOF_PASS FAT_READS=129->2 TOTAL_READS=260->133 TIME_NS=2692395000->1391905000
+# ** Note: $finish    : tb_fat_cache.v(81)
+#    Time: 4084395 ns  Iteration: 2  Instance: /tb_fat_cache
+# Break in Module tb_fat_cache at tb_fat_cache.v line 81
+# Stopped at tb_fat_cache.v line 81
+# End time: 11:14:21 on Oct 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

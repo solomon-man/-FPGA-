@@ -1,0 +1,80 @@
+# do test_pll_clocks.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:42:26 on Oct 26,2026
+# vlog -work work_pll_clocks E:/TD_Engineer/sim_release/eg4/eg_phy_pll.v sim_bufg.v ../user_source/hdl_source/IP/sys_pll.v ../user_source/hdl_source/IP/video_pll.v ../user_source/hdl_source/IP/PLL_HDMI_AUDIO.v 
+# -- Compiling module EG_PHY_PLL
+# -- Compiling module prediv_mux
+# -- Compiling module eg_dphase_sel
+# -- Compiling module eg_clko_premux
+# -- Compiling module eg_clko_ctrl
+# -- Compiling module eg_pll_div128
+# -- Compiling module eg_pll_div2
+# -- Compiling module EG_LOGIC_BUFG
+# -- Compiling module sys_pll
+# -- Compiling module video_pll
+# -- Compiling module PLL_HDMI_AUDIO
+# 
+# Top level modules:
+# 	sys_pll
+# 	video_pll
+# 	PLL_HDMI_AUDIO
+# End time: 17:42:27 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:42:27 on Oct 26,2026
+# vlog -sv -work work_pll_clocks tb_pll_clocks.v 
+# -- Compiling module tb_pll_clocks
+# 
+# Top level modules:
+# 	tb_pll_clocks
+# End time: 17:42:28 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt work_pll_clocks.tb_pll_clocks 
+# Start time: 17:42:28 on Oct 26,2026
+# Loading sv_std.std
+# Loading work_pll_clocks.tb_pll_clocks
+# Loading work_pll_clocks.sys_pll
+# Loading work_pll_clocks.EG_LOGIC_BUFG
+# Loading work_pll_clocks.EG_PHY_PLL
+# Loading work_pll_clocks.eg_dphase_sel
+# Loading work_pll_clocks.prediv_mux
+# Loading work_pll_clocks.eg_pll_div2
+# Loading work_pll_clocks.eg_clko_premux
+# Loading work_pll_clocks.eg_pll_div128
+# Loading work_pll_clocks.eg_clko_ctrl
+# Loading work_pll_clocks.video_pll
+# Loading work_pll_clocks.PLL_HDMI_AUDIO
+# ** Warning: (vsim-3015) ../user_source/hdl_source/IP/sys_pll.v(78): [PCDPC] - Port size (5) does not match connection size (1) for port 'load_reg'. The port definition is at: E:/TD_Engineer/sim_release/eg4/eg_phy_pll.v(25).
+#    Time: 0 fs  Iteration: 0  Instance: /tb_pll_clocks/sys/pll_inst File: E:/TD_Engineer/sim_release/eg4/eg_phy_pll.v
+# ** Warning: (vsim-3015) ../user_source/hdl_source/IP/video_pll.v(68): [PCDPC] - Port size (5) does not match connection size (1) for port 'load_reg'. The port definition is at: E:/TD_Engineer/sim_release/eg4/eg_phy_pll.v(25).
+#    Time: 0 fs  Iteration: 0  Instance: /tb_pll_clocks/vid/pll_inst File: E:/TD_Engineer/sim_release/eg4/eg_phy_pll.v
+# ** Warning: (vsim-3015) ../user_source/hdl_source/IP/PLL_HDMI_AUDIO.v(75): [PCDPC] - Port size (5) does not match connection size (1) for port 'load_reg'. The port definition is at: E:/TD_Engineer/sim_release/eg4/eg_phy_pll.v(25).
+#    Time: 0 fs  Iteration: 0  Instance: /tb_pll_clocks/aud/pll_inst File: E:/TD_Engineer/sim_release/eg4/eg_phy_pll.v
+# ******************** : The Attribute            REFCLK_DIV on pll instance tb_pll_clocks.sys.pll_inst.para_int_range_chk is set to           1.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             FBCLK_DIV on pll instance tb_pll_clocks.sys.pll_inst.para_int_range_chk is set to          20.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             CLKC0_DIV on pll instance tb_pll_clocks.sys.pll_inst.para_int_range_chk is set to          10.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             CLKC1_DIV on pll instance tb_pll_clocks.sys.pll_inst.para_int_range_chk is set to          12.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             CLKC2_DIV on pll instance tb_pll_clocks.sys.pll_inst.para_int_range_chk is set to          12.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             CLKC3_DIV on pll instance tb_pll_clocks.sys.pll_inst.para_int_range_chk is set to           1.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             CLKC4_DIV on pll instance tb_pll_clocks.sys.pll_inst.para_int_range_chk is set to           1.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute            REFCLK_DIV on pll instance tb_pll_clocks.vid.pll_inst.para_int_range_chk is set to           2.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             FBCLK_DIV on pll instance tb_pll_clocks.vid.pll_inst.para_int_range_chk is set to          39.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             CLKC0_DIV on pll instance tb_pll_clocks.vid.pll_inst.para_int_range_chk is set to          15.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             CLKC1_DIV on pll instance tb_pll_clocks.vid.pll_inst.para_int_range_chk is set to           3.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             CLKC2_DIV on pll instance tb_pll_clocks.vid.pll_inst.para_int_range_chk is set to           1.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             CLKC3_DIV on pll instance tb_pll_clocks.vid.pll_inst.para_int_range_chk is set to           1.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             CLKC4_DIV on pll instance tb_pll_clocks.vid.pll_inst.para_int_range_chk is set to           1.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute            REFCLK_DIV on pll instance tb_pll_clocks.aud.pll_inst.para_int_range_chk is set to           1.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             FBCLK_DIV on pll instance tb_pll_clocks.aud.pll_inst.para_int_range_chk is set to          15.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             CLKC0_DIV on pll instance tb_pll_clocks.aud.pll_inst.para_int_range_chk is set to          10.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             CLKC1_DIV on pll instance tb_pll_clocks.aud.pll_inst.para_int_range_chk is set to           2.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             CLKC2_DIV on pll instance tb_pll_clocks.aud.pll_inst.para_int_range_chk is set to          61.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             CLKC3_DIV on pll instance tb_pll_clocks.aud.pll_inst.para_int_range_chk is set to           1.  Legal values for this attribute are           1 to         128.
+# ******************** : The Attribute             CLKC4_DIV on pll instance tb_pll_clocks.aud.pll_inst.para_int_range_chk is set to           1.  Legal values for this attribute are           1 to         128.
+# PLL_INTERNAL_FEEDBACK_100_83_65_325_12MHZ_PHASE_ZERO_PASS
+# ** Note: $finish    : tb_pll_clocks.v(24)
+#    Time: 3944867400 fs  Iteration: 0  Instance: /tb_pll_clocks
+# Break in Module tb_pll_clocks at tb_pll_clocks.v line 24
+# Stopped at tb_pll_clocks.v line 24
+# End time: 17:42:29 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 3

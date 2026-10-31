@@ -1,0 +1,148 @@
+PAGE 30
+TangDynasty          软件手册   
+29                              http://www.anlogic.com  
+ 
+2.3 导出 tcl 脚本 
+软件支持使用 tcl 脚本运行 Flow，可减少用户界面操作。 
+工程运行 flow 后会自动生成 prj_name_Runs 文件夹，默认包含 syn_1 和 phy_1 两个
+文件夹，各自包含有 prj_name.tcl 文件，该文件分别对应记录了 syn_1 和 phy_1 的完整
+flow 命令。 
+ 
+ 
+ 
+ 
+如，在界面有如下操作： 
+1. 打开工程 demo.al 
+2. 设置参数 Optimize RTL keep_hierarchy flatten 
+3. 运行 Syn Opt 
+4. 生成 syn_1 的 tcl 脚本：demo_Runs/syn_1/demo.tcl 
+5. 运行 Phy Opt，生成 phy_1 的 tcl 脚本：demo_Runs/phy_1/demo.tcl 
+ 
+执行 tcl 脚本的步骤为： 
+1. 在 Windows 下启动 TD CMD 窗口： 
+
+PAGE 31
+TangDynasty          软件手册   
+30                              http://www.anlogic.com  
+Start → All Programs → td_commands_prompt 
+2. 进入工程中的 tcl 脚本所在目录 
+3. 执行命令：source demo.tcl。 
+ 
+执行 syn_1 目录的 tcl 脚本： 
+ 
+ 
+执行 phy_1 目录的 tcl 脚本： 
+ 
+ 
+单击 Project > Export > Export Tcl File for Flow，可在工程目录中生成一个运行完整
+
+PAGE 32
+TangDynasty          软件手册   
+31                              http://www.anlogic.com  
+flow 的 tcl 文件，用户可自定义文件名。 
+ 
+生成的文件内容如下： 
+ 
+  
+
+PAGE 114
+TangDynasty          软件手册   
+113                              http://www.anlogic.com  
+ 
+ 
+ 
+Reports 即当前 Syn Opt/Phy Opt 的 step 运行完成后对应生成的 report，双击 report
+即可查看相关内容。 
+ 
+ 
+Export Script 可导出当前 Syn Opt/Phy Opt 的 tcl 脚本，包括运行 flow 时执行的命
+令、已设置的各参数选项等信息，用户可进行重命名并保存； 
+ 
+ 
+Setup Multi-Seed 可以一键启动后端撒种子的多组运行， 找到时序最优的种子配置，
+输出到设计脚本里，仅支持 active 的 Phy Opt 的多种子运行。 
+ 
+Setup Multi-Seed Result 可以在多种子运行结束后，查看所有种子的运行结果。 
+  
+
+PAGE 245
+TangDynasty          软件手册   
+244                              http://www.anlogic.com  
+HDL-7321 无效参数 修改 HDL 设计中的参数写法 
+ 
+RUN ERROR/CRITICAL-WARNING 
+RUN ERROR Message 
+ID 说明 建议 
+(RUN) Flow error message 
+RUN-8002 非法参数值 需要填正整数 
+RUN-8004 打开文件失败 确认文件名合法，硬盘够大，权限开放 
+RUN-8005 tcl 脚本非法 需要先 import_device 
+RUN-8007 design 中面积太大，器件不够 需要换大一点的 device 
+RUN-8009 无法写文件 确认文件名合法，硬盘够大，权限开放 
+RUN-8010 数据结构非法 需要重新生成 db 
+RUN-8011 数据结构非法 需要重新生成 db 
+RUN-8012 db 文件版本不兼容 需要重新生成 db 
+RUN-8013 打不开项目文件 确认文件路径存在，权限开放 
+RUN-8014 项目文件有非法内容 重新生成项目 
+RUN-8015 项目文件非法 重新生成项目 
+RUN-8016 项目文件不存在 确认文件路径存在，权限开放 
+RUN-8017 项目文件有非法内容 重新生成项目 
+RUN-8018 项目文件有非法内容 重新生成项目 
+RUN-8019 项目中源文件分析失败 根据分析源文件时的报错进行对应规避
+操作 
+RUN-8020 IP 文件非法 重新生成 IP，或去除 IP 
+RUN-8021 项目文件缺失内容 重新生成项目 
+RUN-8022 db 文件版本不兼容 需要重新生成 db 
+RUN-8101 Place 布局失败 根据日志修复设计或参数配置，如改小逻
+辑，min_control_set 调大，effort 调高 
+RUN-8102 Route 布线失败 根据日志修复设计或参数配置，如改小逻
+辑，min_control_set 调大，effort 调高 
+RUN-8415 项目文件有非法内容 重新生成项目 
+RUN-8419 PLL 参数非法 重新生成 IP 
+RUN-8420 PLL 同步管脚 IO standard 设置不一致 修正 ADC，使管脚 IO Standard 一致 
+RUN-9990 参数非法 换正整数 
+RUN-9992 license 格式非法 重新获取合法的 license 文件 
+ 
+PAGE 275
+TangDynasty          软件手册   
+274                              http://www.anlogic.com  
+9.4 TD 软件中间文件用途说明 
+ 
+  
+Flow 
+Step File Name Description 
+SynOpt 
+prj_name.tcl syn opt 的 tcl 脚本 
+prj_name.prj syn opt 的参数设置 
+.read_design.begin.f syn opt 的运行进度标识文件，表示已开始执行 read_design 
+prj_name_elaborate.db read_design 阶段生成的 database 
+.read_design.end.f syn opt 的运行进度标识文件，表示已完成 read_design 
+.opt_rtl.begin.f syn opt 的运行进度标识文件，表示已开始执行 opt_rtl 
+prj_name_rtl.area optimize_rtl 阶段的资源报告 
+prj_name_rtl.db optimize_rtl 阶段生成的 database 
+.opt_rtl.end.f syn opt 的运行进度标识文件，表示已完成 opt_rtl 
+.opt_gate.begin.f syn opt 的运行进度标识文件，表示已开始执行 opt_gate 
+prj_name_gate.area optimize_gate 阶段的资源报告 
+run.log 运行 syn opt 的过程中打印出来的日志 
+prj_name_gate.db optimize_gate 阶段生成的 database 
+.opt_gate.end.f syn opt 的运行进度标识文件，表示已完成 opt_gate 
+PhyOpt 
+prj_name.tcl phy opt 的 tcl 脚本 
+prj_name.prj phy opt 的参数设置 
+.opt_place.begin.f phy opt 的运行进度标识文件，表示已开始执行 opt_place 
+prj_name_place.db place 阶段生成的 database 
+.opt_place.end.f phy opt 的运行进度标识文件，表示已完成 opt_place 
+.opt_route.begin.f phy opt 的运行进度标识文件，表示已开始执行 opt_route 
+top_module_preroute_clock_
+analysis.rpt pre-route 阶段的时钟分析报告 
+top_module_postroute_clock
+_analysis.rpt post-route 阶段的时钟分析报告 
+prj_name_phy.area route 阶段的资源报告 
+prj_name_pr.db route 阶段生成的 database 
+prj_name_phy.tsm route 阶段的时序文件（summary） 
+prj_name_phy.timing route 阶段的时序文件（detialed） 
+.opt_route.end.f phy opt 的运行进度标识文件，表示已完成 opt_route 
+.bitgen.begin.f phy opt 的运行进度标识文件，表示已开始执行 bitgen 
+prj_name.bit 工程的位流文件 
+run.log 运行 phy opt 的过程中打印出来的日志 
+.bitgen.end.f phy opt 的运行进度标识文件，表示已完成 bitgen 

@@ -1,0 +1,9 @@
+Timing acceptance failed: SWNS
+    while executing
+"error "Timing acceptance failed: $label""
+    ("foreach" body line 7)
+    invoked from within
+"foreach label {SWNS STNS HWNS HTNS {Period Check WNS}} {
+    set pattern [format {%s:\s+([-0-9.]+)ns} $label]
+    if {![regexp $pattern $timing_text m..."
+    (file "build/build.tcl" line 45)

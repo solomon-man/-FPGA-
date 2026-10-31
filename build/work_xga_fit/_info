@@ -1,0 +1,106 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vbmp_fit_read
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1793168241
+!i10b 1
+!s100 [PEhJFX`3U`=a7N>49`<C3
+ID487@c?>6mmG92iAGfLCA3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 fat_bmp_read_v_unit
+S1
+R0
+Z5 w1793006506
+Z6 8../user_source/hdl_source/SD/fat_bmp_read.v
+Z7 F../user_source/hdl_source/SD/fat_bmp_read.v
+L0 79
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1793168241.000000
+Z10 !s107 tb_xga_fit.v|../user_source/hdl_source/SD/fat_bmp_read.v|../user_source/hdl_source/SD/fat32_sector_map.v|
+Z11 !s90 -sv|-work|work_xga_fit|../user_source/hdl_source/SD/fat32_sector_map.v|../user_source/hdl_source/SD/fat_bmp_read.v|tb_xga_fit.v|
+!i113 1
+Z12 o-sv -work work_xga_fit
+Z13 tCvgOpt 0
+vfat32_sector_map
+R1
+R2
+!i10b 1
+!s100 gF4j8^>eGjjWgI2A1=9UM3
+IRNJSPYaB3UnZ03=3N8PGj2
+R3
+!s105 fat32_sector_map_v_unit
+S1
+R0
+w1793070826
+8../user_source/hdl_source/SD/fat32_sector_map.v
+F../user_source/hdl_source/SD/fat32_sector_map.v
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vfat_bmp_read
+R1
+R2
+!i10b 1
+!s100 h>7e98_7V`J_;P>68hZKV1
+ImgeZe8l1S5KdOcoN`i;hT2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vtb_xga_fit
+R1
+R2
+!i10b 1
+!s100 0?9mB8?KH2^I5QAFYl7Fn0
+I;nla==hlZE5`akn90`6QR0
+R3
+!s105 tb_xga_fit_v_unit
+S1
+R0
+w1792418240
+8tb_xga_fit.v
+Ftb_xga_fit.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13

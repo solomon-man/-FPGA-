@@ -1,0 +1,106 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vaudio_ring_overlay
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1793154378
+!i10b 1
+!s100 0dSWWB:QI^_=_GFbF:eGd0
+IOMA]FXjNA5_`gAPn1[1<Q0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 audio_ring_overlay_v_unit
+S1
+R0
+w1793003990
+8reference_v027/audio_ring_overlay.v
+Freference_v027/audio_ring_overlay.v
+L0 3
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1793154378.000000
+Z6 !s107 tb_wave_overlay3.v|reference_v027/audio_ring_overlay.v|../user_source/hdl_source/audio_wave.v|
+Z7 !s90 -sv|-work|work_wave_overlay3|../user_source/hdl_source/audio_wave.v|reference_v027/audio_ring_overlay.v|tb_wave_overlay3.v|
+!i113 1
+Z8 o-sv -work work_wave_overlay3
+Z9 tCvgOpt 0
+vaudio_wave_levels
+R1
+R2
+!i10b 1
+!s100 P]kVmmS?I=H2AjSLFTEGm3
+IC;i[^A6:7lk9T>2o_kYkD0
+R3
+Z10 !s105 audio_wave_v_unit
+S1
+R0
+Z11 w1793154046
+Z12 8../user_source/hdl_source/audio_wave.v
+Z13 F../user_source/hdl_source/audio_wave.v
+L0 9
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vaudio_wave_overlay
+R1
+R2
+!i10b 1
+!s100 WSXMb^okkV1;OOR[f_SfX2
+I6[:`=VgPDginjNInjDDNg2
+R3
+R10
+S1
+R0
+R11
+R12
+R13
+L0 108
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vtb_wave_overlay3
+R1
+R2
+!i10b 1
+!s100 BeRBb>FK=X?GE]mk?M9de0
+I78GDjnbS:ANe03GCL7Dc@3
+R3
+!s105 tb_wave_overlay3_v_unit
+S1
+R0
+w1793154378
+8tb_wave_overlay3.v
+Ftb_wave_overlay3.v
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9

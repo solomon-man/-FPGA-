@@ -1,0 +1,36 @@
+# do test_wave_levels3.do
+# ** Warning: (vlib-34) Library already exists at "work_wave_levels3".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work_wave_levels3 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:53:02 on Oct 26,2026
+# vlog -sv -work work_wave_levels3 ../user_source/hdl_source/audio_wave.v reference_v027/audio_ring_levels.v reference_v027/AL_MAP_LUT1.v tb_wave_levels3.v 
+# -- Compiling module audio_wave_levels
+# -- Compiling module audio_wave_overlay
+# -- Compiling module audio_ring_levels
+# -- Compiling module AL_MAP_LUT1
+# -- Compiling module tb_wave_levels3
+# 
+# Top level modules:
+# 	audio_wave_overlay
+# 	tb_wave_levels3
+# End time: 17:53:03 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt work_wave_levels3.tb_wave_levels3 
+# Start time: 17:53:03 on Oct 26,2026
+# Loading sv_std.std
+# Loading work_wave_levels3.tb_wave_levels3
+# Loading work_wave_levels3.audio_wave_levels
+# Loading work_wave_levels3.audio_ring_levels
+# Loading work_wave_levels3.AL_MAP_LUT1
+# WAVE3_LINEAR_LEVELS_EQUAL_V027_12800_BARS_PASS
+# dBFS  linear  log: -40 0 2, -30 2 9, -20 6 15, -10 20 22, -3 28 26
+# WAVE3_LOG_SCALE_1P5DB_STEPS_MINUS42_TO_0DBFS_PASS
+# WAVE3_ENABLE_GATE_BLANK_RESTART_DECAY_PASS
+# ** Note: $finish    : tb_wave_levels3.v(94)
+#    Time: 17499841 ns  Iteration: 0  Instance: /tb_wave_levels3
+# Break in Module tb_wave_levels3 at tb_wave_levels3.v line 94
+# Stopped at tb_wave_levels3.v line 94
+# End time: 17:53:12 on Oct 26,2026, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 0

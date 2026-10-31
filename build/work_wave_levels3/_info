@@ -1,0 +1,131 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vAL_MAP_LUT1
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1793008383
+!i10b 1
+!s100 gcEEZ7i=aHgG`Z`?KJmoI0
+IN9;1M>X46c]^cDZY8aF5e1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 AL_MAP_LUT1_v_unit
+S1
+R0
+Z4 w1793003990
+8reference_v027/AL_MAP_LUT1.v
+Freference_v027/AL_MAP_LUT1.v
+L0 2
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1793008382.000000
+Z7 !s107 tb_wave_levels3.v|reference_v027/AL_MAP_LUT1.v|reference_v027/audio_ring_levels.v|../user_source/hdl_source/audio_wave.v|
+Z8 !s90 -sv|-work|work_wave_levels3|../user_source/hdl_source/audio_wave.v|reference_v027/audio_ring_levels.v|reference_v027/AL_MAP_LUT1.v|tb_wave_levels3.v|
+!i113 1
+Z9 o-sv -work work_wave_levels3
+Z10 tCvgOpt 0
+n@a@l_@m@a@p_@l@u@t1
+vaudio_ring_levels
+R1
+R2
+!i10b 1
+!s100 Il[zChNm;;P9^W7_2WmK=1
+InZl[2gW<YUVSQdHb6KK3O0
+R3
+!s105 audio_ring_levels_v_unit
+S1
+R0
+R4
+8reference_v027/audio_ring_levels.v
+Freference_v027/audio_ring_levels.v
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vaudio_wave_levels
+R1
+Z11 !s110 1793008382
+!i10b 1
+!s100 P]kVmmS?I=H2AjSLFTEGm3
+IYW?d1eTNB[j[BLPPoceQj2
+R3
+Z12 !s105 audio_wave_v_unit
+S1
+R0
+Z13 w1793007440
+Z14 8../user_source/hdl_source/audio_wave.v
+Z15 F../user_source/hdl_source/audio_wave.v
+L0 9
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vaudio_wave_overlay
+R1
+R11
+!i10b 1
+!s100 eVTHKCImAolWQ3`mRg3oB2
+IKc5:WP3iei]A;CX3UBOR50
+R3
+R12
+S1
+R0
+R13
+R14
+R15
+L0 108
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vtb_wave_levels3
+R1
+R2
+!i10b 1
+!s100 i7YOm71QonSAmK[X1l9=V2
+IHlzIgIMQ8fY?I4gm_ObP82
+R3
+!s105 tb_wave_levels3_v_unit
+S1
+R0
+w1793004064
+8tb_wave_levels3.v
+Ftb_wave_levels3.v
+L0 5
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10

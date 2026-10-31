@@ -1,0 +1,63 @@
+Reading E:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# do test_cache.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work_cache 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:19:58 on Oct 27,2026
+# vlog -sv ../user_source/hdl_source/pcm_async_fifo.v ../user_source/hdl_source/SD/sd_read_arbiter.v ../user_source/hdl_source/SD/fat32_wav_map.v ../user_source/hdl_source/SD/wav_pcm_reader.v ../user_source/hdl_source/SD/sd_wav_player.v ../user_source/hdl_source/SD/bmp_read.v ../user_source/hdl_source/SD/fat32_sector_map.v ../user_source/hdl_source/SD/bmp_fit_read.v ../user_source/hdl_source/SD/fat_bmp_read.v ../user_source/hdl_source/SD/key_press_debounce.v ../user_source/hdl_source/SD/sd_card_bmp.v ../user_source/hdl_source/SD/sd_card_top.v ../user_source/hdl_source/SD/sd_card_cmd.v ../user_source/hdl_source/SD/sd_card_sec_read_write.v ../user_source/hdl_source/SD/spi_master.v tb_cache.v 
+# -- Compiling module pcm_async_fifo
+# -- Compiling module sd_read_arbiter
+# -- Compiling module fat32_wav_map
+# -- Compiling module wav_pcm_reader
+# -- Compiling module sd_wav_player
+# -- Compiling module bmp_read
+# -- Compiling module fat32_sector_map
+# -- Compiling module fat_bmp_read
+# -- Compiling module bmp_fit_read
+# -- Compiling module key_press_debounce
+# -- Compiling module sd_card_bmp
+# -- Compiling module sd_card_top
+# -- Compiling module sd_card_cmd
+# -- Compiling module sd_card_sec_read_write
+# -- Compiling module spi_master
+# -- Compiling module tb_cache
+# 
+# Top level modules:
+# 	bmp_read
+# 	tb_cache
+# End time: 11:19:58 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt work.tb_cache 
+# Start time: 11:19:58 on Oct 27,2026
+# Loading sv_std.std
+# Loading work.tb_cache
+# Loading work.sd_card_bmp
+# Loading work.fat_bmp_read
+# Loading work.fat32_sector_map
+# Loading work.bmp_fit_read
+# Loading work.sd_card_top
+# Loading work.sd_card_sec_read_write
+# Loading work.sd_card_cmd
+# Loading work.spi_master
+# Loading work.sd_read_arbiter
+# Loading work.sd_wav_player
+# Loading work.fat32_wav_map
+# Loading work.wav_pcm_reader
+# Loading work.pcm_async_fifo
+# ** Warning: (vsim-3017) tb_cache.v(11): [TFMPC] - Too few port connections. Expected 45, found 39.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cache/dut File: ../user_source/hdl_source/SD/sd_card_bmp.v
+# ** Warning: (vsim-3722) tb_cache.v(11): [TFMPC] - Missing connection for port 'reader_owned'.
+# ** Warning: (vsim-3722) tb_cache.v(11): [TFMPC] - Missing connection for port 'hd_read_busy'.
+# ** Warning: (vsim-3722) tb_cache.v(11): [TFMPC] - Missing connection for port 'committed_bank'.
+# ** Warning: (vsim-3722) tb_cache.v(11): [TFMPC] - Missing connection for port 'committed_photo'.
+# ** Warning: (vsim-3722) tb_cache.v(11): [TFMPC] - Missing connection for port 'committed_valid'.
+# ** Warning: (vsim-3722) tb_cache.v(11): [TFMPC] - Missing connection for port 'photo_index'.
+# FOUR_BANK_CACHE_COMPLETION_ERROR_SWITCH_PASS AUTOPLAY_3_8_15_SECONDS_RESET_PASS
+# ** Note: $finish    : tb_cache.v(89)
+#    Time: 261 us  Iteration: 1  Instance: /tb_cache
+# End time: 11:19:59 on Oct 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 7

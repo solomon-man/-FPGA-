@@ -1,0 +1,8 @@
+{
+  "built_at": "2026-10-27T11:19:26+08:00",
+  "place_seed": 6,
+  "log": "build/td_20261027_111407.log",
+  "bit_sha256": "359574AEDBF0EE019EA3104B63AA34F3C634E001B744A01C01BE89C1854B667E",
+  "timing_report": "build/timing_summary.rpt",
+  "swns_ns": 0.152, "stns_ns": 0.000, "hwns_ns": 0.011, "htns_ns": 0.000, "period_check_wns_ns": 6.586
+}

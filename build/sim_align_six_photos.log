@@ -1,0 +1,124 @@
+Reading E:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# do test_six_photos.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work_six_photos 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:20:23 on Oct 27,2026
+# vlog -sv ../user_source/hdl_source/pcm_async_fifo.v ../user_source/hdl_source/SD/sd_read_arbiter.v ../user_source/hdl_source/SD/fat32_wav_map.v ../user_source/hdl_source/SD/wav_pcm_reader.v ../user_source/hdl_source/SD/sd_wav_player.v ../user_source/hdl_source/SD/fat32_sector_map.v ../user_source/hdl_source/SD/fat_bmp_read.v ../user_source/hdl_source/SD/key_press_debounce.v ../user_source/hdl_source/SD/sd_card_bmp.v ../user_source/hdl_source/SD/sd_card_top.v ../user_source/hdl_source/SD/sd_card_cmd.v ../user_source/hdl_source/SD/sd_card_sec_read_write.v ../user_source/hdl_source/SD/spi_master.v ../user_source/hdl_source/display_controls4.v ../user_source/hdl_source/frame_commit.v tb_six_cache.v tb_photo_settings.v tb_six_fat.v tb_six_addresses.v ../user_source/hdl_source/SD/frame_fifo_write.v 
+# -- Compiling module pcm_async_fifo
+# -- Compiling module sd_read_arbiter
+# -- Compiling module fat32_wav_map
+# -- Compiling module wav_pcm_reader
+# -- Compiling module sd_wav_player
+# -- Compiling module fat32_sector_map
+# -- Compiling module fat_bmp_read
+# -- Compiling module bmp_fit_read
+# -- Compiling module key_press_debounce
+# -- Compiling module sd_card_bmp
+# -- Compiling module sd_card_top
+# -- Compiling module sd_card_cmd
+# -- Compiling module sd_card_sec_read_write
+# -- Compiling module spi_master
+# -- Compiling module display_controls4
+# -- Compiling module frame_commit
+# -- Compiling module tb_six_cache
+# -- Compiling module tb_photo_settings
+# -- Compiling module tb_six_fat
+# -- Compiling module tb_six_addresses
+# -- Compiling module frame_fifo_write
+# 
+# Top level modules:
+# 	tb_six_cache
+# 	tb_photo_settings
+# 	tb_six_fat
+# 	tb_six_addresses
+# End time: 11:20:24 on Oct 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:20:24 on Oct 27,2026
+# vlog -sv ../user_source/hdl_source/text_layers.v 
+# -- Compiling module text_layers
+# 
+# Top level modules:
+# 	text_layers
+# End time: 11:20:24 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt work.tb_six_cache 
+# Start time: 11:20:24 on Oct 27,2026
+# Loading sv_std.std
+# Loading work.tb_six_cache
+# Loading work.sd_card_bmp
+# Loading work.fat_bmp_read
+# Loading work.fat32_sector_map
+# Loading work.bmp_fit_read
+# Loading work.sd_card_top
+# Loading work.sd_card_sec_read_write
+# Loading work.sd_card_cmd
+# Loading work.spi_master
+# ** Warning: (vsim-3017) tb_six_cache.v(10): [TFMPC] - Too few port connections. Expected 45, found 38.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_six_cache/dut File: ../user_source/hdl_source/SD/sd_card_bmp.v
+# ** Warning: (vsim-3722) tb_six_cache.v(10): [TFMPC] - Missing connection for port 'reader_owned'.
+# ** Warning: (vsim-3722) tb_six_cache.v(10): [TFMPC] - Missing connection for port 'hd_read_busy'.
+# ** Warning: (vsim-3722) tb_six_cache.v(10): [TFMPC] - Missing connection for port 'music_count'.
+# ** Warning: (vsim-3722) tb_six_cache.v(10): [TFMPC] - Missing connection for port 'music_status'.
+# ** Warning: (vsim-3722) tb_six_cache.v(10): [TFMPC] - Missing connection for port 'music_error'.
+# ** Warning: (vsim-3722) tb_six_cache.v(10): [TFMPC] - Missing connection for port 'sd_audio_left'.
+# ** Warning: (vsim-3722) tb_six_cache.v(10): [TFMPC] - Missing connection for port 'sd_audio_right'.
+# SIX_RESIDENT_CAP_NO_RELOAD_FORWARD_REVERSE_WRAP_AUTOPLAY_FAILURE_SHORT_CATALOG_PASS
+# ** Note: $finish    : tb_six_cache.v(72)
+#    Time: 9980 ns  Iteration: 1  Instance: /tb_six_cache
+# Break in Module tb_six_cache at tb_six_cache.v line 72
+# Stopped at tb_six_cache.v line 72
+# End time: 11:20:24 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# vsim -novopt work.tb_six_fat 
+# Start time: 11:20:24 on Oct 27,2026
+# Loading sv_std.std
+# Loading work.tb_six_fat
+# Loading work.fat_bmp_read
+# Loading work.fat32_sector_map
+# Loading work.bmp_fit_read
+# TEN_FAT_FULL_PIXEL_FILE 1
+# TEN_FAT_FULL_PIXEL_FILE 2
+# TEN_FAT_FULL_PIXEL_FILE 3
+# TEN_FAT_FULL_PIXEL_FILE 4
+# TEN_FAT_FULL_PIXEL_FILE 5
+# TEN_FAT_FULL_PIXEL_FILE 6
+# FAT32_SIX_BMP_DIRECTORY_CHAIN_CAP_ELEVEN_FULL_PIXELS_PASS
+# ** Note: $finish    : tb_six_fat.v(76)
+#    Time: 83258560 ns  Iteration: 1  Instance: /tb_six_fat
+# Break in Module tb_six_fat at tb_six_fat.v line 76
+# Stopped at tb_six_fat.v line 76
+# End time: 11:21:37 on Oct 27,2026, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 0
+# vsim -novopt work.tb_six_addresses 
+# Start time: 11:21:37 on Oct 27,2026
+# Loading sv_std.std
+# Loading work.tb_six_addresses
+# Loading work.frame_fifo_write
+# ALL_SIX_BANK_FULL_FRAME_VFLIP_ADDRESS_PASS
+# ** Note: $finish    : tb_six_addresses.v(32)
+#    Time: 37442120 ns  Iteration: 1  Instance: /tb_six_addresses
+# Break in Module tb_six_addresses at tb_six_addresses.v line 32
+# Stopped at tb_six_addresses.v line 32
+# End time: 11:21:43 on Oct 27,2026, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0
+# vsim -novopt work.tb_photo_settings 
+# Start time: 11:21:43 on Oct 27,2026
+# Loading sv_std.std
+# Loading work.tb_photo_settings
+# Loading work.display_controls4
+# Loading work.text_layers
+# ** Error: (vsim-3033) tb_photo_settings.v(19): Instantiation of 'status_seven_segment' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_photo_settings File: tb_photo_settings.v
+#         Searched libraries:
+#             G:/ANLU_Project/digital photo frame3.0/build/work_six_photos
+# Loading work.frame_commit
+# Error loading design
+Error loading design
+# End time: 11:21:43 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

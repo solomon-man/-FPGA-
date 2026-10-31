@@ -1,0 +1,40 @@
+Reading E:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# do test_text_early_equiv.do
+# ** Warning: (vlib-34) Library already exists at "work_text_early".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap text_early work_text_early 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:06:30 on Oct 28,2026
+# vlog -work text_early -sv "+define+MODEL_TECH" ../user_source/hdl_source/text_layers.v tb_text_early_equiv.v 
+# ** Warning: (On Command Line): (vlog-2263) Redefinition of macro: 'MODEL_TECH'.
+# -- Compiling module text_layers
+# -- Compiling module osd_font_rom
+# ** Warning: (On Command Line): (vlog-2263) Redefinition of macro: 'MODEL_TECH'.
+# -- Compiling module tb_text_early_equiv
+# ** Warning: (On Command Line): (vlog-2263) Redefinition of macro: 'MODEL_TECH'.
+# ** Warning: (On Command Line): (vlog-2263) Redefinition of macro: 'MODEL_TECH'.
+# 
+# Top level modules:
+# 	tb_text_early_equiv
+# End time: 15:06:30 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vsim -novopt text_early.tb_text_early_equiv 
+# Start time: 15:06:30 on Oct 28,2026
+# Loading sv_std.std
+# Loading text_early.tb_text_early_equiv
+# Loading text_early.text_layers
+# Loading text_early.osd_font_rom
+# ** Warning: (vsim-3017) tb_text_early_equiv.v(15): [TFMPC] - Too few port connections. Expected 33, found 30.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_text_early_equiv/ref_m File: ../user_source/hdl_source/text_layers.v
+# ** Warning: (vsim-3722) tb_text_early_equiv.v(15): [TFMPC] - Missing connection for port 'de_early'.
+# ** Warning: (vsim-3722) tb_text_early_equiv.v(15): [TFMPC] - Missing connection for port 'x_early'.
+# ** Warning: (vsim-3722) tb_text_early_equiv.v(15): [TFMPC] - Missing connection for port 'y_early'.
+# TEXT_LAYERS_EARLY_XY_EQUIVALENT_PASS cycles=3240000 ink_pixels=11640
+# ** Note: $finish    : tb_text_early_equiv.v(34)
+#    Time: 32400035 ns  Iteration: 1  Instance: /tb_text_early_equiv
+# End time: 15:07:11 on Oct 28,2026, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 4

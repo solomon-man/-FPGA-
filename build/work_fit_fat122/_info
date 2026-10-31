@@ -1,0 +1,130 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vbmp_fit_read
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1793071201
+!i10b 1
+!s100 [PEhJFX`3U`=a7N>49`<C3
+IdaH57UF9Ol:9<FYj1O;R13
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 fat_bmp_read_v_unit
+S1
+R0
+Z5 w1793006506
+Z6 8../user_source/hdl_source/SD/fat_bmp_read.v
+Z7 F../user_source/hdl_source/SD/fat_bmp_read.v
+L0 79
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1793071200.000000
+Z10 !s107 tb_fit_fat122.v|../user_source/hdl_source/SD/fat_bmp_read.v|../user_source/hdl_source/SD/bmp_fit_read.v|../user_source/hdl_source/SD/fat32_sector_map.v|../user_source/hdl_source/SD/bmp_read.v|
+Z11 !s90 -sv|../user_source/hdl_source/SD/bmp_read.v|../user_source/hdl_source/SD/fat32_sector_map.v|../user_source/hdl_source/SD/bmp_fit_read.v|../user_source/hdl_source/SD/fat_bmp_read.v|tb_fit_fat122.v|
+!i113 1
+o-sv
+Z12 tCvgOpt 0
+vbmp_read
+R1
+!s110 1793071200
+!i10b 1
+!s100 ;m7;OMlnXhjCR7_T[LI941
+Ibm2zHSGK]?izBO[1[72HH2
+R3
+!s105 bmp_read_v_unit
+S1
+R0
+w1791642078
+8../user_source/hdl_source/SD/bmp_read.v
+F../user_source/hdl_source/SD/bmp_read.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+o-sv
+R12
+vfat32_sector_map
+R1
+R2
+!i10b 1
+!s100 gF4j8^>eGjjWgI2A1=9UM3
+IWaGIMzh@gCgl20UhI[<T61
+R3
+!s105 fat32_sector_map_v_unit
+S1
+R0
+w1793070826
+8../user_source/hdl_source/SD/fat32_sector_map.v
+F../user_source/hdl_source/SD/fat32_sector_map.v
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+o-sv
+R12
+vfat_bmp_read
+R1
+R2
+!i10b 1
+!s100 h>7e98_7V`J_;P>68hZKV1
+I4bl87]`CJa@PH1Kf;>1?92
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+o-sv
+R12
+vtb_fit_fat122
+R1
+R2
+!i10b 1
+!s100 GMibM;7=7_P5VbBGF0jBF1
+IX9Ye3=P^4EMoo1;;J0;n=0
+R3
+!s105 tb_fit_fat122_v_unit
+S1
+R0
+w1792148458
+8tb_fit_fat122.v
+Ftb_fit_fat122.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+o-sv
+R12

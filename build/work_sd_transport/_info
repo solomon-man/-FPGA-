@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vpcm_async_fifo
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1793007801
+!i10b 1
+!s100 J7gBa@h;3DICQMKFz7<2D2
+If@8d4naKmdOo8E@Xj`5PM2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 pcm_async_fifo_v_unit
+S1
+R0
+w1793006050
+8../user_source/hdl_source/pcm_async_fifo.v
+F../user_source/hdl_source/pcm_async_fifo.v
+L0 3
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1793007801.000000
+Z6 !s107 tb_sd_transport.v|../user_source/hdl_source/SD/sd_read_arbiter.v|../user_source/hdl_source/pcm_async_fifo.v|
+Z7 !s90 -sv|../user_source/hdl_source/pcm_async_fifo.v|../user_source/hdl_source/SD/sd_read_arbiter.v|tb_sd_transport.v|
+!i113 1
+o-sv
+Z8 tCvgOpt 0
+vsd_read_arbiter
+R1
+R2
+!i10b 1
+!s100 m;M[8OY3?MfR4FlJaE@m`0
+Izja=`aPhh:[ln4z_lY3XU2
+R3
+!s105 sd_read_arbiter_v_unit
+S1
+R0
+w1792851782
+8../user_source/hdl_source/SD/sd_read_arbiter.v
+F../user_source/hdl_source/SD/sd_read_arbiter.v
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8
+vtb_sd_transport
+R1
+R2
+!i10b 1
+!s100 aWa4`d_5cTKH`2d:fhQB^0
+IVzB5k:JND3dZPH3?GI[EV3
+R3
+!s105 tb_sd_transport_v_unit
+S1
+R0
+w1792852304
+8tb_sd_transport.v
+Ftb_sd_transport.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8

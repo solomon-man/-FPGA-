@@ -1,0 +1,130 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vaudio_spectrum
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1793171298
+!i10b 1
+!s100 5PX:Q:eW;d158[Cl6cCTF1
+I14KVOGib;B:Fm3^i2J_La0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 audio_spectrum_v_unit
+S1
+R0
+Z5 w1793166976
+Z6 8../user_source/hdl_source/audio_spectrum.v
+Z7 F../user_source/hdl_source/audio_spectrum.v
+L0 4
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1793171297.000000
+Z10 !s107 tb_spectrum.v|../user_source/hdl_source/text_layers.v|../user_source/hdl_source/audio_spectrum.v|
+Z11 !s90 -sv|../user_source/hdl_source/audio_spectrum.v|../user_source/hdl_source/text_layers.v|tb_spectrum.v|
+!i113 1
+o-sv
+Z12 tCvgOpt 0
+vosd_font_rom
+R1
+R2
+!i10b 1
+!s100 8SST17A7o:Z6Y6WVU^DbH1
+I3iRkHm=`n380XHl=SUDCS1
+R3
+Z13 !s105 text_layers_v_unit
+S1
+R0
+Z14 w1793171114
+Z15 8../user_source/hdl_source/text_layers.v
+Z16 F../user_source/hdl_source/text_layers.v
+L0 79
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+o-sv
+R12
+vspectrum_renderer_pipeline
+R1
+R2
+!i10b 1
+!s100 m0M^fl>0c8hM073OLZeP[1
+Io;9n<FgL>1ZmI:;WP>[E_0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 246
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+o-sv
+R12
+vtb_spectrum
+R1
+R2
+!i10b 1
+!s100 ^Pk9ViB`X6l0672eUa9Rh1
+IeJ>efS01iL^iX0hO494Lg1
+R3
+!s105 tb_spectrum_v_unit
+S1
+R0
+w1792148182
+8tb_spectrum.v
+Ftb_spectrum.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+o-sv
+R12
+vtext_layers
+R1
+R2
+!i10b 1
+!s100 QUz8g0MWWzkFe_@fiN0>a0
+I423=lJVSi4@dEQgQSjCbe2
+R3
+R13
+S1
+R0
+R14
+R15
+R16
+L0 5
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+o-sv
+R12

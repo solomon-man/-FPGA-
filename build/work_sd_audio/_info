@@ -1,0 +1,154 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vfat32_wav_map
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1793007768
+!i10b 1
+!s100 cObW^TS:XI]?MITo@TQ371
+I9FXT5TlOZ0Vb7LJ_N`7241
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 fat32_wav_map_v_unit
+S1
+R0
+w1793006014
+8../user_source/hdl_source/SD/fat32_wav_map.v
+F../user_source/hdl_source/SD/fat32_wav_map.v
+L0 3
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1793007768.000000
+Z6 !s107 tb_sd_audio.v|../user_source/hdl_source/SD/sd_wav_player.v|../user_source/hdl_source/SD/wav_pcm_reader.v|../user_source/hdl_source/SD/fat32_wav_map.v|../user_source/hdl_source/pcm_async_fifo.v|../user_source/hdl_source/SD/sd_read_arbiter.v|
+Z7 !s90 -sv|../user_source/hdl_source/SD/sd_read_arbiter.v|../user_source/hdl_source/pcm_async_fifo.v|../user_source/hdl_source/SD/fat32_wav_map.v|../user_source/hdl_source/SD/wav_pcm_reader.v|../user_source/hdl_source/SD/sd_wav_player.v|tb_sd_audio.v|
+!i113 1
+o-sv
+Z8 tCvgOpt 0
+vpcm_async_fifo
+R1
+R2
+!i10b 1
+!s100 J7gBa@h;3DICQMKFz7<2D2
+If@8d4naKmdOo8E@Xj`5PM2
+R3
+!s105 pcm_async_fifo_v_unit
+S1
+R0
+w1793006050
+8../user_source/hdl_source/pcm_async_fifo.v
+F../user_source/hdl_source/pcm_async_fifo.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8
+vsd_read_arbiter
+R1
+R2
+!i10b 1
+!s100 m;M[8OY3?MfR4FlJaE@m`0
+Izja=`aPhh:[ln4z_lY3XU2
+R3
+!s105 sd_read_arbiter_v_unit
+S1
+R0
+Z9 w1792851782
+8../user_source/hdl_source/SD/sd_read_arbiter.v
+F../user_source/hdl_source/SD/sd_read_arbiter.v
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8
+vsd_wav_player
+R1
+R2
+!i10b 1
+!s100 OI[TKHkO=a:F>24CPg<c]2
+IIaCQYg<YdV6QeRb3NIlhQ0
+R3
+!s105 sd_wav_player_v_unit
+S1
+R0
+R9
+8../user_source/hdl_source/SD/sd_wav_player.v
+F../user_source/hdl_source/SD/sd_wav_player.v
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8
+vtb_sd_audio
+R1
+R2
+!i10b 1
+!s100 6X_c4kR[e0zBlXkUjLm_33
+IP?R_gNnGA37gXKmTY_H`21
+R3
+!s105 tb_sd_audio_v_unit
+S1
+R0
+w1791974066
+8tb_sd_audio.v
+Ftb_sd_audio.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8
+vwav_pcm_reader
+R1
+R2
+!i10b 1
+!s100 4LD;Dmhi3ek<fmZ@gaH:03
+I8@AY=;aAF8<aW1h?JUoW23
+R3
+!s105 wav_pcm_reader_v_unit
+S1
+R0
+w1791964130
+8../user_source/hdl_source/SD/wav_pcm_reader.v
+F../user_source/hdl_source/SD/wav_pcm_reader.v
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8

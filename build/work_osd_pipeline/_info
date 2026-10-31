@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/ANLU_Project/digital photo frame3.0/build
+vosd_font_rom
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1793171232
+!i10b 1
+!s100 8SST17A7o:Z6Y6WVU^DbH1
+I130LH81_UB;j3dL<BcPKH3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 text_layers_v_unit
+S1
+R0
+Z5 w1793171114
+Z6 8../user_source/hdl_source/text_layers.v
+Z7 F../user_source/hdl_source/text_layers.v
+L0 79
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1793171232.000000
+Z10 !s107 tb_osd_pipeline.v|../user_source/hdl_source/text_layers.v|
+Z11 !s90 -sv|-work|work_osd_pipeline|../user_source/hdl_source/text_layers.v|tb_osd_pipeline.v|
+!i113 1
+Z12 o-sv -work work_osd_pipeline
+Z13 tCvgOpt 0
+vtb_osd_pipeline
+R1
+R2
+!i10b 1
+!s100 ]h=C8<Bd=3U@]cfYI@Ll73
+IW7Cf]3JC``1^zz5@90R5h3
+R3
+!s105 tb_osd_pipeline_v_unit
+S1
+R0
+w1793163206
+8tb_osd_pipeline.v
+Ftb_osd_pipeline.v
+L0 6
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vtext_layers
+R1
+R2
+!i10b 1
+!s100 QUz8g0MWWzkFe_@fiN0>a0
+IeQ7DHG4FU^CR1ETi0InOF3
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 5
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13

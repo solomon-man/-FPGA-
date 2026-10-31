@@ -1,0 +1,33 @@
+# do test_render_pipeline.do
+# ** Warning: (vlib-34) Library already exists at "work_render_pipeline".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work_render_pipeline 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:56:15 on Oct 28,2026
+# vlog -sv -work work_render_pipeline ../user_source/hdl_source/audio_spectrum.v reference_v30/audio_spectrum_v30.v tb_render_pipeline.v 
+# -- Compiling module audio_spectrum
+# -- Compiling module spectrum_renderer_pipeline
+# -- Compiling module audio_spectrum_v30
+# -- Compiling module spectrum_renderer_pipeline_v30
+# -- Compiling module tb_render_pipeline
+# 
+# Top level modules:
+# 	tb_render_pipeline
+# End time: 13:56:15 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt work_render_pipeline.tb_render_pipeline 
+# Start time: 13:56:15 on Oct 28,2026
+# Loading sv_std.std
+# Loading work_render_pipeline.tb_render_pipeline
+# Loading work_render_pipeline.audio_spectrum_v30
+# Loading work_render_pipeline.audio_spectrum
+# Loading work_render_pipeline.spectrum_renderer_pipeline
+# Loading work_render_pipeline.spectrum_renderer_pipeline_v30
+# SPECTRUM_BARS_EQUAL_3_0_RADIAL_XGA_BOX_ONLY_GATES_PASS
+# ** Note: $finish    : tb_render_pipeline.v(77)
+#    Time: 54442410 ns  Iteration: 1  Instance: /tb_render_pipeline
+# Break in Module tb_render_pipeline at tb_render_pipeline.v line 77
+# Stopped at tb_render_pipeline.v line 77
+# End time: 13:58:59 on Oct 28,2026, Elapsed time: 0:02:44
+# Errors: 0, Warnings: 0

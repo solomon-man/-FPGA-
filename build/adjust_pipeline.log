@@ -1,0 +1,28 @@
+# do test_adjust_pipeline.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work_adjust_pipeline 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:39:16 on Oct 26,2026
+# vlog -sv -work work_adjust_pipeline ../user_source/hdl_source/runtime_adjust.v tb_adjust_pipeline.v 
+# -- Compiling module runtime_adjust
+# -- Compiling module runtime_adjust_pipeline
+# -- Compiling module tb_adjust_pipeline
+# 
+# Top level modules:
+# 	tb_adjust_pipeline
+# End time: 17:39:17 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt work_adjust_pipeline.tb_adjust_pipeline 
+# Start time: 17:39:17 on Oct 26,2026
+# Loading sv_std.std
+# Loading work_adjust_pipeline.tb_adjust_pipeline
+# Loading work_adjust_pipeline.runtime_adjust
+# Loading work_adjust_pipeline.runtime_adjust_pipeline
+# ADJUST_PIPELINE_150000_EXACT_RGB_SIGNED_SATURATION_PASS
+# ** Note: $finish    : tb_adjust_pipeline.v(20)
+#    Time: 1500100 ns  Iteration: 1  Instance: /tb_adjust_pipeline
+# Break in Module tb_adjust_pipeline at tb_adjust_pipeline.v line 20
+# Stopped at tb_adjust_pipeline.v line 20
+# End time: 17:39:18 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

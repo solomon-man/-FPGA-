@@ -1,0 +1,32 @@
+# do test_sdram_link.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:42:32 on Oct 26,2026
+# vlog -sv -work work_sdram_link "+incdir+../user_source/hdl_source/include" ../user_source/hdl_source/include/sdr_init_ref.enc.v ../user_source/hdl_source/include/sdr_wrrd.enc.v ../user_source/hdl_source/include/sdr_as_ram.enc.v ../user_source/hdl_source/SD/sdram.v tb_sdram_link.v 
+# -- Compiling module sdr_init_ref
+# ** Warning: (vlog-2121) ../user_source/hdl_source/include/sdr_init_ref.enc.v(207): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: (vlog-2121) <protected>(<protected>): Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# -- Compiling module sdr_as_ram
+# -- Compiling module sdram
+# -- Compiling module tb_sdram_link
+# -- Compiling module EG_PHY_SDRAM_2M_32
+# 
+# Top level modules:
+# 	tb_sdram_link
+# End time: 17:42:33 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+# vsim -novopt work_sdram_link.tb_sdram_link 
+# Start time: 17:42:33 on Oct 26,2026
+# Loading sv_std.std
+# Loading work_sdram_link.tb_sdram_link
+# Loading work_sdram_link.sdram
+# Loading work_sdram_link.sdr_as_ram
+# Loading work_sdram_link.sdr_init_ref
+# Loading work_sdram_link.EG_PHY_SDRAM_2M_32
+# SDRAM MRS 032 CAS           3 BL           4
+# SDRAM_REAL_CONTROLLER_RGB888_PHASE_0_ROWBANK_READWRITE_PASS
+# ** Note: $finish    : tb_sdram_link.v(29)
+#    Time: 1628736 ns  Iteration: 1  Instance: /tb_sdram_link
+# Break in Module tb_sdram_link at tb_sdram_link.v line 29
+# Stopped at tb_sdram_link.v line 29
+# End time: 17:42:35 on Oct 26,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

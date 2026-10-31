@@ -1,0 +1,89 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Tue Oct 20 08:51:42 2026
+
+Top Model           : top
+Device              : EG4S20BG256
+Speed               : NA
+STA coverage        : 99.98%
+
+Timing details for EG_PHY_SDRAM_2M_32
+------------------------------
+
+Timing details for U3/sdram
+------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     ext_mem_clk -> ext_mem_clk
+Type           :     Self
+From Clock     :     ext_mem_clk
+To Clock       :     ext_mem_clk
+Min Period     :     1.752ns
+Fmax           :     570.776MHz
+
+Statistics:
+Min            : HWNS     -0.044ns, HTNS     -0.044ns,         1 Viol Endpoints,         1 Total Endpoints,         1 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+Slack               : -0.044ns
+Begin Point         : U3/sdram_syn_8.osclk (rising edge triggered by clock ext_mem_clk  { rise@0.000000ns  fall@5.999000ns  period=11.999000 })
+End Point           : U3/sdram.cas_n (rising edge triggered by clock ext_mem_clk  { rise@0.000000ns  fall@5.999000ns  period=11.999000 })
+Check Type          : hold
+Process             : slow
+Budget              : 0.000ns { ext_mem_clk rising@0.000ns - ext_mem_clk rising@0.000ns }
+Data Path Delay     : 4.470ns (cell 4.470ns (100%), net 0.000ns (0%))
+Clock Skew          : 4.414ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                 x020y071            1.493          1.493          pin: clk_syn_2.di
+net (fo=6)          x000y000            1.665          3.158          net: clk_dup_1,  ../user_source/hdl_source/top_tf_hdmi_audio.v(3)
+                                                                      pin: sys_pll_m0/pll_inst.refclk
+PLL                 x000y000            0.000          3.158          pin: sys_pll_m0/pll_inst.clkc[1]
+net (fo=618)                            1.730          4.888          net: U3/u2_ram/SDRAM_CLK,  ../user_source/hdl_source/include/sdr_as_ram.enc.v(35)
+                                                                      pin: U3/sdram_syn_8.osclk
+launch edge                             0.000    r     4.888               
+--------------------------------------------------------------------  ---------------
+PAD (clk2q)         x000y035            3.470    r     8.358          pin: U3/sdram_syn_8.opad
+net (fo=1)          x020y036            0.000          8.358          net: cas_n,  NOFILE(0)
+                                                                      pin: U3/sdram.cas_n
+--------------------------------------------------------------------  ---------------
+Arrival                                                8.358               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                 x020y071            1.660          1.660          pin: clk_syn_2.di
+net (fo=6)          x000y000            1.853          3.513          net: clk_dup_1,  ../user_source/hdl_source/top_tf_hdmi_audio.v(3)
+                                                                      pin: sys_pll_m0/pll_inst.refclk
+PLL                 x000y000            0.000          3.513          pin: sys_pll_m0/pll_inst.clkc[1]
+net (fo=618)                            2.423          5.936          net: U3/u2_ram/SDRAM_CLK,  ../user_source/hdl_source/include/sdr_as_ram.enc.v(35)
+                                                                      pin: U3/sdram_syn_45.do[0]
+PAD                 x040y041            3.816          9.752          pin: U3/sdram_syn_45.opad
+net (fo=1)          x020y036            0.000          9.752          net: clk0,  NOFILE(0)
+                                                                      pin: U3/sdram.clk
+capture edge                            0.000    r     9.752               
+--------------------------------------------------------------------  ---------------
+output (hard ip)    x020y036           -1.000          8.752               
+clock uncertainty                       0.100          8.852               
+clock pessimism                        -0.450          8.402               
+--------------------------------------------------------------------  ---------------
+Required                                               8.402               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.044               
+
+
+
+
+
+
+

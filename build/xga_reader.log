@@ -1,0 +1,65 @@
+# do test_xga_reader.do
+# ** Warning: (vlib-34) Library already exists at "work_xga".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:35 on Oct 28,2026
+# vlog -work work_xga -sv ../user_source/hdl_source/xga_scale_config.v ../user_source/hdl_source/scaled_frame_reader.v ../user_source/hdl_source/SD/frame_fifo_read.v tb_xga_reader.v 
+# -- Compiling module xga_scale_config
+# -- Compiling module scaled_frame_reader
+# -- Compiling module frame_fifo_read
+# -- Compiling module tb_xga_reader
+# 
+# Top level modules:
+# 	tb_xga_reader
+# End time: 14:11:36 on Oct 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt work_xga.tb_xga_reader 
+# Start time: 14:11:36 on Oct 28,2026
+# Loading sv_std.std
+# Loading work_xga.tb_xga_reader
+# Loading work_xga.scaled_frame_reader
+# Loading work_xga.xga_scale_config
+# Loading work_xga.frame_fifo_read
+# ** Warning: (vsim-3017) tb_xga_reader.v(11): [TFMPC] - Too few port connections. Expected 28, found 27.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_xga_reader/dut File: ../user_source/hdl_source/scaled_frame_reader.v
+# ** Warning: (vsim-3722) tb_xga_reader.v(11): [TFMPC] - Missing connection for port 'reader_owned'.
+# XGA_READER bank=          0 scale=          3 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=          4 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=          5 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=          6 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=          7 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=          8 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=          9 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=         10 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=         11 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=         12 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=         13 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=         14 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=         15 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=         16 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=         17 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=         18 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=         19 FULL_FRAME_PASS
+# XGA_READER bank=          0 scale=         20 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=          3 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=          4 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=          5 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=          6 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=          7 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=          8 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=          9 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=         10 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=         11 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=         12 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=         13 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=         14 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=         15 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=         16 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=         17 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=         18 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=         19 FULL_FRAME_PASS
+# XGA_READER bank=          4 scale=         20 FULL_FRAME_PASS
+# XGA_READER_36_FRAMES_RGB888_BANDWIDTH_PASS
+# ** Note: $finish    : tb_xga_reader.v(54)
+#    Time: 573662400 ns  Iteration: 1  Instance: /tb_xga_reader
+# End time: 14:17:20 on Oct 28,2026, Elapsed time: 0:05:44
+# Errors: 0, Warnings: 2
